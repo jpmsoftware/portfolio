@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(0, 0, 50);
+}
+
+body{
+    background-color: rgb(100, 110, 100);
+}
+
+.about{
+    margin-top: 3rem;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #fff;
+}
+
+#profile{
+    margin: 5rem 0 0 5rem;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
