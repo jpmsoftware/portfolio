@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bellota+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bellota+Text&display=swap');
 
 /*
     COLORS: 
@@ -29,40 +30,46 @@ header{
     background-color: #fff;
     overflow: hidden;
     width: 100%;
-    height: 4rem;
+    height: 3.5rem;
     position: relative;
     z-index: 1;
 }
 
+#header-content {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
 #logo{
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 60px;
+    height: 60px;
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+
+#header-content h4 {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%);
+    font-size: 20px;
+    font-family: 'Bellota Text', cursive;
+    color: #010b26;
+
+    animation: AutoSpacing 2s 1;
 }
 
 #nav-bar{
     display: flex;
     position: absolute;
-    right: 20%;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 3rem;
-
-    animation: SlideFromAbove .7s 1;
-}
-
-.content {
-    padding: 16px;
-}
-
-.sticky + .content {
-    padding-top: 60px;
-}
-
-.sticky-li-adjust{
-    line-height: 3rem;
+    right: 0%;
 }
 
 #menu{
@@ -70,11 +77,9 @@ header{
 }
 
 #menu li{
-    margin-left: 2rem;
-    width: 6rem;
-    line-height: 4rem;
+    padding: 0 0rem 0 3rem;
+    line-height: 3.5rem;
     text-align: center;
-    
     animation: FadeIn 1.5s 1;
 }
 
@@ -86,8 +91,8 @@ header{
 #menu li a{
     color: #010b26;
     font-family: 'PT Serif', sans-serif;
-    letter-spacing: 2px;
-    font-size: 17px;    
+    letter-spacing: 3px;
+    font-size: 18px;    
 }
 
 #burger{
@@ -96,53 +101,75 @@ header{
     height: 24px;
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 0%;
     transform: translate(0, -50%);
 }
 
-.banner{
+#banner {
     position: relative;
+    height: 40rem;
 }
 
 #bk{
     width: 100%;
+    height: 100%;
 }
 
-/* #profile-img{
+#banner-content {
     position: absolute;
-    top: 10%;
-    left: 20%;
-    width: 400px;
-    height: 400px;
-    background-color: #b2b6c2;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#images-area {
+    width: 50%;
+    height: 100%;
+}
+
+#profile-img{
+    position: relative;
+    margin-top: 6rem;
+    left: 10%;
+    width: 250px;
+    height: 250px;
+    border: 1px dotted blue;
     opacity: .5;
     border-radius: 3px;
-} */
+} 
 
-.banner p {
+#text-area {
     position: absolute;
-    top: 10%;
-    right: 20%;
-    width: 30rem;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+#text-area p {
+    padding-top: 5rem;
+    width: 100%;
+    height: 70%;
     color: #d1d5df;
     line-height: 3rem;
     font-size: 17px;
     font-family: 'Bellota Text', cursive;
     text-align: justify;
-    padding-top: 2rem;
 
     animation: FadeIn 3s 1;
 }
 
-.banner a {
+#text-area a {
     position: absolute;
-    left: 30%;
     bottom: 15%;
-    font-size: 17px;
-    letter-spacing: 2px;
+    width: 13rem;
+    font-size: 16px;
+    letter-spacing: 4px;
     background-color: #b20b25;
     padding: 1rem;
-    width: 14rem;
     text-align: center;
     color: #fff;
     font-family: 'Bellota Text', cursive;
@@ -150,10 +177,19 @@ header{
     animation: SlideFromBelow 1.5s 1, FadeIn 1.5s 1;
 }
 
-.banner a:hover {
+#text-area a:hover {
     transition: all .4s;
     color: #fff;
-    background-color: #920c20;
+    background-color: #ce1530;
+}
+
+#btn-up {
+    display: none;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    width: 40px;
+    height: 40px;
 }
 
 #projects {
@@ -163,6 +199,11 @@ header{
 @keyframes FadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@keyframes FadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 @keyframes SlideFromAbove {
@@ -175,12 +216,83 @@ header{
     100% { margin-bottom: 0; }
 }
 
+@keyframes Rotate {
+    0% { transform: rotateX(0); }
+    100% { transform: rotateX(90deg); }
+}
+
+@keyframes AutoSpacing {
+    0% { letter-spacing: 0; }
+    100% {  letter-spacing: 5px; }
+}
+
 @media (max-width: 920px){
+    #header-content {
+        width: 90%;
+    }
+
+    #burger{
+        position: absolute;
+        right: 0;
+        display: block;
+        animation: FadeIn 1s 1;
+    }
+
     #menu{
         display: none;
     }
 
-    #burger{
-        display: block;
+    #bk {
+        background-image: none;
+    }
+
+    #banner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    #banner-content {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 90%;
+        height: 100%;
+    }
+
+    #images-area {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 7rem;
+    }
+
+    #profile-img {
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100px;
+        height: 100px;
+    }
+
+    #text-area {
+        width: 100%;
+    }
+
+    #text-area p {
+        width: 100%;
+        height: 85%;
+        padding-top: 7rem;
+        line-height: 2rem;
+    }
+
+    #text-area a {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 }
