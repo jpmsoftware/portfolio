@@ -32,42 +32,17 @@ header{
     width: 100%;
     height: 3.5rem;
     position: relative;
-    z-index: 1;
 }
 
 #header-content {
+    position: relative;
     width: 70%;
+    height: auto;
     margin: 0 auto;
     display: flex;
 }
 
-#logo{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 60px;
-    height: 60px;
-}
-
-#logo:hover{
-    cursor: pointer;
-}
-
-#header-content h4 {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translate(0, -50%);
-    font-size: 20px;
-    font-family: 'Bellota Text', cursive;
-    color: #010b26;
-
-    animation: AutoSpacing 2s 1;
-}
-
 #nav-bar{
-    display: flex;
     position: absolute;
     right: 0%;
 }
@@ -149,6 +124,10 @@ header{
     height: 100%;
 }
 
+#text-area h3 {
+
+}
+
 #text-area p {
     padding-top: 5rem;
     width: 100%;
@@ -162,7 +141,7 @@ header{
     animation: FadeIn 3s 1;
 }
 
-#text-area a {
+.button {
     position: absolute;
     bottom: 15%;
     width: 13rem;
@@ -177,10 +156,15 @@ header{
     animation: SlideFromBelow 1.5s 1, FadeIn 1.5s 1;
 }
 
-#text-area a:hover {
+.button a:hover {
     transition: all .4s;
     color: #fff;
     background-color: #ce1530;
+}
+
+
+#projects {
+    height: 1000px;
 }
 
 #btn-up {
@@ -192,8 +176,8 @@ header{
     height: 40px;
 }
 
-#projects {
-    height: 1000px;
+footer {
+    
 }
 
 @keyframes FadeIn {
