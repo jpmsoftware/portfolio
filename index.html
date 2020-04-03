@@ -1,70 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
-    <script defer src="../index.js"></script>
-    <title>cronossoftware</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="./img/favicon.png">
+    <title>jpm software</title>
 </head>
 <body>
     <header>
-        <div id="header-content">
-            <nav id="nav-bar">
-                <ul id="menu">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="">Contacto</a></li>
-                </ul>
-            </nav>
-            <img src="../img/menu.png" alt="" id="burger" onclick="ShowMenu()">
-        </div>
+        <nav id="nav-bar">
+            <ul id="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#" onclick="ShowModal()">Contacto</a></li>
+            </ul>
+        </nav>
+        <img src="img/menu.png" alt="" id="burger" onclick="ShowMenu()">
     </header>
 
-    <section id="banner">
-        <img src="../img/background-horizontal.jpg" alt="" id="bk">
+    <section id="inicio">
+        <div id="background"></div>
         <div id="banner-content">
-            <div id="images-area">
-                <div id="profile-img"></div>
-            </div>
             <div id="text-area">
-                <h3></h3>
-                <p>Me gusta diseñar aplicaciones web con un fuerte enfoque comercial. 
-                Repudiandae officia enim laudantium esse maiores nihil non! 
-                Repudiandae modi a nemo neque consequatur at magnam ipsam labore 
-                quae doloribus esse odio voluptatibus repellat alias velit, 
-                sapiente architecto exercitationem animi nesciunt atque cum tempore sed? Earum, 
-                voluptate unde voluptates optio dolores accusamus.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <a href="" class="button">Ver proyectos</a>
+                <p>Soy un programador con conocimientos en tecnologías full-stack
+                y con gusto por el desarrollo de ideas originales y desafiantes. 
+                Me especializo en desarrollo web y tengo conocimientos en tecnologías full stack.<br>
+                Mi visión consiste en desarrollar aplicaciones visualmente atractivas, novedosas y que
+                impliquen un valor para el usuario final.
+                </p>
+                <a href="#proyectos" class="button">Ver proyectos</a>
             </div>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="proyectos">
         <div id="card-container">
-            <div id="card-1">
-                <img src="../img/pic01.jpeg" alt="">
-                <a href="">Ver código</a>
-                <a href="">Ver demo</a>
+            <div class="card">
+                <!-- <a href="" class="button"></a>
+                <a href="" class="button"></a> -->
             </div>
-            <div id="card-2">
-                <img src="../img/pic01.jpeg" alt="">
-                <a href="">Ver código</a>
-                <a href="">Ver demo</a>
+            <div class="card">
+                <!-- <a href="" class="button"></a>
+                <a href="" class="button"></a> -->
             </div>
-            <div id="card-3">
-                <img src="../img/pic01.jpeg" alt="">
-                <a href="">Ver código</a>
-                <a href="">Ver demo</a>
+            <div class="card">
+                <!-- <a href="" class="button"></a>
+                <a href="" class="button"></a> -->
             </div>
         </div>
     </section>
 
-    <img src="../img/arrow-up.png" alt="up" id="btn-up">
+    <section id="contacto">
+        <div id="img-container">
+            <img src="" alt="">
+        </div>
+        <div id="right-panel">
+
+        </div>
+    </section>
+
+    <img src="img/flecha-arriba.png" alt="up" id="btn-up" onclick="ScrollUp()">
 
     <footer>
-
     </footer>
 </body>
 </html>
