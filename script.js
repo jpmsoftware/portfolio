@@ -1,36 +1,15 @@
-var btnUp = document.getElementById('btn-up')
-var burger = document.getElementById('burger');
-var modal = document.getElementById('contacto');
+var header = document.getElementsByTagName('header')[0];
+var logo = document.querySelector('nav > a');
+var menuItems = document.querySelectorAll('nav ul li a');
+var lastScroll = 0;
 
-window.onload = () => {
-    
-}
 
-window.onscroll = () => {
-    if (window.pageYOffset >= 350) {
-        btnUp.style.display = 'block';
-        btnUp.style.animation = 'FadeIn 1s 1';
-    } else {
-        btnUp.style.animation = 'FadeOut 0.7s 1';
-        btnUp.style.animationFillMode = 'forwards';
+
+function IsScrollingUp(pLast, pCurrent) {
+    if(pLast < pCurrent) {
+        return false;
     }
-}
-
-window.onclick = (event) => {
-    if(event.target == modal) {
-        modal.style.display = 'none';
+    else {
+        return true;
     }
-}
-
-function ScrollUp() {
-    window.scrollTo(0, 0);
-}
-
-function ShowModal() {
-    modal.style.display = 'block';
-    return false;
-}
-
-function CloseModal() {
-
 }
