@@ -249,7 +249,7 @@ h1 {
     border-radius: 0.4rem;
 }
 
-#slider-2, #slider-3 {
+.sliders{
     display: none;
 }
 
