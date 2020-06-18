@@ -33,7 +33,7 @@ header {
 nav {
     position: relative;
     display: flex;
-    width: 65%;
+    width: 70%;
     height: 100%;
     margin: 0 auto;
 }
@@ -75,8 +75,8 @@ nav ul li a {
 
 .container {
     margin-top: 1rem;
-    width: 25%;
-    padding: 5px;
+    width: 40%;
+    text-align: justify;
 }
 
 .center {
@@ -88,8 +88,8 @@ nav ul li a {
 
 h1 {
     font-family: 'Candara', sans-serif;
-    font-size: 28px;
-    letter-spacing: 3px;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
     text-align: center;
     color: #fff;
     animation: FadeIn 2s 1, SlideFromLeft 2s 1;
@@ -101,7 +101,7 @@ h1 {
     color: #fff;
     opacity: .7;
     text-align: center;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: lighter;
     animation: FadeIn 1s 1 ease-out, SlideFromRight 1.5s 1;
 }
@@ -122,12 +122,12 @@ h1 {
 
 .container p {
     margin-top: 5rem;
+    font-family: 'Playfair Display', serif;
     text-align: center;
     color: #fff;
     line-height: 2rem;
-    font-weight: 100;
-    letter-spacing: 2px;
-    font-size: 16px;
+    letter-spacing: 3px;
+    font-size: 1em;
     animation: FadeIn 1s 1 ease-out;
 }
 
@@ -135,12 +135,12 @@ h1 {
     position: relative;
     bottom: 0;
     display: block;
-    width: 15rem;
+    width: 13.5rem;
+    line-height: 3rem;
     text-align: center;
     margin: 0 auto;
     color: #fff;
     background-color: rgb(50, 160, 95);
-    line-height: 3rem;
     border-radius: 10rem;
     font-size: 1.2rem;
     font-family: 'Candara', sans-serif;
@@ -199,45 +199,64 @@ h1 {
     width: 100%;
     height: 45%;
     background-color: rgb(52, 84, 90);
-    border-radius: 1.5rem;
+    border-radius: 0.5rem;
     display: flex;
 }
 
-#slider-container img {
+#slider-1, #slider-2, #slider-3 {
+    display: flex;
     position: relative;
-    top: 50%;
-    transform: translate(0, -50%);
-    margin-left: 3rem;
-    width: 55%;
-    height: 80%;
+    /* display: none; */
+}
+
+#screenshot {
+    position: relative;
+    margin: auto auto;
+    left: 1rem;
+    width: 50%;
+    height: 85%;
     border-radius: 0.5rem;
 }
 
 #text-area{
     position: relative;
     margin: auto 3rem;
-    width: 50%;
+    width: 55%;
     height: 80%;
+}
+
+#text-area h3 {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
 }
 
 .description {
     color: #fff;
-    line-height: 2rem;
+    margin-top: 1rem;
+    line-height: 1.5rem;
     text-align: justify;
+    font-family: 'Playfair Display', serif;
 }
 
 #text-area a {
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    width: 25%;
-    height: 2.5rem;
-    line-height: 2.5rem;
+    top: 2rem;
+    position: relative;
+    padding: 0.5rem;
     text-align: center;
     background-color: rgb(50, 160, 95);
     color: #fff;
     font-family: 'Candara', sans-serif;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+#slider-2, #slider-3 {
+    display: none;
+}
+
+.icon {
+    margin: auto auto;
+    width: 32px;
+    height: 32px;
 }
 
 @keyframes FadeIn {

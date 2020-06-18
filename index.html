@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./img/custom – 1.svg">
+    <link rel="icon" href="./img/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <title>Desarrollo de Software</title>
-    <script defer src="script.js"></script>
+    <script defer src="action.js"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -15,6 +18,7 @@
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="">Acerca</a></li>
                 <li><a href="">Contacto</a></li>
             </ul>
         </nav>
@@ -24,10 +28,10 @@
             <h1>Juan Pablo Miranda</h1>
             <h3>Full Stack Developer</h3>
             <div id="separador"></div>
-            <p>Soy un programador enfocado en el desarrollo web. 
-               Actualmente buscando mi primera experiencia laboral en el ámbito de IT.
-               <br>Para el desarrollo de mis proyectos personales utilizo 
-               HTML, CSS, Javascript, Node y MySql, entre otros.</p>
+            <p>Soy un programador enfocado en el desarrollo web.
+                <br>Actualmente buscando mi primera experiencia laboral en el ámbito de IT.
+                <br>Para el desarrollo de mis proyectos personales utilizo
+                HTML, CSS, Javascript, Node JS y My SQL, entre otras tecnologías.</p>
             <a href="#proyectos" class="button">Ver proyectos</a>
         </div>
     </section>
@@ -39,15 +43,41 @@
             <div></div>
         </div>
         <div id="slider-container">
-            <img src="/img/screenshot.png" alt="">
-            <div id="text-area">
-                <p class="description">Modelo de aplicación web de e-commerce con las funcionalidades
-                tradicionales de 'shopping-cart' pero que además permite la visualización de productos 
-                en 3D. Muy útil en escenarios de personalización un tanto más exigentes.
-                </p>
-                <a href="https://github.com/jpmsoftware/web-portfolio" target="_blank">Ver demo</a>
+            <div id="slider-1">
+                <img src="/img/screenshot.jpg" alt="" id="screenshot">
+                <div id="text-area">
+                    <h3>Visualización 3D</h3>
+                    <p class="description">
+                        Carga y visualización de elementos 3D interactivos utilizando Three JS
+                    </p>
+                    <a href="https://github.com/jpmsoftware/web-portfolio" target="_blank">Ver demo<img src="./img/github-icon.png" class="icon"></img></a>
+                    <a href="https://github.com/jpmsoftware/web-portfolio" target="_blank">Ver código<img src="img/globe.png" class="icon"></img></a>
+                </div>
+            </div>
+            <div id="slider-2">
+                <img src="/img/screenshot.jpg" alt="" id="screenshot">
+                <div id="text-area">
+                    <h3>Visualización 3D</h3>
+                    <p class="description">
+                        Carga y visualización de elementos 3D interactivos utilizando Three JS
+                    </p>
+                    <a href="https://github.com/jpmsoftware/web-portfolio" target="_blank">Ver demo<img src="./img/github-icon.png" class="icon"></img></a>
+                    <a href="https://github.com/jpmsoftware/web-portfolio" target="_blank">Ver código<img src="img/globe.png" class="icon"></img></a>
+                </div>
+            </div>
+            <div id="slider-3">
+                <img src="/img/screenshot.jpg" alt="" id="screenshot">
+                <div id="text-area">
+                    <h3>Visualización 3D</h3>
+                    <p class="description">
+                        Carga y visualización de elementos 3D interactivos utilizando Three JS
+                    </p>
+                    <a href="https://github.com/jpmsoftware/web-portfolio" target="_blank">Ver demo<img src="./img/github-icon.png" class="icon"></img></a>
+                    <a href="https://github.com/jpmsoftware/web-portfolio" target="_blank">Ver código<img src="img/globe.png" class="icon"></img></a>
+                </div>
             </div>
         </div>
     </section>
 </body>
+
 </html>
