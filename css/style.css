@@ -2,7 +2,7 @@
 @import 'inicio.css';
 @import 'proyectos.css';
 @import 'acerca.css';
-@import 'contacto';
+@import 'contacto.css';
 @import 'animations.css';
 @import 'responsive.css';
 
@@ -27,4 +27,3 @@ body {
     width: 100%;
     background: rgb(10, 30, 40);
 }
-
