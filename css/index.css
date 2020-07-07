@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: Candara;
+}
+
+@font-face {
+    font-family: 'Candara';
+    src: url(../fonts/Candara.ttf);
+}
+
+#nav-bar {
+    display: flex;
+    margin: 2% auto;
+    width: 35%;
+    background-color: #7D829B;
+    border-radius: 1rem;
+}
+
+.nav-bar-item {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+.nav-bar-item:first-child {
+    border-radius: 1rem 0 0 1rem;
+}
+
+.nav-bar-item:last-child {
+    border-radius: 0 1rem 1rem 0;
+}
+
+.nav-bar-item:hover {
+    transition: all .4s;
+    cursor: pointer;
+    background-color: #5a5e70;
+}
+
+#panel {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4rem 6rem;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #484B5B;
+    opacity: .7;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+#panel h1, #panel h4, #panel p {
+    color: #fff;
+    padding: 10px 0;
+    opacity: 1;
+}
+
+#separador {
+    margin: 1rem auto;
+    background-color: white;
+    height: 1px;
+    width: 100%;
+}
+
+h4 {
+    opacity: .7;
+}
+
+p {
+    margin: 0 auto;
+    width: 85%;
+    text-align: center;
+    line-height: 1.5rem;
+    
+}

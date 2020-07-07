@@ -4,12 +4,12 @@
     vertical-align: middle;
     margin: 0 auto;
     width: 65%;
-    height: 58rem;
     padding-top: 2rem;
 }
 
 #proyectos h1 {
     text-align: left;
+    font-family: 'Gadugi';
 }
 
 #controls {
@@ -32,62 +32,74 @@
     cursor: pointer;
 }
 
-#slider-container {
+#sliders-container {
     position: relative;
     margin-top: 2rem;
+    padding: 1rem;
     width: 100%;
-    height: 45%;
-    background-color: rgb(52, 84, 90);
+    height: 23rem;
+    background-color: rgb(50, 50, 55);
+    border: 1px solid gray;
     border-radius: 0.5rem;
     display: flex;
 }
 
-#slider-1, #slider-2, #slider-3 {
-    display: flex;
+.sliders-group {
     position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: none;
+    animation: FadeIn 1s 1;
 }
 
 .screenshot {
-    position: relative;
-    margin: auto auto;
-    left: 1.5rem;
+    margin: auto 0;
     width: 55%;
-    height: 85%;
+    height: 100%;
+    padding-right: 10px;
     box-shadow: 5px 5px 5px 0px rgb(50, 50, 50);
 }
 
-#text-area{
+#text-area {
     position: relative;
-    margin: auto 3rem;
-    width: 55%;
-    height: 80%;
+    padding-left: 1rem;
+    width: 50%;
+    height: 10;
+    border-left: 1px solid rgb(70, 70, 70);
 }
 
 #text-area h3 {
     color: #fff;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Gadugi';
+    letter-spacing: 2px;
 }
 
-.description {
+#description {
     color: #fff;
+    opacity: .8;
     margin-top: 1rem;
     line-height: 1.5rem;
     text-align: justify;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Gadugi';
 }
 
-#text-area a {
-    top: 2rem;
-    position: relative;
-    padding: 0.5rem;
+.small-button {
+    margin: 0 5px 0 5px;
+    width: 8rem;
+    padding: 15px;
     text-align: center;
-    background-color: rgb(50, 160, 95);
     color: #fff;
+    background-color: rgb(50, 160, 95);
+    border-radius: 10px;
+    font-size: 15px;
     font-family: 'Candara', sans-serif;
-    border-radius: 0.4rem;
 }
 
-.sliders{
-    display: none;
-    animation: FadeIn 2s 1;
+#button-group {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 7px;
 }

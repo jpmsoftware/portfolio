@@ -1,46 +1,80 @@
-#contacto {
+#modal-contacto {
     display: none;
     position: fixed;
     padding: 1rem;
-    top: 70%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    width: 30rem;
-    height: 25rem;
-    background: rgb(50, 50, 50);
-    opacity: .7;
+    bottom: 5%;
+    right: 4%;
+    width: 25%;
+    height: 50%;
+    background: rgb(30, 20, 40);
     border-radius: 3px;
+    border: 1px solid gray;
     color: #fff;
-    font-family: Candara;
+    z-index: 1;
 }
 
-#contacto form {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
+#modal-contacto h3 {
+    font-family: Candara;
+    letter-spacing: 2px;
+}
+
+#form-contacto {
+    position: relative;
+    margin-top: 1.5rem;
     text-align: right;
     font-size: 14px;
+    font-family: 'Candara', 'sans-serif';
+    padding-right: 0.5rem;
 }
 
-#contacto input{
-    margin: 0.5rem 0.5rem;
+#user-name, #user-mail {
+    margin: 0 0 1rem 0.5rem;
     padding: 1rem;
     width: 80%;
     height: 25px;
-    border-radius: 3px;
     font-family: 'Candara', sans-serif;
     border: none;
+    outline: none;
 }
 
-#contacto textarea {
-    margin: 0.5rem 0.5rem;
+#user-message {
+    margin: 0 0 1rem 0.5rem;
     padding: 1rem;
     width: 80%;
+    line-height: 1rem;
     resize: none;
     font-family: 'Candara', sans-serif;
     border: none;
-    border-radius: 4px;
+    outline: none;
 }
 
-#contacto input:focus, #contacto textarea:focus {
+#icon-close {
+    position: absolute;
+    top: 5%;
+    right: 4%;
+}
+
+#icon-close:hover {
+    cursor: pointer;
+}
+
+#button-enviar {
+    width: 40%;
+    height: 50%;
+    padding: 20px 10px;
+    background-color: rgb(50, 160, 95);
+    color: #fff;
+    border-radius: 4px;
+    border: none;
     outline: none;
+}
+
+#button-enviar:hover {
+    transition: all .4s;
+    cursor: pointer;
+    background: rgb(192, 106, 49);
+}
+
+label {
+    vertical-align: top;
 }

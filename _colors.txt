@@ -1,0 +1,14 @@
+AUTUMN
+primary (nav bar):  #CC8400 opacity: 85%
+panel-background: #704800opacity: 70%
+text: white
+
+WINTER
+
+
+
+SPRING
+
+
+
+SUMMER

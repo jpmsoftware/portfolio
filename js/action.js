@@ -1,75 +1,110 @@
-//Referenciar elementos
-var btnProyectos = document.querySelector('#inicio a');
-var linkProyectos = document.querySelector('li:nth-child(1)');
-var modalContacto = document.getElementById('contacto');
-var proyectos = document.getElementById("proyectos");
-var slidersCollection = document.getElementsByClassName('sliders');
-var sliderIndex = 0;
+/*===============================================================================================*/
+/*======================================= GET DOM ELEMENTS ======================================*/
+/*===============================================================================================*/
+var menuOptionProyectos = document.querySelectorAll('#menu li a')[0];
+var menuOptionAcerca = document.querySelectorAll('#menu li a')[1];
+var menuOptionContacto = document.querySelectorAll('#menu li a')[2];
+var buttonProyectos = document.getElementById('btnVerProyectos');
+var sectionProyectos = document.getElementById('proyectos');
 var sliderControls = document.querySelectorAll('#controls div');
-var currentPos = 0;
+var sliderCollection = document.getElementsByClassName('sliders-group');
+var modal_acerca = document.getElementById('acerca');
+var modal_contacto = document.getElementById('modal-contacto');
+var update;
+var sliderIndex = 0;
 
-//Event Handlers
-window.addEventListener('scroll', CheckCurrentYPos, false);
-var menu = document.querySelectorAll('ul li');
-
-menu[0].addEventListener('click', () => {
+/*===============================================================================================*/
+/*========================================== EVENTS =============================================*/
+/*===============================================================================================*/
+menuOptionProyectos.addEventListener('click', () => {
     window.scrollTo(0, 950);
-    sliderIndex = 0;
-    CheckCurrentYPos();
-    document.getElementById('contacto').style.display = 'none';
+    if (sectionProyectos.style.visibility != 'visible') {
+        sectionProyectos.style.visibility = 'visible';
+        sectionProyectos.style.animation = 'FadeIn 1s 1';
+        autoSlide();
+    }
 }, false);
 
-menu[1].addEventListener('click', () => {
+menuOptionAcerca.addEventListener('click', showAcerca, false);
 
-}, false);
+menuOptionContacto.addEventListener('click', showContacto, false);
 
-menu[2].addEventListener('click', () => {
-    modalContacto.style.display = 'block';
-}, false);
-
-btnProyectos.addEventListener('click', () => {
+buttonProyectos.addEventListener('click', () => {
     window.scrollTo(0, 950);
-    sliderIndex = 0;
-    CheckCurrentYPos();
+    if (sectionProyectos.style.visibility != 'visible') {
+        sectionProyectos.style.visibility = 'visible';
+        sectionProyectos.style.animation = 'FadeIn 1s 1';
+        autoSlide();
+    }
 }, false);
-AutoSlide();
 
-function AutoSlide() {
-    if (sliderIndex >= slidersCollection.length) {
-        //set index back to 0
+for (var i = 0; i < sliderControls.length; i++) {
+    sliderControls[i].addEventListener('click', changeIndex, false);
+}
+
+modal_acerca.onclick = (event) => {
+    if(event.target.id == 'icon-close') {
+        modal_acerca.style.display = 'none';
+    }
+}
+
+modal_contacto.onclick = (event) => {
+    if(event.target.id == 'icon-close') {
+        modal_contacto.style.display = 'none';
+    }
+}
+
+/*===============================================================================================*/
+/*========================================== FUNCTIONS ==========================================*/
+/*===============================================================================================*/
+function autoSlide() {
+    clearTimeout(update);
+    if (sliderIndex > sliderCollection.length - 1) {
         sliderIndex = 0;
     }
-
-    //Hide all sliders
-    for (var i = 0; i < slidersCollection.length; i++) {
-        slidersCollection[i].style.display = 'none';
+    for (var i = 0; i < sliderCollection.length; i++) {
+        sliderCollection[i].style.display = 'none';
     }
-    PaintCurrrentIndex();
-    slidersCollection[sliderIndex].style.display = 'flex';
+    sliderCollection[sliderIndex].style.display = 'flex';
+    paintIndex();
     sliderIndex++;
-    setTimeout(AutoSlide, 5000);
+    
+    update = window.setTimeout(autoSlide, 6000);
 }
 
-function PaintCurrrentIndex() {
-    for(var i = 0; i < sliderControls.length; i++) {
-        sliderControls[i].style.background = 'none';
+function showAcerca() {
+    modal_acerca.style.display = 'flex';
+}
+
+function showContacto() {
+    modal_contacto.style.display = 'block';
+    // modal_contacto.style.animation = 'MoveUp 4s 1';
+}
+
+function paintIndex() {
+    for (var i = 0; i < sliderControls.length; i++) {
+        sliderControls[i].style.backgroundColor = 'transparent';
     }
-    sliderControls[sliderIndex].style.background = '#fff';
+    sliderControls[sliderIndex].style.backgroundColor = '#fff';
 }
 
-function CheckCurrentYPos() {
-    currentPos = window.scrollY;
-    if (currentPos >= proyectos.offsetTop) {
-        proyectos.style.visibility = 'visible';
-        proyectos.style.animation = 'FadeIn 1s 1';
+function changeIndex(event) {
+    //Get index of the item that calls the event
+    for (var i = 0; i < sliderControls.length; i++) {
+        if (sliderControls[i] === event.target) {
+            sliderIndex = i;
+        }
+    }
+    paintIndex();
+    autoSlide();
+}
+
+window.onscroll = () => {
+    if (window.scrollY >= 500) {
+        if (sectionProyectos.style.visibility != 'visible') {
+            sectionProyectos.style.visibility = 'visible';
+            sectionProyectos.style.animation = 'FadeIn 1s 1';
+            autoSlide();
+        }
     }
 }
-
-window.onclick = function(event) {
-    console.log(event.target);
-    // if(event.target != modalContacto) {
-    //     modalContacto.style.display = 'none';
-    // }
-}
-
-

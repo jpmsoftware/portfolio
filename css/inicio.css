@@ -5,12 +5,12 @@
 }
 
 .container {
-    margin-top: 1rem;
     width: 40%;
     text-align: justify;
     position: absolute;
     top: 50%;
     left: 50%;
+    padding: 1rem;
     transform: translate(-50%, -50%);
 }
 
@@ -31,7 +31,7 @@ h1 {
     text-align: center;
     font-size: 1rem;
     font-weight: lighter;
-    animation: FadeIn 1s 1 ease-out, SlideFromRight 1.5s 1;
+    animation: animH3 5s 1, SlideFromRight 1.5s 1;
 }
 
 #separador {
@@ -44,7 +44,7 @@ h1 {
     opacity: .1;
     background: #fff;
     border: 1px solid white;
-    animation: Linea 1s 1;
+    animation: Linea 2s 1;
     border-radius: 10px;
 }
 
@@ -56,17 +56,18 @@ h1 {
     line-height: 2rem;
     letter-spacing: 3px;
     font-size: 1em;
-    animation: FadeIn 1s 1 ease-out;
+    animation: FadeIn 2.5s 1 linear;
 }
 
 .button {
     position: relative;
-    bottom: 0;
+    margin: 0 auto;
+    bottom: 5%;
     display: block;
     width: 13.5rem;
     line-height: 3rem;
     text-align: center;
-    margin: 0 auto;
+    margin: 4rem auto;
     color: #fff;
     background-color: rgb(50, 160, 95);
     border-radius: 10rem;
@@ -74,7 +75,6 @@ h1 {
     font-family: 'Candara', sans-serif;
     animation: FadeIn 2s 1;
 }
-
 
 #inicio .button {
     margin-top: 5rem;
@@ -84,4 +84,11 @@ h1 {
     transition: all .5s;
     background-color: rgb(192, 106, 49);
     cursor: pointer;
+}
+
+.container img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: MoveDown 2s infinite linear;
 }

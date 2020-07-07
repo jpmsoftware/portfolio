@@ -1,3 +1,8 @@
+@keyframes animH3 {
+    0% { opacity: 0; }
+    100% { opacity: .7; }
+}
+
 @keyframes FadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -29,6 +34,16 @@
 }
 
 @keyframes MoveDown {
-    0% { bottom: 15%; }
-    100% { bottom: 10%; }
+    0% { margin-top: 0px; }
+    100% { margin-top: 60px; }
+}
+
+@keyframes MoveUp {
+    0% { margin-bottom: 0px; }
+    100% { margin-bottom: 100px; }
+}
+
+@keyframes MoveSliderLeft {
+    0% { margin-left: 0; }
+    100% { margin-left: -300px; }
 }

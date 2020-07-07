@@ -5,10 +5,16 @@
 @import 'contacto.css';
 @import 'animations.css';
 @import 'responsive.css';
+@import 'footer.css';
 
 @font-face {
     font-family: 'Candara';
     src: url(../fonts/Candara.ttf);
+}
+
+@font-face {
+    font-family: 'Gadugi';
+    src: url(../fonts/Gadugi.ttf);
 }
 
 *{
