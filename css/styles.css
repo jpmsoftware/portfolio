@@ -23,6 +23,7 @@ p, a, h1, h4, li, label {
 
 body {
     background-color: #1F1139;
+    overflow-y: scroll;
 }
 
 .nav-bar {
@@ -236,19 +237,22 @@ form {
     width: 60%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: Corbel;
+}
+
+form * {
+    flex: 1;
 }
 
 form label {
     text-align: left;
-    margin-bottom: 0;
 }
 
 form input {
     outline: none;
     border: none;
     padding: 1rem;
-    height: 3rem;
     color: gray;
     border-radius: 2px;
 }
