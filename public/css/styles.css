@@ -34,6 +34,17 @@ body {
     padding: 2rem 0;
 }
 
+#burger {
+    display: none;
+}
+
+#burger div {
+    width: 40px;
+    height: 3px;
+    margin: 10px 0;
+    background-color: #fff;
+}
+
 .logo {
     margin: auto 0;
     font-size: 25px;
@@ -271,13 +282,20 @@ textarea {
         display: none;
     }
 
+    .nav-bar {
+        width: 80%;
+    }
+
     body {
         
     }
 
+    #burger {
+        display: inline-block;
+    }
+
     .container {
-        width: 80%;
-        border: 1px solid white;
+        width: 90%;
     }
 }
 
