@@ -22,7 +22,7 @@ p, a, h1, h4, li, label {
 }
 
 body {
-    background-color: #1F1139;
+    background-color: red;
     overflow-y: scroll;
 }
 
