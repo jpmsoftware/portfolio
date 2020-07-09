@@ -43,6 +43,7 @@ body {
     height: 3px;
     margin: 10px 0;
     background-color: #fff;
+    border-radius: 2px;
 }
 
 .logo {
@@ -113,6 +114,7 @@ body {
     font-size: 2.5rem;
     letter-spacing: 2px;
     font-family: Corbel;
+    text-align: center;
 }
 
 #separador {
@@ -290,12 +292,34 @@ textarea {
         
     }
 
+    .text {
+        text-align: justify;
+    }
+
     #burger {
         display: inline-block;
     }
 
+    .change #burger div:first-child {
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change #burger div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .change #burger div:last-child {
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    .titulo {
+        font-size: 2.5rem;
+    }
+
     .container {
         width: 90%;
+        position: absolute;
+        top: 25%;
     }
 }
 

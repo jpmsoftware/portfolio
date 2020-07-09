@@ -1,5 +1,3 @@
-
-
 window.onload = () => {
     markCurrentPage();
 }
@@ -18,4 +16,8 @@ markCurrentPage = () => {
             menuItems[i].style.backgroundColor = '#3A63FF';
         }
     }
+}
+
+function toggleMenu() {
+    console.log('test');
 }
