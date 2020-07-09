@@ -265,6 +265,22 @@ textarea {
     border-radius: 3px;
 }
 
+/*RESPONSIVE*/
+@media only screen and (max-width: 1080px) {
+    .menu {
+        display: none;
+    }
+
+    body {
+        
+    }
+
+    .container {
+        width: 80%;
+        border: 1px solid white;
+    }
+}
+
 @keyframes FadeIn {
     0% {
         opacity: 0;
