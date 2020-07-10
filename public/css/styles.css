@@ -1,3 +1,6 @@
+@import './animation.css';
+@import './responsive.css';
+
 @font-face {
     font-family: Corbel;
     src: url(../fonts/Corbel.TTF);
@@ -91,10 +94,6 @@ body {
     border-radius: 4px;
 }
 
-.container * {
-    margin: 1rem 0;
-}
-
 .center-horizontally {
     margin: 0 auto;
 }
@@ -119,8 +118,10 @@ body {
 
 #separador {
     width: 100%;
+    margin: 1rem auto;
     height: 1px;
     background-color: lightgray;
+    animation: Stretch 1s 1 linear;
 }
 
 .subtitulo {
@@ -167,6 +168,7 @@ body {
 }
 
 .card {
+    margin: 1rem 0;
     width: 100%;
     display: flex;
     padding: 1rem 2rem;
@@ -268,6 +270,7 @@ form input {
     padding: 1rem;
     color: gray;
     border-radius: 2px;
+    margin-bottom: 2rem;
 }
 
 textarea {
@@ -276,58 +279,5 @@ textarea {
     color: gray;
     resize: none;
     border-radius: 3px;
-}
-
-/*RESPONSIVE*/
-@media only screen and (max-width: 1080px) {
-    .menu {
-        display: none;
-    }
-
-    .nav-bar {
-        width: 80%;
-    }
-
-    body {
-        
-    }
-
-    .text {
-        text-align: justify;
-    }
-
-    #burger {
-        display: inline-block;
-    }
-
-    .change #burger div:first-child {
-        transform: rotate(-45deg) translate(-9px, 6px);
-    }
-
-    .change #burger div:nth-child(2) {
-        opacity: 0;
-    }
-
-    .change #burger div:last-child {
-        transform: rotate(45deg) translate(-8px, -8px);
-    }
-
-    .titulo {
-        font-size: 2.5rem;
-    }
-
-    .container {
-        width: 90%;
-        position: absolute;
-        top: 25%;
-    }
-}
-
-@keyframes FadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+    margin-bottom: 2rem;
 }
