@@ -113,7 +113,6 @@ body {
     font-size: 2.5rem;
     letter-spacing: 2px;
     font-family: Corbel;
-    text-align: center;
 }
 
 #separador {
@@ -135,6 +134,7 @@ body {
     font-size: 20px;
     line-height: 2rem;
     font-family: Constantia;
+    padding: 1rem 0 2rem 0;
 }
 
 .small-font {
@@ -160,7 +160,8 @@ body {
 }
 
 .small-button {
-    padding: 1rem 1rem;
+    margin: 0.5rem 0.5rem;
+    padding: 1rem 0.5rem;
 }
 
 .center {
@@ -175,7 +176,7 @@ body {
     border-radius: 5px;
 }
 
-.caption {
+.screenshot {
     margin: auto 0;
     width: 350px;
     height: 200px;
@@ -210,6 +211,7 @@ body {
 }
 
 #about-content {
+    margin-top: 2rem;
     display: flex;
 }
 
@@ -241,6 +243,9 @@ body {
 }
 
 .list li {
+    margin: 1rem 0;
+    padding: 5px;
+    font-family: Corbel;
     background-color: #FF693A;
 }
 
@@ -249,15 +254,11 @@ body {
 }
 
 form {
-    width: 60%;
+    margin-top: 2rem;
+    width: 60%; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     font-family: Corbel;
-}
-
-form * {
-    flex: 1;
 }
 
 form label {
@@ -267,9 +268,9 @@ form label {
 form input {
     outline: none;
     border: none;
-    padding: 1rem;
+    padding: 0.5rem;
     color: gray;
-    border-radius: 2px;
+    border-radius: 1px;
     margin-bottom: 2rem;
 }
 

@@ -3,6 +3,10 @@
         display: none;
     }
 
+    body {
+        background-color: black;
+    }
+
     .nav-bar {
         width: 80%;
     }
