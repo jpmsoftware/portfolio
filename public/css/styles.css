@@ -289,7 +289,9 @@ textarea {
     }
 
     .nav-bar {
-        width: 80%;
+        width: 90%;
+        border: 1px solid white;
+        padding: 0;
     }
 
     .text {
@@ -313,12 +315,20 @@ textarea {
     }
 
     .titulo {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .container {
-        width: 90%;
+        width: 95%;
         position: absolute;
-        top: 50%;
+        top: 60%;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    .nav-bar {
+        
     }
 }
