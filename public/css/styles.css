@@ -49,6 +49,18 @@ body {
     border-radius: 2px;
 }
 
+.change #burger div:first-child {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change #burger div:nth-child(2) {
+    opacity: 0;
+}
+
+.change #burger div:last-child {
+    transform: rotate(45deg) translate(-8px, -8px);
+}   
+
 .logo {
     margin: auto 0;
     font-size: 25px;
@@ -283,14 +295,13 @@ textarea {
     margin-bottom: 2rem;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 960px) {
     .menu {
         display: none;
     }
 
     .nav-bar {
-        width: 90%;
-        border: 1px solid white;
+        width: 95%;
         padding: 0;
     }
 
@@ -302,17 +313,7 @@ textarea {
         display: inline-block;
     }
 
-    .change #burger div:first-child {
-        transform: rotate(-45deg) translate(-9px, 6px);
-    }
-
-    .change #burger div:nth-child(2) {
-        opacity: 0;
-    }
-
-    .change #burger div:last-child {
-        transform: rotate(45deg) translate(-8px, -8px);
-    }
+    
 
     .titulo {
         font-size: 2rem;
@@ -328,7 +329,12 @@ textarea {
         font-size: 15px;
     }
 
-    .nav-bar {
-        
+    .card {
+        flex-direction: column;
+    }
+
+    .button-area {
+        flex-direction: row;
+        margin: 0 auto;
     }
 }
