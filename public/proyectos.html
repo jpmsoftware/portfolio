@@ -9,67 +9,66 @@
 </head>
 
 <body>
-    <nav class="nav-bar">
+    <nav class="nav-bar flex flex-row">
         <p class="logo"><a href="./home.html">{ jpm }</a></p>
-        <ul class="menu">
-            <li class="menu-item"><a href="./home.html" class="link">Home</a></li>
-            <li class="menu-item"><a href="./proyectos.html" class="link">Proyectos</a></li>
-            <li class="menu-item"><a href="./acerca.html" class="link">Acerca</a></li>
-            <li class="menu-item"><a href="./contacto.html" class="link">Contacto</a></li>
+        <ul class="menu flex flex-row">
+            <li class="menu-item text-center"><a href="./home.html" class="link">Home</a></li>
+            <li class="menu-item text-center"><a href="./proyectos.html" class="link">Proyectos</a></li>
+            <li class="menu-item text-center"><a href="./acerca.html" class="link">Acerca</a></li>
+            <li class="menu-item text-center"><a href="./contacto.html" class="link">Contacto</a></li>
         </ul>
-        <div id="burger">
+        <div id="menu-icon">
             <div></div>
             <div></div>
             <div></div>
         </div>
     </nav>
 
-    <div class="container center-horizontally">
+    <div class="container center-horizontally flex flex-col">
         <h1 class="titulo">Proyectos</h1>
-        <div class="card border">
-            <img src="" alt="" class="screenshot">
-            <div class="text-area">
+
+        <div class="card border-visible flex">
+            <img src="" alt="" class="screenshot center-vertically">
+            <div class="text-area flex flex-col">
                 <h4 class="subtitulo">Game Land (e-commerce)</h4>
-                <p class="text small-font">
+                <p class="text ">
                     Sitio de e-commerce para tienda de videojuegos
                 </p>
             </div>
-            
-            <div class="button-area">
-                <a class="button small-button" href="javascript:void(0)">ver demo</a>
-                <a class="button small-button" href="https://github.com/jpmsoftware/game-land-ecommerce" target="_blank">ver código</a>
+            <div class="button-area center-vertically flex flex-col">
+                <a class="button small-button text-center" href="javascript:void(0)">ver demo</a>
+                <a class="button small-button text-center" href="https://github.com/jpmsoftware/game-land-ecommerce" target="_blank">ver código</a>
             </div>
         </div>
-        <div class="card border">
-            <img src="" alt="" class="screenshot">
-            <div class="text-area">
+
+        <div class="card border-visible flex">
+            <img src="" alt="" class="screenshot center-vertically">
+            <div class="text-area flex flex-col">
                 <h4 class="subtitulo">Visualización 3D</h4>
-                <p class="text small-font">
+                <p class="text ">
                     Visualización de objetos 3D utilizando Three JS
                 </p>
             </div>
-            
-            <div class="button-area">
-                <a class="button small-button" href="javascript:void(0)">ver demo</a>
-                <a class="button small-button" href="https://github.com/jpmsoftware/3DVisualization" target="_blank">ver código</a>
+            <div class="button-area center-vertically flex flex-col">
+                <a class="button small-button text-center" href="javascript:void(0)">ver demo</a>
+                <a class="button small-button text-center" href="https://github.com/jpmsoftware/3DVisualization" target="_blank">ver código</a>
             </div>
         </div>
-        <div class="card border">
-            <img src="" alt="" class="screenshot">
-            <div class="text-area">
+
+        <div class="card border-visible flex">
+            <img src="" alt="" class="screenshot center-vertically">
+            <div class="text-area flex flex-col">
                 <h4 class="subtitulo">API</h4>
-                <p class="text small-font">
+                <p class="text ">
                     Implementación de la API de...
                 </p>
             </div>
-            
-            <div class="button-area">
-                <a class="button small-button" href="javascript:void(0)">ver demo</a>
-                <a class="button small-button" href="javascript:void(0)">ver código</a>
+            <div class="button-area center-vertically flex flex-col">
+                <a class="button small-button text-center" href="javascript:void(0)">ver demo</a>
+                <a class="button small-button text-center" href="javascript:void(0)">ver código</a>
             </div>
         </div>
     </div>
-
     <script src="./js/main.js"></script>
 </body>
 

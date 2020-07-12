@@ -1,0 +1,39 @@
+@media only screen and (max-width: 960px) {
+    .menu {
+        display: none;
+    }
+
+    .nav-bar {
+        width: 95%;
+        padding: 0;
+    }
+
+    .text {
+        text-align: justify;
+    }
+
+    #menu-icon {
+        display: inline-block;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .button-area {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+}

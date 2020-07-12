@@ -9,26 +9,26 @@
 </head>
 
 <body>
-    <nav class="nav-bar">
+    <nav class="nav-bar flex flex-row">
         <p class="logo"><a href="./home.html">{ jpm }</a></p>
-        <ul class="menu">
-            <li class="menu-item"><a href="./home.html" class="link">Home</a></li>
-            <li class="menu-item"><a href="./proyectos.html" class="link">Proyectos</a></li>
-            <li class="menu-item"><a href="./acerca.html" class="link">Acerca</a></li>
-            <li class="menu-item"><a href="./contacto.html" class="link">Contacto</a></li>
+        <ul class="menu flex flex-row">
+            <li class="menu-item text-center"><a href="./home.html" class="link">Home</a></li>
+            <li class="menu-item text-center"><a href="./proyectos.html" class="link">Proyectos</a></li>
+            <li class="menu-item text-center"><a href="./acerca.html" class="link">Acerca</a></li>
+            <li class="menu-item text-center"><a href="./contacto.html" class="link">Contacto</a></li>
         </ul>
-        <div id="burger">
+        <div id="menu-icon">
             <div></div>
             <div></div>
             <div></div>
         </div>
     </nav>
 
-    <div class="container center-h-v border text-center">
+    <div class="container center-both border-visible text-center flex flex-col">
         <h1 class="titulo">Acerca de mi</h1>
         <div id="about-content">
-            <div id="left">
-                <img src="" alt="" id="profile-pic">
+            <aside class="flex flex-col">
+                <img src="" id="profile-pic" alt="">
                 <ul class="list">
                     <li>HTML, CSS, Javascript</li>
                     <li>React</li>
@@ -36,9 +36,9 @@
                     <li>My SQL</li>
                     <li>GIT</li>
                 </ul>
-            </div>
-            <div id="right">
-                <p class="text small-font justify">
+            </aside>
+            <aside>
+                <p class="text  text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum porttitor pretium. Proin
                     aliquet
                     auctor fermentum.
@@ -50,7 +50,7 @@
                     Curabitur eget mi nec lectus tempor pellentesque. In dignissim nisl vel risus dictum tempus. Nam
                     hendrerit lectus velit. Mauris aliquet eleifend volutpat.
                 </p>
-            </div>
+            </aside>
         </div>
 
 

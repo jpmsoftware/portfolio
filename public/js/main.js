@@ -1,5 +1,5 @@
 //Get DOM elements
-var burger = document.getElementById('burger');
+var menuicon = document.getElementById('menu-icon');
 
 
 window.onload = () => {
@@ -18,6 +18,5 @@ markCurrentPage = () => {
 }
 
 function toggleMenu(e) {
-    alert('puto');
     e.classList.add("change");
 }
