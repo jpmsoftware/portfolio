@@ -27,7 +27,7 @@ p, a, h1, h4, li, label {
 body {
     background-color: #1F1139;
     overflow-y: scroll;
-}
+}   
 
 .nav-bar {
     display: flex;
@@ -159,6 +159,8 @@ body {
     border-radius: 3px;
     font-family: Corbel;
     color: #fff;
+    outline: none;
+    border: none;
 }
 
 .button:hover {
@@ -266,7 +268,7 @@ body {
 }
 
 form {
-    margin-top: 2rem;
+    margin: 4rem auto 0 auto;
     width: 60%; 
     display: flex;
     flex-direction: column;
@@ -275,9 +277,10 @@ form {
 
 form label {
     text-align: left;
+    margin-bottom: 5px;
 }
 
-form input {
+form input[type="text"], form input[type="email"] {
     outline: none;
     border: none;
     padding: 0.5rem;
@@ -294,6 +297,8 @@ textarea {
     border-radius: 3px;
     margin-bottom: 2rem;
 }
+
+
 
 @media only screen and (max-width: 960px) {
     .menu {
@@ -313,16 +318,13 @@ textarea {
         display: inline-block;
     }
 
-    
-
     .titulo {
         font-size: 2rem;
     }
 
     .container {
         width: 95%;
-        position: absolute;
-        top: 60%;
+        position: relative;
     }
 
     .text {
