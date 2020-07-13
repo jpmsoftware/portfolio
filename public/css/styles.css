@@ -19,13 +19,12 @@
 .center-both { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 .text-center { text-align: center; }
 .text-justify { text-align: justify; }
-. { font-size: 15px; }
 .border-visible { border: 1px solid gray; border-radius: 4px; }
 
 body {
     background-color: #1F1139;
     overflow-y: scroll;
-}   
+}
 
 .nav-bar {
     justify-content: space-between;
@@ -213,9 +212,11 @@ form label {
 .field {
     outline: none;
     border: none;
+    resize: none;
     padding: 1rem;
     color: gray;
     border-radius: 1px;
     margin-bottom: 2rem;
     font-family: Corbel;
 }
+
