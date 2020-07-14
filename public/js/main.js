@@ -19,10 +19,10 @@ markCurrentPage = () => {
 
 function toggleMenu(e) {
     e.classList.toggle('change');
-
-    if(menu.style.display = 'none') {
+    if(menu.style.display == '' || menu.style.display == 'none') {
         menu.style.display = 'flex';
-    } else {
+    } 
+    else {
         menu.style.display = 'none';
     }
 }

@@ -12,9 +12,9 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 25%;
+        top: 80%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -0%);
         padding: 5px;
         width: 100%;
         background-color: rgba(0, 0, 0, 1);
@@ -35,7 +35,8 @@
     }
 
     .container {
-        margin-top: 1rem;
+        position: absolute;
+        top: 5%;
         width: 90%;
     }
 
@@ -45,10 +46,24 @@
 
     .card {
         flex-direction: column;
+        margin: 0 0rem 2rem 1rem;
     }
 
     .button-area {
         flex-direction: row;
         margin: 0 auto;
+    }
+
+    .small-button {
+        padding: 10px;
+    }
+
+    .screenshot {
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    .text {
+        width: 100%;
     }
 }

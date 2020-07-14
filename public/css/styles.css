@@ -22,11 +22,14 @@
 .border-visible { border: 1px solid gray; border-radius: 4px; }
 
 body {
+    position: relative;
     background-color: #1F1139;
     overflow-y: scroll;
+    height: 800px;
 }
 
 .nav-bar {
+    position: relative;
     justify-content: space-between;
     width: 70%;
     margin: 0 auto;
@@ -45,6 +48,7 @@ body {
 }
 
 .menu {
+    position: relative;
     width: 35%;
     align-self: flex-end;
 }
@@ -88,6 +92,7 @@ body {
 }
 
 .container {
+    position: relative;
     width: 40%;
     padding: 2rem 0rem;
     animation: FadeIn 2s 1;
@@ -146,23 +151,26 @@ body {
 }
 
 .card {
+    position: relative;
     margin: 1rem 0;
     width: 100%;
     padding: 1rem 2rem;
 }
 
 .screenshot {
+    position: relative;
     width: 350px;
     height: 200px;
     background-color: black;
 }
 
 .text-area {
+    position: relative;
     padding: 0 1rem;
-    width: 400px;
 }
 
 .button-area {
+    position: relative;
     width: 150px;
 }
 
