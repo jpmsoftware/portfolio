@@ -62,28 +62,29 @@ body {
     background-color: #FF693A;
 }
 
-#menu-icon {
+.menu-container {
     display: none;
 }
 
-#menu-icon div {
-    width: 40px;
+.bar1, .bar2, .bar3 {
+    width: 35px;
     height: 3px;
     margin: 10px 0;
     background-color: #fff;
     border-radius: 2px;
+    transition: 0.4s;
 }
 
-.change #menu-icon div:first-child {
+.change .bar1 {
     transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change #menu-icon div:nth-child(2) {
+.change .bar2 {
     opacity: 0;
 }
 
-.change #menu-icon div:last-child {
-    transform: rotate(45deg) translate(-8px, -8px);
+.change .bar3 {
+    transform: rotate(45deg) translate(-11px, -11px);
 }
 
 .container {

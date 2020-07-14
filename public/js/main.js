@@ -1,6 +1,6 @@
 //Get DOM elements
-var menuicon = document.getElementById('menu-icon');
-
+const menuicon = document.getElementById('menu-icon');
+const menu = document.getElementsByClassName('menu')[0];
 
 window.onload = () => {
     markCurrentPage();
@@ -18,5 +18,11 @@ markCurrentPage = () => {
 }
 
 function toggleMenu(e) {
-    e.classList.add("change");
+    e.classList.toggle('change');
+
+    if(menu.style.display = 'none') {
+        menu.style.display = 'flex';
+    } else {
+        menu.style.display = 'none';
+    }
 }
