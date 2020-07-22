@@ -28,11 +28,11 @@
         <h2 class="titulo text-center">Envíame un mensaje</h2>
         <form action="POST" data-netlify="true" class="flex flex-col">
             <label>Nombre:</label>
-            <input type="text" name="name" class="field">
+            <input type="text" name="name" class="field" required>
             <label>E-Mail:</label>
-            <input type="email" name="email" class="field">
+            <input type="email" name="email" class="field" required>
             <label>Tu mensaje:</label>
-            <textarea name="message" id="" cols="30" rows="10" class="field"></textarea>
+            <textarea name="message" id="" cols="30" rows="10" class="field" required></textarea>
             <input type="submit" class="button small-button" value="Enviar"/>
         </form>
     </div>
