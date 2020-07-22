@@ -12,7 +12,7 @@ markCurrentPage = () => {
     
     for(var i = 0; i < menuItems.length; i++) {
         if(menuItems[i].lastElementChild.innerHTML == currentPage) {
-            menuItems[i].style.backgroundColor = '#3A63FF';
+            menuItems[i].style.backgroundColor = '#002CD2';
         }
     }
 }

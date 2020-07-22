@@ -31,14 +31,14 @@ body {
 .nav-bar {
     position: relative;
     justify-content: space-between;
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding-top: 1rem;
 }
 
 .logo {
-    font-size: 25px;
-    font-family: Constantia;
+    width: 88px;
+    height: 101px;
     cursor: pointer;
 }
 
@@ -54,17 +54,18 @@ body {
 }
 
 .menu-item {
+    transition: all .4s;
+    width: 50%;
+    line-height: 2rem;
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    text-align: center;
     margin: 0 0.5rem;
     font-family: Corbel;
-    flex: 1;
     border-radius: 2px;
 }
 
 .menu-item:hover {
-    transition: all .4s;
-    background-color: #FF693A;
+    background-color: #19A4B4;
 }
 
 .menu-container {
@@ -99,32 +100,38 @@ body {
     animation: FadeIn 2s 1;
 }
 
-.titulo {
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    font-family: Corbel;
-}
-
-.subtitulo {
-    font-size: 20px;
+h1, h2, h3 {
     font-family: Corbel;
     letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 40px;
+    animation: SlideFromLeft 2s 1;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
     opacity: .7;
 }
 
 .button {
-    background-color: #3A63FF;
+    background-color: #002CD2;
     border-radius: 3px;
     font-family: Corbel;
     color: #fff;
     outline: none;
     border: none;
+    transition: all .4s;
 }
 
 .button:hover {
     cursor: pointer;
-    transition: all .4s;
-    background-color: #FF693A;
+    background-color: #19A4B4;
 }
 
 .big-button {
@@ -133,7 +140,8 @@ body {
 
 .small-button {
     margin: 0.5rem 0.5rem;
-    padding: 1rem 0.5rem;
+    width: 7rem;
+    line-height: 2.5rem;
 }
 
 #separador {
@@ -141,7 +149,7 @@ body {
     margin: 1rem auto;
     height: 1px;
     background-color: lightgray;
-    animation: Stretch 1s 1 linear;
+    animation: Stretch 1s 1;
 }
 
 .text {
@@ -156,6 +164,8 @@ body {
     margin: 1rem 0;
     width: 100%;
     padding: 1rem 2rem;
+    background-color: #0E235C;
+    border-radius: 4px;
 }
 
 .screenshot {
@@ -229,4 +239,3 @@ form label {
     margin-bottom: 2rem;
     font-family: Corbel;
 }
-
