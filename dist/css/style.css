@@ -357,7 +357,7 @@ form input[type="text"], input[type="email"] {
     color: rgba(50, 100, 128, .8);
     letter-spacing: 1px;
 }
-    
+
 form textarea {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -374,6 +374,10 @@ form textarea {
 form .button {
     align-self: flex-end;
     border: none;
+}
+
+#success {
+    display: none;
 }
 
 footer {

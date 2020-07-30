@@ -160,12 +160,15 @@
     <section id="contacto">
         <h2>CONTACTO</h2>
         <p>Envíame tu mensaje y te responderé a la brevedad</p>
-        <form action="" data-netlify="true">
+        <form action="javascript:void(0)" data-netlify="true">
             <input type="text" name="name" placeholder="Nombre" required>
             <input type="email" name="email" placeholder="E-Mail" required>
             <textarea name="msg" cols="30" rows="10" placeholder="Tu mensaje" required></textarea>
-            <input type="submit" class="button" value="ENVIAR">
+            <input type="submit" class="button" id="enviar" value="ENVIAR">
         </form>
+        <div id="success">
+            <h4>Gracias por enviar su mensaje</h4>
+        </div>
     </section>
 
     <footer>
