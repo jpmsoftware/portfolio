@@ -5,13 +5,12 @@
     </clipPath>
   </defs>
   <g id="custom_1" data-name="custom – 1" clip-path="url(#clip-custom_1)">
-    <rect width="16" height="16" fill="#fff"/>
-    <g id="Group_1" data-name="Group 1" transform="translate(10 10)">
-      <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(-10 -10)" fill="none" stroke="#64c8ff" stroke-width="1">
+    <g id="Group_5" data-name="Group 5" transform="translate(-333 -48)">
+      <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(333 48)" fill="none" stroke="#000" stroke-width="1">
         <circle cx="8" cy="8" r="8" stroke="none"/>
         <circle cx="8" cy="8" r="7.5" fill="none"/>
       </g>
-      <text id="J" transform="translate(-2)" fill="#64c8ff" font-size="8" font-family="Constantia-Bold, Constantia" font-weight="700" letter-spacing="0.1em"><tspan x="-1.453" y="0">J</tspan></text>
+      <text id="J" transform="translate(339.008 59.304)" font-size="13" font-family="Constantia-Bold, Constantia" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">J</tspan></text>
     </g>
   </g>
 </svg>

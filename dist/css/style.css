@@ -270,6 +270,43 @@ h2 {
     background-color: #64C8FF;
 }
 
+#acerca {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #D6F1FF;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#profile-img {
+    margin: 0 auto;
+    width: 230px;
+    height: 230px;
+    background-color: #fff;
+}
+
+#about {
+    margin: 3rem auto;
+    width: 30%;
+    text-align: justify;
+    font-family: Candara-normal;
+    font-size: 18px;
+    color: #326480;
+}
+
+.group {
+    margin: 0 auto;
+    display: flex;
+}
+
+.group div {
+    width: 320px;
+    height: 270px;
+    margin: 0 2rem;
+    background-color: #fff;
+}
+
 @keyframes MoveDown {
     0% {
         top: 100%;
