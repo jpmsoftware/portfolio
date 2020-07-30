@@ -24,6 +24,7 @@
 
 html {
     scroll-behavior: smooth;
+    animation: FadeIn 4s 1;
 }
 
 p::selection, span::selection {
