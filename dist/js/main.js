@@ -1,5 +1,6 @@
 const menu = document.getElementsByClassName('menu-item');
 const btnProyectos = document.getElementById('button-proyectos');
+var lastScroll = 0;
 
 menu[0].addEventListener('click', showHome);
 menu[1].addEventListener('click', showProyectos);
@@ -8,7 +9,7 @@ menu[3].addEventListener('click', showContacto);
 btnProyectos.addEventListener('click', showProyectos);
 
 function showHome() {
-
+    window.scrollTo(0, 0);
 }
 
 function showProyectos() {
@@ -20,9 +21,20 @@ function showAcerca() {
 }
 
 function showContacto() {
-    
+    window.scrollTo(0, 3000);
+}
+
+function isScrollingUp(before, after) {
+    if (before > after) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 window.onscroll = () => {
-    console.log(window.scrollY);
+    if(isScrollingUp(lastScroll, window.scrollY)) {
+        console.log("UP");
+    }
+    lastScroll = window.scrollY;
 }
