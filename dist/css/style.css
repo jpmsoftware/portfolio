@@ -54,7 +54,7 @@ header {
 
 #home {
     width: 100%;
-    height: 722px;
+    height: 45.125rem;
 }
 
 #background {
@@ -69,7 +69,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 722px;
+    height: 45.125rem;
     background-color: #060926;
     opacity: .9;
 }
@@ -100,8 +100,8 @@ header {
 
 .menu-item a {
     font-family: Candara-bold;
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: 0.875rem;
+    letter-spacing: 0.0625rem;
     color: #fff;
     transition: all .4s;
 }
@@ -121,16 +121,16 @@ header {
 h1 {
     text-align: center;
     font-family: Candara-bold;
-    font-size: 50px;
-    letter-spacing: 2px;
+    font-size: 3.125rem;
+    letter-spacing: 0.125rem;
 }
 
 h4 {
     text-align: center;
     margin-bottom: 3rem;
     font-family: Candara-light;
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-size: 1rem;
+    letter-spacing: 0.0625rem;
 }
 
 #presentation {
@@ -139,19 +139,19 @@ h4 {
     margin-bottom: 1rem;
     line-height: 2rem;
     font-family: Candara-light;
-    font-size: 17px;
+    font-size: 1.0625rem;
 }
 
 #button-proyectos {
     display: inline-block;
     text-align: center;
     margin-top: 4rem;
-    border: 1px solid #fff;
+    border: 0.0625rem solid #fff;
     color: #fff;
     font-family: Candara-bold;
-    font-size: 15px;
+    font-size: 0.9375rem;
     padding: 1rem 2.5rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
 }
 
 #button-proyectos:hover {
@@ -171,32 +171,32 @@ h4 {
     color: #20436E;
     line-height: 1.5rem;
     font-family: Candara-light;
-    font-size: 18px;
-    letter-spacing: 1px;
+    font-size: 1.125rem;
+    letter-spacing: 0.0625rem;
 }
 
 h5 {
     margin-top: 0.5rem;
     font-family: Candara-bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #20436E;
     margin-bottom: 0.5rem;
 }
 
-#pre-proyectos div{
+#pre-proyectos div {
     position: relative;
 }
 
 #go-down {
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;
+    height: 1.5625rem;
     animation: MoveDown 1.5s infinite;
 }
 
 #proyectos {
     position: relative;
-    width: 100%; 
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 10rem;
@@ -208,7 +208,7 @@ h2 {
     text-align: center;
     margin-bottom: 3rem;
     font-family: Candara-bold;
-    font-size: 35px;
+    font-size: 2.1875rem;
     color: #20436E;
 }
 
@@ -217,8 +217,8 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 25%;
-    border: 1px solid #64C8FF;
-    box-shadow: 0px 4px 4px 0px rgba(148,148,148,1);
+    border: 0.0625rem solid #64C8FF;
+    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(148, 148, 148, 1);
 }
 
 .card-container {
@@ -231,20 +231,20 @@ h2 {
 
 .separator {
     width: 2rem;
-    border: 3px solid #20436E;
+    border: 0.1875rem solid #20436E;
     margin-top: 1rem;
 }
 
 .screenshot {
     width: 100%;
-    border: 1px solid #64C8FF;
+    border: 0.0625rem solid #64C8FF;
 }
 
 .app-description {
     margin-top: 1rem;
     width: 100%;
     font-family: Candara-normal;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: justify;
     line-height: 1.5rem;
     color: #20436E;
@@ -254,8 +254,8 @@ h2 {
 .app-title {
     margin-top: 1rem;
     font-family: Candara-bold;
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 1.25rem;
+    letter-spacing: 0.125rem;
     color: #20436E;
 }
 
@@ -291,8 +291,8 @@ h2 {
 
 #profile-img {
     margin: 0 auto;
-    width: 230px;
-    height: 230px;
+    width: 14.375rem;
+    height: 14.375rem;
     background-color: #fff;
 }
 
@@ -301,7 +301,7 @@ h2 {
     width: 30%;
     text-align: justify;
     font-family: Candara-normal;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #326480;
 }
 
@@ -311,11 +311,11 @@ h2 {
 }
 
 .stack {
-    width: 320px;
-    height: 270px;
+    width: 20rem;
+    height: 16.875rem;
     margin: 0 2rem;
     background-color: #fff;
-    box-shadow: 0px 5px 5px 0px rgba(158,158,158,1);
+    box-shadow: 0rem 0.3125rem 0.3125rem 0rem rgba(158, 158, 158, 1);
 }
 
 .stack div {
@@ -327,7 +327,7 @@ h2 {
     margin-top: 1rem;
     list-style-type: initial;
     font-family: Candara-normal;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #326480;
 }
 
@@ -338,7 +338,7 @@ h2 {
 
 #contacto p {
     font-family: Candara-normal;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #326480;
     text-align: center;
 }
@@ -355,12 +355,12 @@ form input[type="text"], input[type="email"] {
     margin-top: 2rem;
     line-height: 3rem;
     border: none;
-    border-bottom: 1px solid #97C6FF;
+    border-bottom: 0.0625rem solid #97C6FF;
     outline: none;
     font-family: Candara-normal;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: rgba(50, 100, 128, .8);
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
 }
 
 form textarea {
@@ -368,12 +368,12 @@ form textarea {
     margin-bottom: 2rem;
     resize: none;
     border: none;
-    border-bottom: 1px solid #97C6FF;
+    border-bottom: 0.0625rem solid #97C6FF;
     font-family: Candara-normal;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: rgba(50, 100, 128, .8);
     outline: none;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
 }
 
 form .button {
