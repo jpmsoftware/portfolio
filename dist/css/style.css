@@ -32,7 +32,6 @@ p::selection, span::selection {
 }
 
 body {
-    width: 100%;
     position: relative;
     overflow-x: hidden;
     z-index: 1;
@@ -53,6 +52,7 @@ header {
 }
 
 #home {
+    position: relative;
     width: 100%;
     height: 45.125rem;
 }
@@ -83,8 +83,9 @@ header {
 }
 
 .logo {
+    width: 100px;
+    margin: auto 0;
     cursor: pointer;
-    width: 80%;
 }
 
 .menu {
@@ -108,6 +109,19 @@ header {
 
 .menu-item:hover a {
     color: #64C8FF;
+}
+
+#menu-mobile {
+    display: none;
+    cursor: pointer;
+}
+
+#menu-mobile div {
+    margin: 0.5rem 0;
+    width: 2rem;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 4px;
 }
 
 .container {
@@ -311,8 +325,8 @@ h2 {
 }
 
 .stack {
-    width: 20rem;
-    height: 16.875rem;
+    width: 17rem;
+    height: 16rem;
     margin: 0 2rem;
     background-color: #fff;
     box-shadow: 0rem 0.3125rem 0.3125rem 0rem rgba(158, 158, 158, 1);
@@ -398,6 +412,39 @@ footer p {
     color: #fff;
     font-family: Candara-normal;
     font-size: 18px;
+}
+
+@media only screen and (max-width: 960px) {
+    .wrapper {
+        width: 85%;
+    }
+    .menu {
+        display: none;
+    }
+    #menu-mobile {
+        display: inline-block;
+    }
+    .container {
+        margin-top: 2rem;
+        width: 85%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h4 {
+        margin-bottom: 2rem;
+    }
+    #pre-proyectos {
+        width: 85%;
+    }
+    #presentation {
+        text-align: justify;
+        font-size: 15px;
+        line-height: 1.5rem;
+    }
+    #background {
+        height: 50%;
+    }
 }
 
 @keyframes MoveDown {

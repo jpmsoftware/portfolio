@@ -12,7 +12,6 @@ menu[1].addEventListener('click', () => window.scrollTo(0, sectionsCoordinates.p
 menu[2].addEventListener('click', () => window.scrollTo(0, sectionsCoordinates.acerca));
 menu[3].addEventListener('click', () => window.scrollTo(0, sectionsCoordinates.contacto));
 btnProyectos.addEventListener('click', () => window.scrollTo(0, sectionsCoordinates.proyectos));
-btnEnviar.addEventListener('click', () => document.getElementById('success').style.display = 'block');
 
 window.onload = () => {
     //GET SECTIONS COORDINATES
