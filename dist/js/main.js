@@ -23,24 +23,3 @@ window.onload = () => {
     }
 }
 
-function isScrollingUp(before, after) {
-    if (before > after) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-window.onscroll = () => {
-    if (isScrollingUp(lastScroll, window.scrollY)) {
-        if (window.scrollY >= 200) {
-            header.classList.add('sticky');
-        } else {
-            header.classList.remove('sticky');
-        }
-    } else {
-        header.classList.remove('sticky');
-    }
-    lastScroll = window.scrollY;
-}
-

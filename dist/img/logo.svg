@@ -1,19 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="121" height="37" viewBox="0 0 121 37">
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="37" viewBox="0 0 136 37">
   <g id="Group_5" data-name="Group 5" transform="translate(-334 -51)">
-    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(376 51)" fill="none" stroke="#fff" stroke-width="2">
+    <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(384 51)" stroke="#fff" stroke-width="2" opacity="0.6">
       <circle cx="18.5" cy="18.5" r="18.5" stroke="none"/>
       <circle cx="18.5" cy="18.5" r="17.5" fill="none"/>
     </g>
-    <g id="Ellipse_14" data-name="Ellipse 14" transform="translate(418 51)" fill="none" stroke="#fff" stroke-width="2">
+    <g id="Ellipse_14" data-name="Ellipse 14" transform="translate(433 51)" fill="rgba(0,0,0,0.4)" stroke="#fff" stroke-width="2">
       <circle cx="18.5" cy="18.5" r="18.5" stroke="none"/>
       <circle cx="18.5" cy="18.5" r="17.5" fill="none"/>
     </g>
-    <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(334 51)" fill="none" stroke="#fff" stroke-width="2">
+    <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(334 51)" stroke="#fff" stroke-width="2" opacity="0.8">
       <circle cx="18.5" cy="18.5" r="18.5" stroke="none"/>
       <circle cx="18.5" cy="18.5" r="17.5" fill="none"/>
     </g>
-    <text id="J" transform="translate(353 75)" fill="#fff" font-size="20" font-family="Constantia-Bold, Constantia" font-weight="700" letter-spacing="0.1em"><tspan x="-3.633" y="0">J</tspan></text>
-    <text id="P" transform="translate(395 77)" fill="#fff" font-size="20" font-family="Constantia-Bold, Constantia" font-weight="700" letter-spacing="0.1em"><tspan x="-6.416" y="0">P</tspan></text>
-    <text id="M" transform="translate(437 77)" fill="#fff" font-size="20" font-family="Constantia-Bold, Constantia" font-weight="700" letter-spacing="0.1em"><tspan x="-9.351" y="0">M</tspan></text>
+    <text id="J" transform="translate(349.367 75)" fill="#fff" font-size="20" font-family="Constantia-Bold, Constantia" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">J</tspan></text>
+    <text id="P" transform="translate(396.584 77)" fill="#fff" font-size="20" font-family="Constantia-Bold, Constantia" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">P</tspan></text>
+    <text id="M" transform="translate(442.649 77)" fill="#fff" font-size="20" font-family="Constantia-Bold, Constantia" font-weight="700" letter-spacing="0.1em"><tspan x="0" y="0">M</tspan></text>
   </g>
 </svg>

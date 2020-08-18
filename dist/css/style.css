@@ -22,13 +22,42 @@
     text-decoration: none;
 }
 
-html {
-    scroll-behavior: smooth;
-    animation: FadeIn 3s 1;
+h1, h4, hr, span {
+    color: #fff;
 }
 
-p::selection, span::selection {
-    background-color: #C9ECFF;
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fr {
+    flex-direction: row;
+}
+
+.fc {
+    flex-direction: column;
+}
+
+.center-v {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.line {
+    margin: 0 auto;
+    width: 43%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: transparent;
 }
 
 body {
@@ -43,18 +72,17 @@ header {
 }
 
 .sticky {
+    transition: all .7s;
     position: fixed;
     top: 0;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: #000;
     z-index: 2;
-    transition: all .4s;
 }
 
 #home {
     position: relative;
     width: 100%;
-    height: 45.125rem;
 }
 
 #background {
@@ -76,14 +104,17 @@ header {
 
 .wrapper {
     position: relative;
-    display: flex;
     width: 70%;
     margin: 0 auto;
-    justify-content: space-between;
 }
 
+.container {
+    position: relative;
+}
+
+
 .logo {
-    width: 100px;
+    width: 8rem;
     margin: auto 0;
     cursor: pointer;
 }
@@ -124,15 +155,10 @@ header {
     border-radius: 4px;
 }
 
-.container {
-    margin: 8rem auto;
-    width: 30%;
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-}
-
 h1 {
+    margin: 7.5rem auto 0 auto;
+    display: block;
+    width: 43%;
     text-align: center;
     font-family: Candara-bold;
     font-size: 3.125rem;
@@ -140,48 +166,47 @@ h1 {
 }
 
 h4 {
-    text-align: center;
-    margin-bottom: 3rem;
+    display: block;
+    width: 43%;
+    margin: 0 auto 3rem auto;
     font-family: Candara-light;
     font-size: 1rem;
     letter-spacing: 0.0625rem;
 }
 
 #presentation {
+    margin: 1rem auto 1rem auto;
+    width: 43%;
     display: block;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     line-height: 2rem;
     font-family: Candara-light;
     font-size: 1.0625rem;
+    text-align: center;
 }
 
 #button-proyectos {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
+    width: 16%;
+    line-height: 3rem;
     text-align: center;
     margin-top: 4rem;
     border: 0.0625rem solid #fff;
     color: #fff;
     font-family: Candara-bold;
     font-size: 0.9375rem;
-    padding: 1rem 2.5rem;
     letter-spacing: 0.125rem;
 }
 
 #button-proyectos:hover {
     transition: all .4s;
-    background-color: #64C8FF;
-}
-
-#pre-proyectos {
-    position: relative;
-    width: 30%;
-    margin: 0 auto;
-    text-align: center;
+    background-color: #50A0CC;
 }
 
 .text {
-    margin-top: 1rem;
+    width: 43%;
+    margin: 9rem auto 0 auto;
+    text-align: center;
     color: #20436E;
     line-height: 1.5rem;
     font-family: Candara-light;
@@ -189,23 +214,20 @@ h4 {
     letter-spacing: 0.0625rem;
 }
 
-h5 {
-    margin-top: 0.5rem;
+h6 {
+    margin: 1rem 0 0.5rem 0;
     font-family: Candara-bold;
     font-size: 1.25rem;
     color: #20436E;
+    text-align: center;
     margin-bottom: 0.5rem;
 }
 
-#pre-proyectos div {
-    position: relative;
-}
-
 #go-down {
-    position: absolute;
+    margin: 1rem auto 2rem auto;
     width: 1.5625rem;
     height: 1.5625rem;
-    animation: MoveDown 1.5s infinite;
+    animation: MoveDown 1s infinite;
 }
 
 #proyectos {
@@ -213,14 +235,13 @@ h5 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 10rem;
     padding-top: 2rem;
     padding-bottom: 20rem;
 }
 
 h2 {
+    margin: 1rem auto 3rem auto;
     text-align: center;
-    margin-bottom: 3rem;
     font-family: Candara-bold;
     font-size: 2.1875rem;
     color: #20436E;
@@ -228,29 +249,28 @@ h2 {
 
 .card {
     position: relative;
-    display: flex;
-    flex-direction: column;
     width: 25%;
-    border: 0.0625rem solid #64C8FF;
+    border: 1px solid #64C8FF;
     box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(148, 148, 148, 1);
 }
 
-.card-container {
-    position: relative;
-    margin: auto auto;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+.card:first-child {
+    margin-left: 3rem;
+}
+
+.card:last-child {
+    margin-right: 3rem;
 }
 
 .separator {
     width: 2rem;
     border: 0.1875rem solid #20436E;
-    margin-top: 1rem;
+    margin: 1rem 0 1rem 0;
 }
 
 .screenshot {
     width: 100%;
+    height: 35%;
     border: 0.0625rem solid #64C8FF;
 }
 
@@ -276,17 +296,16 @@ h2 {
 .button-container {
     position: relative;
     margin: 2rem 0;
-    display: flex;
     justify-content: space-between;
 }
 
 .button {
-    width: 7.5rem;
-    line-height: 3rem;
+    padding: 1rem 1.5rem;
     background-color: #20436E;
     text-align: center;
     color: #fff;
     font-family: Candara-bold;
+    font-size: 0.75rem;
     transition: all .4s;
 }
 
@@ -300,45 +319,44 @@ h2 {
     flex-direction: column;
     background-color: #D6F1FF;
     padding-top: 3rem;
-    padding-bottom: 8rem;
+    padding-bottom: 8rem;   
 }
 
 #profile-img {
     margin: 0 auto;
     width: 14.375rem;
-    height: 14.375rem;
-    background-color: #fff;
+    height: 14.375rem;      
+    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(148, 148, 148, 1);
 }
 
 #about {
     margin: 3rem auto;
-    width: 30%;
+    width: 50%;
     text-align: justify;
     font-family: Candara-normal;
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: #326480;
-}
-
-.group {
-    margin: 0 auto;
-    display: flex;
+    line-height: 2rem;
 }
 
 .stack {
-    width: 17rem;
-    height: 16rem;
-    margin: 0 2rem;
+    width: 22%;
+    padding: 1rem 4rem;
+    margin: 0rem 1rem;
     background-color: #fff;
     box-shadow: 0rem 0.3125rem 0.3125rem 0rem rgba(158, 158, 158, 1);
 }
 
-.stack div {
-    width: 50%;
-    margin: 2rem auto;
+.stack:first-child {
+    margin-left: 12rem;
+}
+
+.stack:last-child {
+    margin-right: 12rem;
 }
 
 .items {
-    margin-top: 1rem;
+    margin: 0.5rem 0rem;
     list-style-type: initial;
     font-family: Candara-normal;
     font-size: 1.125rem;
@@ -346,8 +364,8 @@ h2 {
 }
 
 #contacto {
-    margin-top: 5rem;
-    margin-bottom: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
 }
 
 #contacto p {
@@ -355,17 +373,17 @@ h2 {
     font-size: 1.125rem;
     color: #326480;
     text-align: center;
+    
 }
 
-#contacto form {
+.form-contacto {
     position: relative;
     margin: 3rem auto;
-    width: 30%;
-    display: flex;
+    width: 40%;
     flex-direction: column;
 }
 
-form input[type="text"], input[type="email"] {
+#form-name, #form-email {
     margin-top: 2rem;
     line-height: 3rem;
     border: none;
@@ -377,7 +395,11 @@ form input[type="text"], input[type="email"] {
     letter-spacing: 0.0625rem;
 }
 
-form textarea {
+#form-name:focus, #form-email:focus, #form-msg:focus {
+    border-bottom: 3px solid #97C6FF;
+}
+
+#form-msg {
     margin-top: 2rem;
     margin-bottom: 2rem;
     resize: none;
@@ -390,9 +412,11 @@ form textarea {
     letter-spacing: 0.0625rem;
 }
 
-form .button {
+.button {
+    cursor: pointer;
     align-self: flex-end;
     border: none;
+    outline: none;
 }
 
 #success {
@@ -400,18 +424,46 @@ form .button {
 }
 
 footer {
-    padding: 1rem 0;
+    padding: 3rem 0rem;
     width: 100%;
     background-color: rgba(32, 67, 110, .8);
+}
+
+footer .container:first-child {
+    margin-left: 35%;
+    cursor: pointer;
+}
+
+footer .container:last-child {
+    margin-right: 35%;
 }
 
 footer p {
     display: block;
     margin-top: 1rem;
-    text-align: center;
     color: #fff;
     font-family: Candara-normal;
-    font-size: 18px;
+    font-size: 1rem;
+}
+
+footer hr {
+    opacity: .3;
+}
+
+footer p a{
+    color: #fff;
+}
+
+#go-up {
+    display: none;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    z-index: 3;
+    animation: FadeIn 1s 1;
 }
 
 @media only screen and (max-width: 960px) {
@@ -434,9 +486,6 @@ footer p {
     h4 {
         margin-bottom: 2rem;
     }
-    #pre-proyectos {
-        width: 85%;
-    }
     #presentation {
         text-align: justify;
         font-size: 15px;
@@ -447,14 +496,6 @@ footer p {
     }
 }
 
-@keyframes MoveDown {
-    0% {
-        top: 100%;
-    }
-    100% {
-        top: 300%;
-    }
-}
 
 @keyframes FadeIn {
     0% {
