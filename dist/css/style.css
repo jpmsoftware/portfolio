@@ -204,7 +204,7 @@ h4 {
 
 .text {
     width: 43%;
-    margin: 9rem auto 0 auto;
+    margin: 11rem auto 0 auto;
     text-align: center;
     color: #20436E;
     line-height: 1.5rem;
@@ -525,9 +525,6 @@ footer p a{
         height: 100%;
     }
 
-    #background img {
-        src: url('../img/background-vertical.jpg'); 
-    }
 
     #button-proyectos {
         margin-top: 2.5rem;
