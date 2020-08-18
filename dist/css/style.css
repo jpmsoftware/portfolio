@@ -149,15 +149,14 @@ header {
 
 #menu-mobile div {
     margin: 0.5rem 0;
-    width: 2rem;
-    height: 3px;
+    width: 1.75rem;
+    height: 2px;
     background-color: #fff;
     border-radius: 4px;
 }
 
 h1 {
     margin: 7.5rem auto 0 auto;
-    display: block;
     width: 43%;
     text-align: center;
     font-family: Candara-bold;
@@ -168,7 +167,7 @@ h1 {
 h4 {
     display: block;
     width: 43%;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 1rem auto;
     font-family: Candara-light;
     font-size: 1rem;
     letter-spacing: 0.0625rem;
@@ -467,8 +466,19 @@ footer p a{
 }
 
 @media only screen and (max-width: 960px) {
+    * {
+        overflow-x: hidden;
+    }
+
     .wrapper {
-        width: 85%;
+        width: 90%;
+    }
+    #home {
+        width: 100%;
+        height: 40rem;
+    }
+    .logo {
+        width: 6rem;
     }
     .menu {
         display: none;
@@ -477,22 +487,58 @@ footer p a{
         display: inline-block;
     }
     .container {
-        margin-top: 2rem;
-        width: 85%;
+        margin: 0 auto;
+        width: 100%;
+    }
+    #color-layer {
+        width: 100%;
+        height: 80%;
     }
     h1 {
-        font-size: 2rem;
+        display: block;
+        margin: 2rem auto;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
     }
     h4 {
+        text-align: center;
         margin-bottom: 2rem;
+        font-size: 0.75rem;
+        width: 100%;
+    }
+    h6 {
+        margin: 0 auto;
+        font-size: 1rem;
+    }
+    .line {
+        width: 100%;
     }
     #presentation {
-        text-align: justify;
+        width: 100%;
+        text-align: center;
         font-size: 15px;
         line-height: 1.5rem;
     }
     #background {
-        height: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    #background img {
+        src: url('../img/background-vertical.jpg'); 
+    }
+
+    #button-proyectos {
+        margin-top: 2.5rem;
+        width: 60%;
+        height: 70%;
+    }
+
+    .text {
+        margin: 2.5rem auto;
+        width: 100%;
+        font-size: 0.85rem;
     }
 }
 
