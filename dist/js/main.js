@@ -3,6 +3,7 @@ const header = document.getElementsByTagName('header')[0];
 const menu = document.getElementsByClassName('menu-item');
 const btnProyectos = document.getElementById('button-proyectos');
 const btnEnviar = document.getElementById('enviar');
+const menuMobile = document.getElementById('menu-mobile');
 var sectionsCoordinates;
 var lastScroll = 0;
 
@@ -23,3 +24,11 @@ window.onload = () => {
     }
 }
 
+menuMobile.onclick = () => {
+    let menu = document.getElementsByClassName('menu')[0];
+    if(menu.style.display == '' || menu.style.display == 'none') {
+        menu.style.display = 'flex';
+    } else {
+        menu.style.display = 'none';
+    }
+}

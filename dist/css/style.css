@@ -469,7 +469,10 @@ footer p a{
     * {
         overflow-x: hidden;
     }
-
+    #background img {
+        display: none;
+        src: url('./img/background-vertical.jpg');
+    }
     .wrapper {
         width: 90%;
     }
@@ -482,6 +485,18 @@ footer p a{
     }
     .menu {
         display: none;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: black;
+        padding: 1rem;
+        z-index: 3;
+        animation: FadeIn 1s 1;
+    }
+    .menu-item {
+        margin: 0.75rem auto;
     }
     #menu-mobile {
         display: inline-block;
@@ -489,14 +504,15 @@ footer p a{
     .container {
         margin: 0 auto;
         width: 100%;
+        flex-direction: column;
     }
     #color-layer {
         width: 100%;
-        height: 80%;
+        height: 75%;
     }
     h1 {
         display: block;
-        margin: 2rem auto;
+        margin: 2rem auto 0 auto;
         width: 100%;
         text-align: center;
         font-size: 1.5rem;
@@ -508,7 +524,7 @@ footer p a{
         width: 100%;
     }
     h6 {
-        margin: 0 auto;
+        margin: 0.5rem auto 0 auto;
         font-size: 1rem;
     }
     .line {
@@ -525,17 +541,62 @@ footer p a{
         height: 100%;
     }
 
-
     #button-proyectos {
-        margin-top: 2.5rem;
+        margin-top: 2rem;
         width: 60%;
         height: 70%;
     }
+    #proyectos {
+        padding-bottom: 10rem;
+    }
 
     .text {
-        margin: 2.5rem auto;
+        margin: 2.5rem auto 0 auto;
         width: 100%;
-        font-size: 0.85rem;
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .card {
+        /* margin: 0 auto; */
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .card:first-child {
+        margin-left: 0;
+    }
+    .card:last-child {
+        margin-right: 0;
+    }
+    .button {
+        width: 45%;
+    }
+    #about {
+        width: 80%;
+    }
+    .stack:first-child {
+        margin-left: 2rem;
+    }
+    .stack {
+        margin: 0 0 2rem 2rem;
+        padding: 1.5rem 2rem;
+        width: 80%;
+    }
+    #contacto p {
+        font-size: 15px;
+    }
+    .form-contacto {
+        width: 80%;
+    }
+    footer .container:first-child {
+        margin-left: 0;
+    }
+    footer .container:last-child {
+        margin-right: 0;
+    }
+    footer hr {
+        margin: 0 1rem;
     }
 }
 
