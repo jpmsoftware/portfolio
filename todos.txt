@@ -1,1 +1,6 @@
--fuente tarda mucho en renderizar en carga de la página
+- fuente tarda mucho en renderizarse, en carga de la página
+- logo muy grande en index.html
+- terminar mobile
+- quitar screenshot(video)
+- footer --> implementar links
+- poner tambien que tengo conocimientos en deploy, y apps de monitoreo de sitios
