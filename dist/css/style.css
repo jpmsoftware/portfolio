@@ -121,6 +121,10 @@ header {
     cursor: pointer;
 }
 
+#logo {
+    width: 3em;
+}
+
 .logo p {
     margin: auto 0; 
     height: 100%;
