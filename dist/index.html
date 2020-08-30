@@ -6,112 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/favicon.svg">
-    <title> jpmsoftware | Desarrollo web - Servicios de software</title>
+    <title> Home | Desarrollo web - Servicios de software</title>
 </head>
 
 <body>
-    <section id="home">
-        <div id="background">
-            <img src="./img/background.jpg" alt="">
-            <div id="color-layer"></div>
+    <section class="home">
+        <div class="background">
+            <img src="./img/background_1080.jpg" alt="" class="background-img">
+            <div class="color-layer"></div>
         </div>
-        <div class="wrapper flex fc">
-            <header class="flex fr">
-                <div class="logo flex">
-                    <img src="./img/logo.svg" alt="logo" id="logo">
+        <div class="wrapper fc">
+            <header class="fr">
+                <div class="logo fr">
+                    <img src="./img/logo.svg" alt="logo" class="logo-img">
                     <p>jpmsoftware</p>
                 </div>
-                <nav class="menu">
+                <nav class="menu fr">
                     <li class="menu-item"><a href="javascript:void(0)">HOME</a></li>
+                    <hr class="line-vertical">
                     <li class="menu-item"><a href="javascript:void(0)">PROYECTOS</a></li>
+                    <hr class="line-vertical">
                     <li class="menu-item"><a href="javascript:void(0)">ACERCA</a></li>
+                    <hr class="line-vertical">
                     <li class="menu-item"><a href="javascript:void(0)">CONTACTO</a></li>
+                    <a href="https://github.com/jpmsoftware" target="_blank">
+                        <img src="./img/icon-github.svg" alt="github" class="icon-github"></a>
                 </nav>
-                <div id="menu-mobile">
+                <div class="menu-mobile">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
             </header>
             <div class="container text-center">
-                <h1>JUAN PABLO MIRANDA</h1>
-                <h4>DESARROLLADOR DE SOFTWARE</h4>
-                <hr class="line">
-                <span id="presentation">
+                <h1>Juan Pablo Miranda</h1>
+                <hr class="line-horizontal gray">
+                <p class="text">
                     Soy un desarrollador de Montevideo, Uruguay. Estoy enfocado en el desarrollo web
-                    y actualmente me encuentro en busca de mi primer experiencia laboral en la
-                    industria de Tecnologías de la Información
-                </span>
-                <hr class="line">
-                <a id="button-proyectos" href="javascript:void(0)">VER PROYECTOS</a>
-            </div>
-            <div class="container flex fc">
-                <p class="text">Para el desarrollo de mis proyectos personales utilizo HTML, CSS, Javascript, Node JS y
-                    MySQL,
-                    entre
-                    otras tecnologías
+                    y<br> actualmente me encuentro en busca de mi primer experiencia laboral en TI
                 </p>
-                <div class="container flex fc">
-                    <h6>CONOCE MÁS</h6>
-                    <img src="./img/down.svg" alt="" id="go-down">
-                </div>
-
+                <a id="button-proyectos" href="javascript:void(0)">VER PROYECTOS</a>
+                <img src="./img/icon-arrow-down.svg" alt="" class="icon-arrow-down">
             </div>
         </div>
     </section>
 
-    <section id="proyectos">
-        <div class="wrapper flex fc">
+    <section class="proyectos">
+        <div class="wrapper fc">
             <h2>PROYECTOS</h2>
-            <div class="container flex fr">
-                <div class="card flex fc">
+            <hr class="line-horizontal">
+            <div class="container fr">
+                <div class="card fc">
                     <img src="./img/screenshot_1.jpg" alt="screenshot" class="screenshot">
-                    <div class="wrapper flex fc">
-                        <h5 class="app-title">EVERGREEN</h5>
+                    <div class="container fc">
+                        <h3>EVERGREEN</h3>
+                        <hr class="separator">
+                        <p class="app-description">
+                            Sitio web de E-Commerce para tienda de productos veganos
+                            Contiene módulo para la gestión de inventario, base de datos propia
+                            en My SQL y app móvil para el apoyo logístico
+                        </p>
+                        <div class="button-container fr">
+                            <a href="https://naughty-mahavira-ce237a.netlify.app/" target="_blank" class="button">VER
+                                DEMO</a>
+                            <a href="https://github.com/jpmsoftware/vegan-store-web" target="_blank" class="button">VER
+                                CÓDIGO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card fc">
+                    <img src="./img/screenshot_1.jpg" alt="screenshot" class="screenshot">
+                    <div class="container fc">
+                        <h3>EVERGREEN</h3>
                         <hr class="separator">
                         <p class="app-description">
                             Plataforma web de E-Commerce para tienda de productos veganos
-                            <br>Contiene módulo para la gestión de inventario, base de datos propia
+                            Contiene módulo para la gestión de inventario, base de datos propia
                             en My SQL y app móvil para el apoyo logístico
                         </p>
-                        <div class="button-container flex fr">
-                            <a href="https://naughty-mahavira-ce237a.netlify.app/" target="_blank" class="button">VER DEMO</a>
-                            <a href="https://github.com/jpmsoftware/vegan-store-web" target="_blank" class="button">VER CÓDIGO</a>
+                        <div class="button-container fr">
+                            <a href="https://naughty-mahavira-ce237a.netlify.app/" target="_blank" class="button">VER
+                                DEMO</a>
+                            <a href="https://github.com/jpmsoftware/vegan-store-web" target="_blank" class="button">VER
+                                CÓDIGO</a>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="./img/screenshot_2.jpg" alt="screenshot" class="screenshot">
-                    <div class="wrapper flex fc">
-                        <h5 class="app-title">URUNOMICS</h5>
+                <div class="card fc">
+                    <img src="./img/screenshot_1.jpg" alt="screenshot" class="screenshot">
+                    <div class="container fc">
+                        <h3>EVERGREEN</h3>
                         <hr class="separator">
                         <p class="app-description">
-                            Principales indicadores macroeconómicos del Uruguay mostrados de manera gráfica
-                            Datos propios en formato JSON + Librería Chart JS
-                            <br>Datos históricos, gráficos
+                            Plataforma web de E-Commerce para tienda de productos veganos
+                            Contiene módulo para la gestión de inventario, base de datos propia
+                            en My SQL y app móvil para el apoyo logístico
                         </p>
-                        <div class="button-container flex fr">
-                            <a href="https://vibrant-franklin-c71b07.netlify.app" target="_blank" class="button">VER DEMO</a>
-                            <a href="https://github.com/jpmsoftware/urunomics" target="_blank" class="button">VER CÓDIGO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./img/04fc0315441225.56291286c305b.png" alt="screenshot" class="screenshot">
-                    <div class="wrapper flex fc">
-                        <h5 class="app-title">API SPOTIFY</h5>
-                        <hr class="separator">
-                        <p class="app-description">
-                            Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris
-                        </p>
-                        <div class="button-container flex fr">
-                            <a href="javascript:void(0)" class="button" target="_blank">VER DEMO</a>
-                            <a href="javascript:void(0)" class="button" target="_blank">VER CÓDIGO</a>
+                        <div class="button-container fr">
+                            <a href="https://naughty-mahavira-ce237a.netlify.app/" target="_blank" class="button">VER
+                                DEMO</a>
+                            <a href="https://github.com/jpmsoftware/vegan-store-web" target="_blank" class="button">VER
+                                CÓDIGO</a>
                         </div>
                     </div>
                 </div>
@@ -119,74 +114,85 @@
         </div>
     </section>
 
-    <section id="acerca">
-        <div class="wrapper flex fc">
+    <section class="acerca">
+        <div class="wrapper fc">
             <h2>ACERCA DE MI</h2>
-            <img src="" alt="profile" id="profile-img">
-            <p id="about">Conocí la programación siendo muy joven y de inmediato comencé a experimentar y a crear programas
-                muy simples en un viejo entorno de desarrollo llamado Turbo C.<br>
-                Años más tarde decidí ir un paso más allá y comencé a formarme de manera autodidacta en el desarrollo web fullstack.
-                <br>Específicamente, aprendí HTML, CSS, SASS, Javascript, Node JS, My SQL, fundamentos de diseño como también 
-                el manejo de algunos programas dedicados a este fin. 
-                <br>Personalmente considero que el orden, la perseverancia y la atención a los detalles son los activos más valiosos de 
-                cualquier programador y me esfuerzo día tras día por mejorarlos.
-            </p>
-            <div class="container flex fr">
+            <hr class="line-horizontal">
+            <div class="container fr">
+                <img src="" alt="profile" class="profile-img">
+                <p class="text dark">Conocí la programación siendo muy joven y de inmediato comencé<br> a experimentar y a
+                    crear programas
+                    muy simples en un viejo entorno<br> de desarrollo llamado Turbo C.<br>*     *     *<br>
+                    Años más tarde decidí ir un paso más allá y comencé a formarme de<br> manera autodidacta en el
+                    desarrollo web fullstack.
+                    <br>Personalmente considero que el orden, la perseverancia y la atención<br> a los detalles son los
+                    activos más valiosos de cualquier programador<br> y me esfuerzo día tras día por mejorarlos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="conocimientos">
+        <div class="wrapper fc">
+            <h2>CONOCIMIENTOS</h2>
+            <hr class="line-horizontal">
+            <div class="container fr">
                 <div class="stack">
-                    <div class="container flex fc">
-                        <h5 class="app-title">FRONTEND</h5>
-                        <hr class="separator">
-                        <li class="items">HTML / CSS</li>
-                        <li class="items">Javascript</li>
-                        <li class="items">React</li>
-                        <li class="items">SASS</li>
+                    <img src="./img/icon-frontend.svg" alt="" class="icon-stack">
+                    <div class="container fc">
+                        <h3>FRONTEND</h3>
+                        <li class="items">> &nbsp; HTML / CSS</li>
+                        <li class="items">> &nbsp; Javascript</li>
+                        <li class="items">> &nbsp; React</li>
+                        <li class="items">> &nbsp; SASS</li>
                     </div>
                 </div>
                 <div class="stack">
-                    <div class="container flex fc">
-                        <h5 class="app-title">BACKEND</h5>
-                        <hr class="separator">
-                        <li class="items">Node JS</li>
-                        <li class="items">My SQL</li>
+                    <img src="./img/icon-backend.svg" alt="" class="icon-stack">
+                    <div class="container fc">
+                        <h3 class="app-title">BACKEND</h3>
+                        <li class="items">> &nbsp; Node JS</li>
+                        <li class="items">> &nbsp; My SQL</li>
                     </div>
                 </div>
                 <div class="stack">
-                    <div class="container flex fc">
-                        <h5 class="app-title">OTROS</h5>
-                        <hr class="separator">
-                        <li class="items">GIT</li>
-                        <li class="items">Adobe XD</li>
-                        <li class="items">GIMP</li>
-                        <li class="items">Deployment & Monitoreo</li>
+                    <img src="./img/icon-tools.svg" alt="" class="icon-stack">
+                    <div class="container fc">
+                        <h3 class="app-title">OTROS</h3>    
+                        <li class="items">> &nbsp; GIT</li>
+                        <li class="items">> &nbsp; Adobe XD</li>
+                        <li class="items">> &nbsp; GIMP</li>
+                        <li class="items">> &nbsp; Deployment & Monitoreo</li>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contacto">
+    <section class="contacto text-center">
         <div class="wrapper">
             <h2>CONTACTO</h2>
-            <p>Envíame tu mensaje y te responderé a la brevedad</p>
-            <form action="./success.html" data-netlify="true" class="form-contacto flex fc">
-                <input type="text" name="name" placeholder="Nombre" required id="form-name">
-                <input type="email" name="email" placeholder="E-Mail" required id="form-email">
-                <textarea name="msg" cols="30" rows="10" placeholder="Tu mensaje" required id="form-msg"></textarea>
+            <hr class="line-horizontal">
+            <p class="text dark">Envíame tu mensaje y te responderé a la brevedad</p>
+            <form action="./success.html" data-netlify="true" class="form-contacto fc">
+                <input type="text" name="name" placeholder="Nombre" required id="form-name" class="text dark">
+                <input type="email" name="email" placeholder="E-Mail" required id="form-email" class="text dark">
+                <textarea name="msg" cols="30" rows="10" placeholder="Tu mensaje" required id="form-msg" class="text dark"></textarea>
                 <input type="submit" class="button" id="enviar" value="ENVIAR">
             </form>
         </div>
     </section>
 
-    <footer>
-        <div class="wrapper flex fr">
-            <div class="container flex fc">
+    <footer class="text">
+        <div class="wrapper fr">
+            <div class="container fc">
                 <p>HOME</p>
                 <p>PROYECTOS</p>
                 <p>ACERCA</p>
                 <p>CONTACTO</p>
             </div>
             <hr>
-            <div class="container flex fc">
+            <div class="container fc">
                 <p>Año 2020</p>
                 <p>www.jpmsoftware.com</p>
                 <p>Montevideo, Uruguay</p>
@@ -194,7 +200,7 @@
             </div>
         </div>
     </footer>
-    <!-- <img src="./img/icon-arrow.svg" alt="" id="go-up"> -->
     <script src="./js/main.js"></script>
 </body>
+
 </html>
