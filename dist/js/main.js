@@ -1,18 +1,19 @@
 //DOM ELEMENTS
-const header = document.getElementsByTagName('header')[0];
-const menu = document.getElementsByClassName('menu-item');
-const btnProyectos = document.getElementById('button-proyectos');
-const btnEnviar = document.getElementById('enviar');
-const menuMobile = document.querySelector('menu-mobile');
+const header = document.querySelector('header');
+const menuItems = document.querySelectorAll('.menu-item');
+const btnProyectos = document.querySelector('#button-proyectos');
+const btnEnviar = document.querySelector('#enviar');
+const menuMobile = document.querySelector('.menu-mobile');
 const footer = document.querySelector('footer');
+const floatingMenu = document.querySelector('.floating-menu');
 var sections;
 var lastScroll = 0;
 
 //EVENTS
-menu[0].addEventListener('click', () => window.scrollTo(0, sections.home));
-menu[1].addEventListener('click', () => window.scrollTo(0, sections.proyectos));
-menu[2].addEventListener('click', () => window.scrollTo(0, sections.acerca));
-menu[3].addEventListener('click', () => window.scrollTo(0, sections.contacto));
+menuItems[0].addEventListener('click', () => window.scrollTo(0, sections.home));
+menuItems[1].addEventListener('click', () => window.scrollTo(0, sections.proyectos));
+menuItems[2].addEventListener('click', () => window.scrollTo(0, sections.acerca));
+menuItems[3].addEventListener('click', () => window.scrollTo(0, sections.contacto));
 btnProyectos.addEventListener('click', () => window.scrollTo(0, sections.proyectos));
 
 window.onload = () => {
@@ -25,13 +26,19 @@ window.onload = () => {
     }
 }
 
-menuMobile.onclick = () => {
-    let menu = document.getElementsByClassName('menu')[0];
-    if (menu.style.display == '' || menu.style.display == 'none') {
-        menu.style.display = 'flex';
+window.onscroll = () => {
+    if (window.scrollY > sections.proyectos - 200) {
+        floatingMenu.style.display = 'flex';
     } else {
-        menu.style.display = 'none';
+        floatingMenu.style.display = 'none';
     }
+}
+
+menuMobile.onclick = () => {
+    let menu = document.querySelector('.menu');
+    menu.classList.add('mobile');
+    menu.classList.remove('menu');
+    console.log(menu.classList);
 }
 
 footer.onclick = (e) => {
@@ -49,6 +56,26 @@ footer.onclick = (e) => {
             break;
 
         case 'CONTACTO':
+            window.scrollTo(0, sections.contacto);
+            break;
+    }
+}
+
+floatingMenu.onclick = (e) => {
+    switch (e.target.id) {
+        case 'home':
+            window.scrollTo(0, sections.home);
+            break;
+
+        case 'proyectos':
+            window.scrollTo(0, sections.proyectos);
+            break;
+
+        case 'acerca':
+            window.scrollTo(0, sections.acerca);
+            break;
+
+        case 'contacto':
             window.scrollTo(0, sections.contacto);
             break;
     }

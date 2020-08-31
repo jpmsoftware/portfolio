@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/favicon.svg">
-    <title> Home | Desarrollo web - Servicios de software</title>
+    <title> Desarrollo web - jpmsoftware</title>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
                 <hr class="line-horizontal gray">
                 <p class="text">
                     Soy un desarrollador de Montevideo, Uruguay. Estoy enfocado en el desarrollo web
-                    y<br> actualmente me encuentro en busca de mi primer experiencia laboral en TI
+                    y actualmente me encuentro en busca de mi primer experiencia laboral en TI
                 </p>
                 <a id="button-proyectos" href="javascript:void(0)">VER PROYECTOS</a>
                 <img src="./img/icon-arrow-down.svg" alt="" class="icon-arrow-down">
@@ -173,17 +173,17 @@
         <div class="wrapper">
             <h2>CONTACTO</h2>
             <hr class="line-horizontal">
-            <p class="text dark">Envíame tu mensaje y te responderé a la brevedad</p>
+            <p class="">Envíame tu mensaje y te responderé a la brevedad</p>
             <form action="./success.html" data-netlify="true" class="form-contacto fc">
-                <input type="text" name="name" placeholder="Nombre" required id="form-name" class="text dark">
-                <input type="email" name="email" placeholder="E-Mail" required id="form-email" class="text dark">
-                <textarea name="msg" cols="30" rows="10" placeholder="Tu mensaje" required id="form-msg" class="text dark"></textarea>
+                <input type="text" name="name" placeholder="Nombre" required id="form-name">
+                <input type="email" name="email" placeholder="E-Mail" required id="form-email">
+                <textarea name="msg" cols="30" rows="10" placeholder="Tu mensaje" required id="form-msg"></textarea>
                 <input type="submit" class="button" id="enviar" value="ENVIAR">
             </form>
         </div>
     </section>
 
-    <footer class="text">
+    <footer>
         <div class="wrapper fr">
             <div class="container fc">
                 <p>HOME</p>
@@ -200,6 +200,12 @@
             </div>
         </div>
     </footer>
+    <div class="floating-menu fc">
+        <img src="./img/icon-home.svg" id="home">
+        <img src="./img/icon-folder.svg" id="proyectos">
+        <img src="./img/icon-info.svg" id="acerca">
+        <img src="./img/icon-mail.svg" id="contacto">
+    </div>
     <script src="./js/main.js"></script>
 </body>
 

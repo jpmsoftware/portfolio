@@ -141,6 +141,19 @@ header {
     margin: auto 0;
 }
 
+.mobile { 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    padding: 2em 0;
+    text-align: center;
+    background: #000;
+    z-index: 2;
+}
+
 .line-vertical {
     margin: auto 0;
     width: 2px;
@@ -217,6 +230,7 @@ h1 {
     font-family: Georgia;
     font-size: 1em;
     letter-spacing: 1px;
+    width: 52em;
 }
 
 .dark {
@@ -243,11 +257,10 @@ h4 {
 
 #button-proyectos {
     display: block;
-    margin: 0 auto;
+    margin: 4rem auto 0 auto;
     width: 13.7em;
     line-height: 3.8em;
     text-align: center;
-    margin-top: 4rem;
     border: 1px solid #fff;
     border-radius: 4px;
     color: #fff;
@@ -372,7 +385,6 @@ h3 {
     height: 17.5em;
     position: relative;
     margin: 0rem 1rem;
-    
     background-color: #fff;
     border: 1px solid #EF7A2C;
     border-radius: 5px;
@@ -410,8 +422,11 @@ h3 {
 }
 
 #form-name, #form-email, #form-msg {
-    margin: 1.5em 0;
+    margin: 1em auto 3em auto;
+    width: 100%;
     border: none;
+    padding: 0.5em;
+    font-family: Georgia;
     border-bottom: 1px solid #EF7A2C;
     outline: none;
     resize: none;
@@ -426,20 +441,12 @@ h3 {
 
 footer {
     padding: 3rem 0rem;
+    display: block;
     width: 100%;
     background: #000;
 }
 
-footer .container:first-child {
-    margin-left: 35%;
-    cursor: pointer;
-}
-
-footer .container:last-child {
-    margin-right: 35%;
-}
-
-footer p {
+footer * {
     display: block;
     margin-top: 1rem;
     color: #fff;
@@ -450,8 +457,95 @@ footer hr {
     opacity: .3;
 }
 
+.floating-menu {
+    display: none;
+    position: fixed;
+    right: 5%;
+    top: 25%;
+    border: 2px solid #000;
+    border-radius: 10em;
+    justify-content: space-between;
+    padding: 0 0.7em;
+    animation: FadeIn 2s 1;
+}
+
+.floating-menu * {
+    margin: 1em auto;
+    width: 2.3em;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 960px) {
-    
+    .wrapper {
+        width: 90%;
+    }
+    .home {
+        height: 640px;
+    }
+    .home .container {
+        margin-top: 0em;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-mobile {
+        display: block;
+        margin: auto 0;
+    }
+    h1 {
+        margin: 0 auto;
+        width: 85%;
+        font-size: 1.8em;
+    }
+    .line-horizontal {
+        margin: 0.5em auto 2em auto;
+    }
+    .text {
+        margin: 0 auto;
+        width: 20em;
+        font-size: 0.9em;
+    }
+    #button-proyectos {
+        margin-top: 3em;
+    }
+    .floating-menu {
+        visibility: hidden;
+    }
+    .proyectos .container {
+        flex-direction: column;
+    }
+    .card {
+        margin: 1em 0;
+        width: 20.5em;
+    }
+    .button {
+        width: 8em;
+        font-size: 0.9em;
+    }
+    .acerca .container {
+        flex-direction: column;
+    }
+    .acerca .text {
+        margin-top: 3em;
+        text-align: justify;
+    }
+    .profile-img {
+        margin: 0 auto;
+    }
+    .conocimientos .container {
+        flex-direction: column;
+    }
+    .stack {
+        margin: 2em 0;
+        width: 17em;
+        height: 15em;
+    }
+    .icon-github {
+        display: none;
+    }
+    .form-contacto {
+        width: 85%;
+    }
 }
 
 @keyframes FadeIn {
@@ -464,7 +558,7 @@ footer hr {
 }
 
 @keyframes MoveDown {
-    0% {  margin-top: 0px; }
-    50% { margin-top: 150px }
-    100% { margin-top: 0px; }
+    0% {  margin-top: 0; }
+    50% { margin-top: 20%; }
+    100% { margin-top: 0; }
 }
