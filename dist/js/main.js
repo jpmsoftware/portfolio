@@ -3,8 +3,8 @@ const header = document.getElementsByTagName('header')[0];
 const menu = document.getElementsByClassName('menu-item');
 const btnProyectos = document.getElementById('button-proyectos');
 const btnEnviar = document.getElementById('enviar');
-const menuMobile = document.getElementById('menu-mobile');
-const footer = document.getElementsByTagName('footer')[0];
+const menuMobile = document.querySelector('menu-mobile');
+const footer = document.querySelector('footer');
 var sections;
 var lastScroll = 0;
 
@@ -18,10 +18,10 @@ btnProyectos.addEventListener('click', () => window.scrollTo(0, sections.proyect
 window.onload = () => {
     //GET SECTIONS COORDINATES
     sections = {
-        home: document.getElementById('home').offsetTop,
-        proyectos: document.getElementById('proyectos').offsetTop,
-        acerca: document.getElementById('acerca').offsetTop,
-        contacto: document.getElementById('contacto').offsetTop
+        home: document.querySelector('.home').offsetTop,
+        proyectos: document.querySelector('.proyectos').offsetTop,
+        acerca: document.querySelector('.acerca').offsetTop,
+        contacto: document.querySelector('.contacto').offsetTop
     }
 }
 
