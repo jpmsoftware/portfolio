@@ -441,6 +441,15 @@ h3 {
     width: 50%;
 }
 
+#msg {
+    font-family: Georgia, 'sans-serif';
+}
+
+.send {
+    font-weight: bold;
+    color: green;
+}
+
 #form-name, #form-email, #form-msg {
     margin: 1em auto 3em auto;
     width: 100%;

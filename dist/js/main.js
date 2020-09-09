@@ -3,6 +3,7 @@ const menu = document.querySelector('.menu');
 const menuMobile = document.querySelector('.menu-mobile');
 const btnProyectos = document.querySelector('.button-proyectos');
 const burger = document.querySelector('.burger');
+const btnEnviar = document.querySelector('#enviar');
 const footer = document.querySelector('footer');
 const floatingMenu = document.querySelector('.floating-menu');
 var sections = {};
@@ -34,6 +35,20 @@ window.onscroll = () => {
 
 burger.onclick = () => {
     menuMobile.classList.toggle('visible');
+}
+
+btnEnviar.onclick = () => {
+    const msg = document.querySelector('#msg');
+    msg.innerHTML = 'Gracias por enviar su mensaje';
+    msg.classList.toggle('send');
+    window.setTimeout(() => {
+        msg.innerHTML = 'Envíame tu mensaje y te responderé a la brevedad';
+        msg.classList.toggle('send');
+        const forms = document.querySelectorAll('#form-name, #form-email, #form-msg');
+        forms.forEach((element) => {
+            element.value = '';
+        });
+    }, 3000)
 }
 
 function MenuScroll(e) {
