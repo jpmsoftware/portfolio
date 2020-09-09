@@ -1,23 +1,21 @@
-//DOM ELEMENTS
-const header = document.querySelector('header');
-const menuItems = document.querySelectorAll('.menu-item');
-const btnProyectos = document.querySelector('#button-proyectos');
-const btnEnviar = document.querySelector('#enviar');
+// Get DOM elements
+const menu = document.querySelector('.menu');
 const menuMobile = document.querySelector('.menu-mobile');
+const btnProyectos = document.querySelector('.button-proyectos');
+const burger = document.querySelector('.burger');
 const footer = document.querySelector('footer');
 const floatingMenu = document.querySelector('.floating-menu');
-var sections;
-var lastScroll = 0;
+var sections = {};
 
-//EVENTS
-menuItems[0].addEventListener('click', () => window.scrollTo(0, sections.home));
-menuItems[1].addEventListener('click', () => window.scrollTo(0, sections.proyectos));
-menuItems[2].addEventListener('click', () => window.scrollTo(0, sections.acerca));
-menuItems[3].addEventListener('click', () => window.scrollTo(0, sections.contacto));
-btnProyectos.addEventListener('click', () => window.scrollTo(0, sections.proyectos));
+// Events Handler
+menu.addEventListener('click', (e) => { MenuScroll(e) })
+menuMobile.addEventListener('click', (e) => { MenuScroll(e) })
+btnProyectos.addEventListener('click', (e) => { MenuScroll(e) });
+floatingMenu.addEventListener('click', (e) => { MenuScroll(e); })
+footer.addEventListener('click', (e) => { MenuScroll(e); })
 
+// Get sections coordinates
 window.onload = () => {
-    //GET SECTIONS COORDINATES
     sections = {
         home: document.querySelector('.home').offsetTop,
         proyectos: document.querySelector('.proyectos').offsetTop,
@@ -34,34 +32,11 @@ window.onscroll = () => {
     }
 }
 
-menuMobile.onclick = () => {
-    let menu = document.querySelector('.menu');
-    menu.classList.add('mobile');
-    menu.classList.remove('menu');
-    console.log(menu.classList);
+burger.onclick = () => {
+    menuMobile.classList.toggle('visible');
 }
 
-footer.onclick = (e) => {
-    switch (e.target.innerHTML) {
-        case 'HOME':
-            window.scrollTo(0, sections.home);
-            break;
-
-        case 'PROYECTOS':
-            window.scrollTo(0, sections.proyectos);
-            break;
-
-        case 'ACERCA':
-            window.scrollTo(0, sections.acerca);
-            break;
-
-        case 'CONTACTO':
-            window.scrollTo(0, sections.contacto);
-            break;
-    }
-}
-
-floatingMenu.onclick = (e) => {
+function MenuScroll(e) {
     switch (e.target.id) {
         case 'home':
             window.scrollTo(0, sections.home);

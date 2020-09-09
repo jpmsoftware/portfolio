@@ -34,7 +34,7 @@ h1, h4, hr, span {
     flex-direction: row;
 }
 
-.fc { 
+.fc {
     display: flex;
     flex-direction: column;
 }
@@ -64,7 +64,8 @@ body {
     z-index: 1;
 }
 
-header {
+.header {
+    position: relative;
     justify-content: space-between;
     width: 100%;
     padding: 2rem 0;
@@ -108,7 +109,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000321;
+    background-color: rgb(12, 6, 27);
     opacity: .9;
 }
 
@@ -116,6 +117,7 @@ header {
     margin: 0 auto;
     position: relative;
     width: 70%;
+    justify-content: space-between;
 }
 
 .logo {
@@ -129,7 +131,7 @@ header {
 }
 
 .logo p {
-    margin: auto 0; 
+    margin: auto 0;
     height: 100%;
     margin-left: 1rem;
     color: #fff;
@@ -141,23 +143,37 @@ header {
     margin: auto 0;
 }
 
-.mobile { 
-    display: flex;
+.menu-mobile {
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 0;
     width: 100%;
     padding: 2em 0;
     text-align: center;
     background: #000;
     z-index: 2;
+    animation: FadeIn .5s 1;
+}
+
+.visible {
+    display: flex;
+}
+
+.menu-mobile .menu-item {
+    margin: 0 auto;
+}
+
+.menu-mobile hr {
+    margin: 0 auto;
+    transform: rotate(90deg);
 }
 
 .line-vertical {
     margin: auto 0;
     width: 2px;
-    height: 1.2em;
+    height: 1.1em;
     background: #fff;
     border: none;
     outline: none;
@@ -165,7 +181,7 @@ header {
 
 .icon-github {
     cursor: pointer;
-    width: 2em;
+    width: 1.7em;
 }
 
 .menu-item {
@@ -186,12 +202,12 @@ header {
     color: #EF7A2C;
 }
 
-.menu-mobile {
+.burger {
     display: none;
     cursor: pointer;
 }
 
-.menu-mobile div {
+.burger div {
     margin: 0.5rem 0;
     width: 1.75rem;
     height: 2px;
@@ -234,7 +250,7 @@ h1 {
 }
 
 .dark {
-    color:#000;
+    color: #000;
 }
 
 h4 {
@@ -255,7 +271,7 @@ h4 {
     letter-spacing: 1px;
 }
 
-#button-proyectos {
+.button-proyectos {
     display: block;
     margin: 4rem auto 0 auto;
     width: 13.7em;
@@ -269,10 +285,10 @@ h4 {
     letter-spacing: 1px;
 }
 
-#button-proyectos:hover {
+.button-proyectos:hover {
     transition: all .4s;
     background-color: #EF7A2C;
-    border: 1px solid #000;
+    border: 1px solid #ffa263;
 }
 
 .icon-arrow-down {
@@ -291,14 +307,14 @@ h6 {
 .proyectos {
     position: relative;
     width: 100%;
-    background: linear-gradient(90deg, rgba(241,241,241,1) 0%, rgba(154,236,236,1) 50%, rgba(241,241,241,1) 100%);
+    background: linear-gradient(90deg, rgba(241, 241, 241, 1) 0%, rgba(154, 236, 236, 1) 50%, rgba(241, 241, 241, 1) 100%);
 }
 
 h2 {
     margin: 0 auto;
     text-align: center;
     font-family: Bahnschrift;
-    font-size: 1.4  em;
+    font-size: 1.4 em;
     letter-spacing: 1px;
     color: #000;
 }
@@ -307,8 +323,10 @@ h2 {
     margin: 0 1.5em;
     position: relative;
     width: 23em;
+    height: 38em;
     background: #fff;
     border-radius: 3px;
+    border: 1px solid lightgray;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, .2);
 }
 
@@ -319,15 +337,16 @@ h2 {
 
 .screenshot {
     width: 100%;
-    height: 250px;
+    height: 14em;
     border-radius: 3px 3px 0 0;
+    border-bottom: 1px solid lightgray;
 }
 
 h3 {
     font-family: Bahnschrift;
     letter-spacing: 2px;
     font-size: 1.3em;
-}   
+}
 
 .separator {
     margin: 1em 0 0.5em 0;
@@ -338,6 +357,7 @@ h3 {
 
 .app-description {
     margin: 0.5em 0 1.5em 0;
+    height: 12em;
     font-family: Georgia;
     font-size: 0.9em;
     text-align: justify;
@@ -372,12 +392,12 @@ h3 {
     margin-right: 5em;
     border-radius: 50%;
     width: 15.6em;
-    height: 15.6em;      
+    height: 15.6em;
     box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, .2);
 }
 
 .conocimientos {
-    background: linear-gradient(90deg, rgba(219,241,236,1) 0%, rgba(180,243,223,1) 50%, rgba(219,241,236,1) 100%);
+    background: linear-gradient(90deg, rgba(219, 241, 236, 1) 0%, rgba(180, 243, 223, 1) 50%, rgba(219, 241, 236, 1) 100%);
 }
 
 .stack {
@@ -446,15 +466,23 @@ footer {
     background: #000;
 }
 
-footer * {
-    display: block;
-    margin-top: 1rem;
-    color: #fff;
-    font-size: 1rem;
-}
-
 footer hr {
     opacity: .3;
+}
+
+footer .wrapper {
+    width: 25%;
+}
+
+footer p {
+    margin: 0.5em 0;
+    font-family: Georgia, 'sans-serif';
+    font-size: 0.9em;
+    color: #fff;
+}
+
+footer .container:first-child p {
+    cursor: pointer;
 }
 
 .floating-menu {
@@ -488,7 +516,7 @@ footer hr {
     .menu {
         display: none;
     }
-    .menu-mobile {
+    .burger {
         display: block;
         margin: auto 0;
     }
@@ -505,7 +533,7 @@ footer hr {
         width: 20em;
         font-size: 0.9em;
     }
-    #button-proyectos {
+    .button-proyectos {
         margin-top: 3em;
     }
     .floating-menu {
@@ -558,7 +586,13 @@ footer hr {
 }
 
 @keyframes MoveDown {
-    0% {  margin-top: 0; }
-    50% { margin-top: 20%; }
-    100% { margin-top: 0; }
+    0% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 20%;
+    }
+    100% {
+        margin-top: 0;
+    }
 }

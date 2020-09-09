@@ -15,40 +15,53 @@
             <img src="./img/background_1080.jpg" alt="" class="background-img">
             <div class="color-layer"></div>
         </div>
-        <div class="wrapper fc">
-            <header class="fr">
+        <header class="header fr">
+            <div class="wrapper fr">
                 <div class="logo fr">
                     <img src="./img/logo.svg" alt="logo" class="logo-img">
                     <p>jpmsoftware</p>
                 </div>
                 <nav class="menu fr">
-                    <li class="menu-item"><a href="javascript:void(0)">HOME</a></li>
+                    <li class="menu-item"><a href="javascript:void(0)" id="home">HOME</a></li>
                     <hr class="line-vertical">
-                    <li class="menu-item"><a href="javascript:void(0)">PROYECTOS</a></li>
+                    <li class="menu-item"><a href="javascript:void(0)" id="proyectos">PROYECTOS</a></li>
                     <hr class="line-vertical">
-                    <li class="menu-item"><a href="javascript:void(0)">ACERCA</a></li>
+                    <li class="menu-item"><a href="javascript:void(0)" id="acerca">ACERCA</a></li>
                     <hr class="line-vertical">
-                    <li class="menu-item"><a href="javascript:void(0)">CONTACTO</a></li>
+                    <li class="menu-item"><a href="javascript:void(0)" id="contacto">CONTACTO</a></li>
                     <a href="https://github.com/jpmsoftware" target="_blank">
                         <img src="./img/icon-github.svg" alt="github" class="icon-github"></a>
                 </nav>
-                <div class="menu-mobile">
+                <div class="burger">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-            </header>
-            <div class="container text-center">
-                <h1>Juan Pablo Miranda</h1>
-                <hr class="line-horizontal gray">
-                <p class="text">
-                    Soy un desarrollador de Montevideo, Uruguay. Estoy enfocado en el desarrollo web
-                    y actualmente me encuentro en busca de mi primer experiencia laboral en TI
-                </p>
-                <a id="button-proyectos" href="javascript:void(0)">VER PROYECTOS</a>
-                <img src="./img/icon-arrow-down.svg" alt="" class="icon-arrow-down">
             </div>
-        </div>
+            <nav class="menu-mobile fr">
+                <li class="menu-item"><a href="javascript:void(0)" id="home">HOME</a></li>
+                <hr class="line-vertical">
+                <li class="menu-item"><a href="javascript:void(0)" id="proyectos">PROYECTOS</a></li>
+                <hr class="line-vertical">
+                <li class="menu-item"><a href="javascript:void(0)" id="acerca">ACERCA</a></li>
+                <hr class="line-vertical">
+                <li class="menu-item"><a href="javascript:void(0)" id="contacto">CONTACTO</a></li>
+                <a href="https://github.com/jpmsoftware" target="_blank">
+                    <img src="./img/icon-github.svg" alt="github" class="icon-github"></a>
+            </nav>
+        </header>
+            <div class="wrapper fc">
+                <div class="container text-center">
+                    <h1>Juan Pablo Miranda</h1>
+                    <hr class="line-horizontal gray">
+                    <p class="text">
+                        Soy un desarrollador de Montevideo, Uruguay. Estoy enfocado en el desarrollo web
+                        y actualmente me encuentro en busca de mi primer experiencia laboral en TI
+                    </p>
+                    <a class="button-proyectos" id="proyectos" href="javascript:void(0)">VER PROYECTOS</a>
+                    <img src="./img/icon-arrow-down.svg" alt="" class="icon-arrow-down">
+                </div>
+            </div>
     </section>
 
     <section class="proyectos">
@@ -59,15 +72,15 @@
                 <div class="card fc">
                     <img src="./img/screenshot_1.jpg" alt="screenshot" class="screenshot">
                     <div class="container fc">
-                        <h3>EVERGREEN</h3>
+                        <h3>EVERGREEN STORE</h3>
                         <hr class="separator">
                         <p class="app-description">
                             Sitio web de E-Commerce para tienda de productos veganos<br>
-                            Contiene módulo para la gestión de inventario, base de datos propia
-                            en My SQL y app móvil para el apoyo logístico
+                            Si bien se presenta sólo el sitio web, originalmente contiene módulo para la gestión de 
+                            inventario, backend y base de datos en My SQL
                         </p>
                         <div class="button-container fr">
-                            <a href="https://naughty-mahavira-ce237a.netlify.app/" target="_blank" class="button">VER
+                            <a href="https://evergreenstore.live" target="_blank" class="button">VER
                                 DEMO</a>
                             <a href="https://github.com/jpmsoftware/vegan-store-web" target="_blank" class="button">VER
                                 CÓDIGO</a>
@@ -75,37 +88,36 @@
                     </div>
                 </div>
                 <div class="card fc">
-                    <img src="./img/screenshot_1.jpg" alt="screenshot" class="screenshot">
+                    <img src="./img/screenshot_2.jpg" alt="screenshot" class="screenshot">
                     <div class="container fc">
-                        <h3>EVERGREEN</h3>
+                        <h3>URUNOMICS</h3>
                         <hr class="separator">
                         <p class="app-description">
-                            Plataforma web de E-Commerce para tienda de productos veganos
-                            Contiene módulo para la gestión de inventario, base de datos propia
-                            en My SQL y app móvil para el apoyo logístico
+                            Sitio que muestra los principales indicadores macroeconómicos del Uruguay.
+                            <br><br>Utiliza: HTML, CSS, Javascript, Chart JS, JSON
                         </p>
                         <div class="button-container fr">
-                            <a href="https://naughty-mahavira-ce237a.netlify.app/" target="_blank" class="button">VER
+                            <a href="https://www.urunomics.com" target="_blank" class="button">VER
                                 DEMO</a>
-                            <a href="https://github.com/jpmsoftware/vegan-store-web" target="_blank" class="button">VER
+                            <a href="https://github.com/jpmsoftware/urunomics" target="_blank" class="button">VER
                                 CÓDIGO</a>
                         </div>
                     </div>
                 </div>
                 <div class="card fc">
-                    <img src="./img/screenshot_1.jpg" alt="screenshot" class="screenshot">
+                    <img src="./img/screenshot_3.jpg" alt="screenshot" class="screenshot">
                     <div class="container fc">
-                        <h3>EVERGREEN</h3>
+                        <h3>UY - NEWS</h3>
                         <hr class="separator">
                         <p class="app-description">
-                            Plataforma web de E-Commerce para tienda de productos veganos
-                            Contiene módulo para la gestión de inventario, base de datos propia
-                            en My SQL y app móvil para el apoyo logístico
+                            Recoge los titulares de los principales diarios de Uruguay.
+                            <br>Implementa la API SerpWow que permite realizar búsquedas personalizadas y posteriormente 
+                            muestra los resultados
                         </p>
                         <div class="button-container fr">
-                            <a href="https://naughty-mahavira-ce237a.netlify.app/" target="_blank" class="button">VER
+                            <a href="https://www.uy-news.tech" target="_blank" class="button">VER
                                 DEMO</a>
-                            <a href="https://github.com/jpmsoftware/vegan-store-web" target="_blank" class="button">VER
+                            <a href="https://github.com/jpmsoftware/uy-news" target="_blank" class="button">VER
                                 CÓDIGO</a>
                         </div>
                     </div>
@@ -186,17 +198,16 @@
     <footer>
         <div class="wrapper fr">
             <div class="container fc">
-                <p>HOME</p>
-                <p>PROYECTOS</p>
-                <p>ACERCA</p>
-                <p>CONTACTO</p>
+                <p id="home">> &nbsp HOME</p>
+                <p id="proyectos">> &nbsp PROYECTOS</p>
+                <p id="acerca">> &nbsp ACERCA</p>
+                <p id="contacto">> &nbsp CONTACTO</p>
             </div>
             <hr>
             <div class="container fc">
                 <p>Año 2020</p>
                 <p>www.jpmsoftware.com</p>
                 <p>Montevideo, Uruguay</p>
-                <p><a href="http://www.github.com/jpmsoftware" target="_blank">GitHub Page</a></p>
             </div>
         </div>
     </footer>
