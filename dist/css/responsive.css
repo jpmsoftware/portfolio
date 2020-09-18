@@ -1,0 +1,72 @@
+@media only screen and (max-width: 960px) {
+    .wrapper {
+        width: 90%;
+    }
+    .home {
+        height: 640px;
+    }
+    .home .container {
+        margin-top: 0em;
+    }
+    .menu {
+        display: none;
+    }
+    .burger {
+        display: block;
+        margin: auto 0;
+    }
+    h1 {
+        margin: 0 auto;
+        width: 85%;
+        font-size: 1.8em;
+    }
+    .line-horizontal {
+        margin: 0.5em auto 2em auto;
+    }
+    .text {
+        margin: 0 auto;
+        width: 20em;
+        font-size: 0.9em;
+    }
+    .button-proyectos {
+        margin-top: 3em;
+    }
+    .floating-menu {
+        visibility: hidden;
+    }
+    .proyectos .container {
+        flex-direction: column;
+    }
+    .card {
+        margin: 1em 0;
+        width: 20.5em;
+    }
+    .button {
+        width: 8em;
+        font-size: 0.9em;
+    }
+    .acerca .container {
+        flex-direction: column;
+    }
+    .acerca .text {
+        margin-top: 3em;
+        text-align: justify;
+    }
+    .profile-img {
+        margin: 0 auto;
+    }
+    .conocimientos .container {
+        flex-direction: column;
+    }
+    .stack {
+        margin: 2em 0;
+        width: 17em;
+        height: 15em;
+    }
+    .icon-github {
+        display: none;
+    }
+    .form-contacto {
+        width: 85%;
+    }
+}

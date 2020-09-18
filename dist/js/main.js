@@ -8,7 +8,7 @@ const footer = document.querySelector('footer');
 const floatingMenu = document.querySelector('.floating-menu');
 var sections = {};
 
-// Events Handler
+// Events Handlers
 menu.addEventListener('click', (e) => { MenuScroll(e) })
 menuMobile.addEventListener('click', (e) => { MenuScroll(e) })
 btnProyectos.addEventListener('click', (e) => { MenuScroll(e) });
