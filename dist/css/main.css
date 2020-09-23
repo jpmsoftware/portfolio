@@ -247,6 +247,7 @@ h1 {
     font-size: 1em;
     letter-spacing: 1px;
     width: 52em;
+    text-align: center;
 }
 
 .dark {

@@ -69,4 +69,10 @@
     .form-contacto {
         width: 85%;
     }
+    footer .wrapper {
+        width: 80%;
+    }
+    footer p {
+        font-size: 0.8em;
+    }
 }
