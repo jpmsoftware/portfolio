@@ -13,6 +13,11 @@
     src: url('../fonts/Georgia-regular.ttf');
 }
 
+@font-face {
+    font-family: Century;
+    src: url('../fonts/Century.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -68,7 +73,7 @@ body {
     position: relative;
     justify-content: space-between;
     width: 100%;
-    padding: 0.3em 0;
+    padding: 0.7em 0;
 }
 
 .sticky {
@@ -101,6 +106,10 @@ body {
 .background img {
     width: 100%;
     height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .color-layer {
@@ -136,7 +145,6 @@ body {
 
 .logo > div {
     margin: auto 0;
-    height: 50%;
 }
 
 .logo p {
@@ -185,19 +193,10 @@ body {
     transform: rotate(90deg);
 }
 
-.line-vertical {
-    margin: auto 0;
-    width: 2px;
-    height: 1.1em;
-    background: #fff;
-    border: none;
-    outline: none;
-}
-
 .icon-github {
     margin-left: 1.5em;
     cursor: pointer;
-    width: 1.7em;
+    width: 1.4em;
 }
 
 .menu-item {
@@ -239,21 +238,21 @@ body {
 h1 {
     display: block;
     text-align: center;
-    font-family: Candara;
-    font-size: 3.7em;
-    letter-spacing: 6px;
+    font-family: Century;
+    font-size: 2.8em;
+    font-weight: 100;
+    letter-spacing: 4px;
 }
 
 .line-horizontal {
-    margin: 0.5em auto 4em auto;
-    width: 6.6em;
-    border: 1px solid #F8F0EB;
-    opacity: .3;
+    margin: 1em auto 3em auto;
+    width: 5.5em;
+    border: 2px solid #E8B62E;
     outline: none;
 }
 
 .gray {
-    border: 1px solid gray;
+    opacity: .1;
 }
 
 .text {
@@ -289,30 +288,29 @@ h4 {
     letter-spacing: 1px;
 }
 
-.button-proyectos {
-    display: block;
-    margin: 4rem auto 0 auto;
-    width: 13.7em;
-    line-height: 3.8em;
-    text-align: center;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 0.9em;
-    font-family: Candara-bold;
-    letter-spacing: 1px;
-}
-
-.button-proyectos:hover {
-    transition: all .4s;
-    background-color: #EF7A2C;
-    border: 1px solid #ffa263;
-}
-
 .icon-arrow-down {
     margin-top: 4em;
     width: 6em;
     opacity: .8;
+}
+
+.apt {
+    margin: 11em auto 0 auto;
+    width: 45%;
+    border: 1px solid #fff;
+    justify-content: space-between;
+}
+
+.item p:first-child {
+    font-size: 2em;
+    color: #E8B62E;
+}
+
+.item p:last-child {
+    font-family: Constantia;
+    font-style: italic;
+    margin: auto 0 auto 1em;
+    color: #474B75;
 }
 
 h6 {
@@ -326,15 +324,16 @@ h6 {
 .proyectos {
     position: relative;
     width: 100%;
-    background: linear-gradient(90deg, rgba(241, 241, 241, 1) 0%, rgba(154, 236, 236, 1) 50%, rgba(241, 241, 241, 1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 1%, rgba(0,3,33,0.08167016806722693) 50%, rgba(255,255,255,1) 100%);
 }
 
 h2 {
     margin: 0 auto;
     text-align: center;
-    font-family: Bahnschrift;
-    font-size: 1.4 em;
-    letter-spacing: 1px;
+    font-family: Constantia;
+    font-weight: 100;
+    font-size: 2.1em;
+    letter-spacing: 2px;
     color: #000;
 }
 
@@ -365,13 +364,8 @@ h3 {
     font-family: Bahnschrift;
     letter-spacing: 2px;
     font-size: 1.3em;
-}
+    color: #050B44;
 
-.separator {
-    margin: 1em 0 0.5em 0;
-    width: 2.5em;
-    border: 3px solid #EF7A2C;
-    opacity: .75;
 }
 
 .app-description {
@@ -416,7 +410,7 @@ h3 {
 }
 
 .conocimientos {
-    background: linear-gradient(90deg, rgba(219, 241, 236, 1) 0%, rgba(180, 243, 223, 1) 50%, rgba(219, 241, 236, 1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 1%, rgba(0,3,33,0.08167016806722693) 50%, rgba(255,255,255,1) 100%);
 }
 
 .stack {
