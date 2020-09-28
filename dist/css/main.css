@@ -68,7 +68,7 @@ body {
     position: relative;
     justify-content: space-between;
     width: 100%;
-    padding: 2rem 0;
+    padding: 0.3em 0;
 }
 
 .sticky {
@@ -95,7 +95,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 75%;
 }
 
 .background img {
@@ -109,14 +109,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(12, 6, 27);
-    opacity: .9;
+    background-color: #000321;
+    opacity: .85;
 }
 
 .wrapper {
     margin: 0 auto;
     position: relative;
-    width: 70%;
+    width: 75%;
     justify-content: space-between;
 }
 
@@ -126,17 +126,32 @@ body {
     cursor: pointer;
 }
 
+.symbol {
+    width: 4.5em;
+}
+
 .logo-img {
-    width: 4em;
+    font-size: 5em;
+}
+
+.logo > div {
+    margin: auto 0;
+    height: 50%;
 }
 
 .logo p {
-    margin: auto 0;
-    height: 100%;
-    margin-left: 1rem;
+    margin: auto 0 auto 0.5em;
     color: #fff;
-    font-size: 1.25rem;
+    font-family: Constantia, italic, 'sans-serif';
+    font-size: 1.3em;
+    font-style: italic;
     letter-spacing: 1px;
+}
+
+.underline {
+    margin: 0.2em auto 0 auto;
+    width: 3em;
+    border: 1px solid #E8B62E;
 }
 
 .menu {
@@ -180,13 +195,13 @@ body {
 }
 
 .icon-github {
+    margin-left: 1.5em;
     cursor: pointer;
     width: 1.7em;
 }
 
 .menu-item {
-    margin: auto 0;
-    width: 8rem;
+    margin: auto 2.2em;
     text-align: center;
 }
 
@@ -194,12 +209,12 @@ body {
     font-family: Candara-bold;
     font-size: 0.9em;
     letter-spacing: 1px;
+    padding-bottom: 0.5em;
     color: #fff;
-    transition: all .4s;
 }
 
 .menu-item:hover a {
-    color: #EF7A2C;
+    border-bottom: 3px solid #EF7A2C;
 }
 
 .burger {
@@ -224,7 +239,7 @@ body {
 h1 {
     display: block;
     text-align: center;
-    font-family: Bahnschrift;
+    font-family: Candara;
     font-size: 3.7em;
     letter-spacing: 6px;
 }
@@ -232,7 +247,8 @@ h1 {
 .line-horizontal {
     margin: 0.5em auto 4em auto;
     width: 6.6em;
-    border: 1px solid #EF7A2C;
+    border: 1px solid #F8F0EB;
+    opacity: .3;
     outline: none;
 }
 
@@ -242,11 +258,12 @@ h1 {
 
 .text {
     color: #fff;
+    opacity: .8;
     line-height: 1.9em;
-    font-family: Georgia;
+    font-family: Candara;
     font-size: 1em;
-    letter-spacing: 1px;
-    width: 52em;
+    letter-spacing: 2px;
+    width: 36em;
     text-align: center;
 }
 
@@ -293,8 +310,9 @@ h4 {
 }
 
 .icon-arrow-down {
+    margin-top: 4em;
     width: 6em;
-    animation: MoveDown 3s infinite;
+    opacity: .8;
 }
 
 h6 {

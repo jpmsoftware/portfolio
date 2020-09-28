@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130" height="130" viewBox="0 0 130 130">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="110" viewBox="0 0 110 110">
   <defs>
-    <filter id="Ellipse_20" x="0" y="0" width="130" height="130" filterUnits="userSpaceOnUse">
+    <filter id="Ellipse_20" x="0" y="0" width="110" height="110" filterUnits="userSpaceOnUse">
       <feOffset input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="10" result="blur"/>
       <feFlood flood-color="#979797"/>
@@ -9,20 +9,14 @@
     </filter>
   </defs>
   <g id="icon-arrow-down" transform="translate(-185 -2333)">
-    <g id="Group_29" data-name="Group 29">
-      <g transform="matrix(1, 0, 0, 1, 185, 2333)" filter="url(#Ellipse_20)">
-        <g id="Ellipse_20-2" data-name="Ellipse 20" transform="translate(30 30)" fill="none" stroke="#fff" stroke-width="2">
-          <circle cx="35" cy="35" r="35" stroke="none"/>
-          <circle cx="35" cy="35" r="34" fill="none"/>
-        </g>
-      </g>
-      <g id="Group_20" data-name="Group 20" transform="translate(0 3)">
-        <g id="icon-arrow-down-2" data-name="icon-arrow-down" transform="translate(250.316 2377.275)">
-          <line id="Line_47" data-name="Line 47" y2="34.253" transform="translate(0)" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
-        </g>
-        <path id="Path_16" data-name="Path 16" d="M11.98,11.793,8.985,8.845,0,0" transform="translate(238.52 2400.707)" fill="none" stroke="#fff" stroke-width="2"/>
-        <path id="Path_17" data-name="Path 17" d="M0,10.875,3.184,7.816,11.321,0" transform="translate(250.054 2401.625)" fill="none" stroke="#fff" stroke-width="2"/>
+    <g transform="matrix(1, 0, 0, 1, 185, 2333)" filter="url(#Ellipse_20)">
+      <g id="Ellipse_20-2" data-name="Ellipse 20" transform="translate(30 30)" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2">
+        <circle cx="25" cy="25" r="25" stroke="none"/>
+        <circle cx="25" cy="25" r="24" fill="none"/>
       </g>
     </g>
+    <line id="Line_47" data-name="Line 47" y2="29.093" transform="translate(240.338 2372.5)" stroke="rgba(255,255,255,0.8)" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="Path_16" data-name="Path 16" d="M10.392,10.23l-2.6-2.557L0,0" transform="translate(230.13 2392.335)" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2"/>
+    <path id="Path_17" data-name="Path 17" d="M0,10.23,2.995,7.353,10.649,0" transform="translate(240.077 2392.335)" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2"/>
   </g>
 </svg>
