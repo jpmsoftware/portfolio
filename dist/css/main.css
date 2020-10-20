@@ -247,7 +247,7 @@ h1 {
 .line-horizontal {
     margin: 1em auto 3em auto;
     width: 5.5em;
-    border: 2px solid #E8B62E;
+    border: 1px solid #E8B62E;
     outline: none;
 }
 
@@ -451,11 +451,15 @@ h3 {
 .form-contacto {
     position: relative;
     margin: 4em auto;
-    width: 50%;
+    width: 40%;
 }
 
 #msg {
-    font-family: Georgia, 'sans-serif';
+    font-family: Constantia, 'sans-serif';
+    font-size: 0.9em;
+    color: #474B75;
+    opacity: .8;
+    letter-spacing: 1px;
 }
 
 .send {
@@ -469,7 +473,7 @@ h3 {
     border: none;
     padding: 0.5em;
     font-family: Georgia;
-    border-bottom: 1px solid #EF7A2C;
+    border-bottom: 1px solid #cdcdd4;
     outline: none;
     resize: none;
 }
