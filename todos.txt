@@ -1,1 +1,3 @@
-- fuente tarda mucho en renderizarse, en carga de la página
+- responsive
+- code cleanup
+- sticky nav-bar too agressive

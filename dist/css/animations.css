@@ -9,12 +9,12 @@
 
 @keyframes MoveDown {
     0% {
-        margin-top: 0;
+        margin-top: 6rem;
     }
     50% {
-        margin-top: 15%;
+        margin-top: 15rem
     }
     100% {
-        margin-top: 0;
+        margin-top: 6rem;
     }
 }

@@ -1,18 +1,15 @@
 // Get DOM elements
+const header = document.querySelector('header');
 const menu = document.querySelector('.menu');
 const menuMobile = document.querySelector('.menu-mobile');
-const btnProyectos = document.querySelector('.button-proyectos');
 const burger = document.querySelector('.burger');
 const btnEnviar = document.querySelector('#enviar');
 const footer = document.querySelector('footer');
-const floatingMenu = document.querySelector('.floating-menu');
 var sections = {};
 
 // Events Handlers
 menu.addEventListener('click', (e) => { MenuScroll(e) })
 menuMobile.addEventListener('click', (e) => { MenuScroll(e) })
-btnProyectos.addEventListener('click', (e) => { MenuScroll(e) });
-floatingMenu.addEventListener('click', (e) => { MenuScroll(e); })
 footer.addEventListener('click', (e) => { MenuScroll(e); })
 
 // Get sections coordinates
@@ -26,10 +23,12 @@ window.onload = () => {
 }
 
 window.onscroll = () => {
-    if (window.scrollY > sections.proyectos - 200) {
-        floatingMenu.style.display = 'flex';
+    if(window.pageYOffset > 400) {
+        header.classList.add('sticky');
+        document.querySelector('.symbol').style.width = '3em';
     } else {
-        floatingMenu.style.display = 'none';
+        header.classList.remove('sticky');
+        document.querySelector('.symbol').style.width = '4.5em';
     }
 }
 
