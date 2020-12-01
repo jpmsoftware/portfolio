@@ -1,6 +1,18 @@
 @media only screen and (max-width: 960px) {
+    .symbol {
+        width: 4em;
+    }
+    .logo p {
+        font-size: 1em;
+    }
     .wrapper {
         width: 90%;
+    }
+    .background-img {
+        background-image: url('../img/background_mobile.jpg');;
+    }
+    body {
+        width: 100%;
     }
     .home {
         height: 640px;
@@ -16,30 +28,30 @@
         margin: auto 0;
     }
     h1 {
-        margin: 0 auto;
-        width: 85%;
-        font-size: 1.8em;
-    }
-    .line-horizontal {
-        margin: 0.5em auto 2em auto;
+        margin: 3.5em auto 0 auto;
+        width: 90%;
+        font-size: 1.5em;
     }
     .text {
         margin: 0 auto;
-        width: 20em;
-        font-size: 0.9em;
+        width: 90%;
+        font-size: 1em;
     }
-    .button-proyectos {
-        margin-top: 3em;
+    .app-name {
+        font-size: 1em;
     }
-    .floating-menu {
-        visibility: hidden;
+    .app-description {
+        line-height: 1.5em;
     }
     .proyectos .container {
         flex-direction: column;
     }
     .card {
-        margin: 1em 0;
-        width: 20.5em;
+        margin: 2em auto;
+    }
+    .screenshot {
+        width: 20em;
+        height: 16em;
     }
     .button {
         width: 8em;
@@ -48,31 +60,16 @@
     .acerca .container {
         flex-direction: column;
     }
-    .acerca .text {
-        margin-top: 3em;
-        text-align: justify;
-    }
-    .profile-img {
-        margin: 0 auto;
-    }
     .conocimientos .container {
         flex-direction: column;
     }
     .stack {
-        margin: 2em 0;
-        width: 17em;
-        height: 15em;
+        margin: 1em 0;
     }
     .icon-github {
         display: none;
     }
     .form-contacto {
         width: 85%;
-    }
-    footer .wrapper {
-        width: 80%;
-    }
-    footer p {
-        font-size: 0.8em;
     }
 }

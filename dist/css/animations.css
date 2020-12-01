@@ -7,6 +7,11 @@
     }
 }
 
+@keyframes FadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 @keyframes MoveDown {
     0% {
         margin-top: 6rem;
@@ -17,4 +22,9 @@
     100% {
         margin-top: 6rem;
     }
+}
+
+@keyframes SlideDown {
+    0% { margin-top: -50px; }
+    100% { margin-top: 0px; }
 }

@@ -1,19 +1,18 @@
 // Get DOM elements
-const header = document.querySelector('header');
+const floatingHeader = document.querySelector('header').cloneNode(true);
 const menu = document.querySelector('.menu');
-const menuMobile = document.querySelector('.menu-mobile');
-const burger = document.querySelector('.burger');
 const btnEnviar = document.querySelector('#enviar');
-const footer = document.querySelector('footer');
 var sections = {};
 
 // Events Handlers
 menu.addEventListener('click', (e) => { MenuScroll(e) })
-menuMobile.addEventListener('click', (e) => { MenuScroll(e) })
-footer.addEventListener('click', (e) => { MenuScroll(e); })
+floatingHeader.querySelector('.menu').addEventListener('click', (e) => { MenuScroll(e) })
 
 // Get sections coordinates
 window.onload = () => {
+    document.querySelector('body').appendChild(floatingHeader);
+    floatingHeader.classList.add('sticky');
+
     sections = {
         home: document.querySelector('.home').offsetTop,
         proyectos: document.querySelector('.proyectos').offsetTop,
@@ -23,26 +22,19 @@ window.onload = () => {
 }
 
 window.onscroll = () => {
-    if(window.pageYOffset > 400) {
-        header.classList.add('sticky');
-        document.querySelector('.symbol').style.width = '3em';
+    if (window.pageYOffset >= 400) {
+        floatingHeader.style.display = 'flex';
+        floatingHeader.style.height = '4.5em';
+        floatingHeader.style.padding = '0';
+        floatingHeader.querySelector('.symbol').style.width = '3em';
     } else {
-        header.classList.remove('sticky');
-        document.querySelector('.symbol').style.width = '4.5em';
+        floatingHeader.style.display = 'none';
+        floatingHeader.querySelector('.symbol').style.width = '4.5em';
     }
 }
 
-burger.onclick = () => {
-    menuMobile.classList.toggle('visible');
-}
-
 btnEnviar.onclick = () => {
-    const msg = document.querySelector('#msg');
-    msg.innerHTML = 'Gracias por enviar su mensaje';
-    msg.classList.toggle('send');
     window.setTimeout(() => {
-        msg.innerHTML = 'Envíame tu mensaje y te responderé a la brevedad';
-        msg.classList.toggle('send');
         const forms = document.querySelectorAll('#form-name, #form-email, #form-msg');
         forms.forEach((element) => {
             element.value = '';
@@ -57,15 +49,15 @@ function MenuScroll(e) {
             break;
 
         case 'proyectos':
-            window.scrollTo(0, sections.proyectos);
+            window.scrollTo(0, sections.proyectos - 48);
             break;
 
         case 'acerca':
-            window.scrollTo(0, sections.acerca);
+            window.scrollTo(0, sections.acerca - 48);
             break;
 
         case 'contacto':
-            window.scrollTo(0, sections.contacto);
+            window.scrollTo(0, sections.contacto - 48);
             break;
     }
 }

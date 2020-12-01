@@ -1,16 +1,18 @@
+:root {
+    --darkest-blue: #000321;
+    --dark-blue: #050B44;
+    --orange: #E8B62E;
+    --background-5percent: rgba(5, 11, 68, .05);
+}
+
 @font-face {
-    font-family: Bahnschrift;
-    src: local('../fonts/Bahnschrift.ttf');
+    font-family: Candara-regular;
+    src: url('../fonts/Candara-regular.ttf');
 }
 
 @font-face {
     font-family: Candara-bold;
     src: url('../fonts/Candara-bold.ttf');
-}
-
-@font-face {
-    font-family: Georgia;
-    src: url('../fonts/Georgia-regular.ttf');
 }
 
 @font-face {
@@ -31,7 +33,7 @@ h1, h4, hr, span {
 }
 
 .proyectos, .acerca, .conocimientos, .contacto {
-    padding: 3em 0 4em 0;
+    padding: 5em 0 10em 0;
 }
 
 .fr {
@@ -42,6 +44,12 @@ h1, h4, hr, span {
 .fc {
     display: flex;
     flex-direction: column;
+}
+
+.underline {
+    margin: 2em auto;
+    width: 4em;
+    opacity: .2;
 }
 
 .center-v {
@@ -66,7 +74,7 @@ html {
 body {
     position: relative;
     width: 100%;
-    z-index: 1;
+    z-index: 0;
 }
 
 .header {
@@ -78,11 +86,14 @@ body {
 }
 
 .sticky {
+    display: none;
     position: fixed;
     top: 0;
-    background: #474B75;
+    left: 0;
+    background: rgb(20, 20, 50);
     padding: 0.5em;
-    animation: FadeIn 1s 1;
+    height: 5em;
+    animation: FadeIn .5s 1, SlideDown .5s 1;
 }
 
 .home {
@@ -106,10 +117,7 @@ body {
 .background img {
     width: 100%;
     height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../img/background_1920.jpg');
 }
 
 .color-layer {
@@ -118,7 +126,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000321;
+    background-color: var(--darkest-blue);
     opacity: .85;
 }
 
@@ -150,47 +158,19 @@ body {
 .logo p {
     margin: auto 0 auto 0.5em;
     color: #fff;
-    font-family: Constantia, italic, 'sans-serif';
+    font-family: Candara-regular;
     font-size: 1.3em;
-    font-style: italic;
     letter-spacing: 1px;
 }
 
-.underline {
+.separator {
     margin: 0.2em auto 0 auto;
     width: 3em;
-    border: 1px solid #E8B62E;
+    border: 1px solid var(--orange);
 }
 
 .menu {
     margin: auto 0;
-}
-
-.menu-mobile {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 2em 0;
-    text-align: center;
-    background: #000;
-    z-index: 2;
-    animation: FadeIn .5s 1;
-}
-
-.visible {
-    display: flex;
-}
-
-.menu-mobile .menu-item {
-    margin: 0 auto;
-}
-
-.menu-mobile hr {
-    margin: 0 auto;
-    transform: rotate(90deg);
 }
 
 .icon-github {
@@ -206,14 +186,14 @@ body {
 
 .menu-item a {
     font-family: Candara-bold;
-    font-size: 0.9em;
+    font-size: 0.8em;
     letter-spacing: 1px;
     padding-bottom: 0.5em;
     color: #fff;
 }
 
 .menu-item:hover a {
-    border-bottom: 3px solid #EF7A2C;
+    border-bottom: 3px solid var(--orange);
 }
 
 .burger {
@@ -247,10 +227,9 @@ h1 {
 }
 
 .line-horizontal {
-    margin: 1em auto 3em auto;
-    width: 5em;
-    border: 1px solid #E8B62E;
-    outline: none;
+    margin: 1em auto 4em auto;
+    width: 3em;
+    border: 1px solid var(--orange);
 }
 
 .gray {
@@ -262,16 +241,14 @@ h1 {
     color: #fff;
     opacity: .8;
     line-height: 1.9em;
-    font-family: Candara;
-    font-size: 1em;
-    letter-spacing: 2px;
+    font-family: Candara-regular;
     max-width: 36em;
     text-align: center;
 }
 
 .dark {
-    color: #050B44;
-    opacity: 1;
+    color: var(--dark-blue);
+    opacity: .7;
     max-width: 50rem;
 }
 
@@ -330,67 +307,78 @@ h6 {
 .proyectos {
     position: relative;
     width: 100%;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 1%, rgba(0,3,33,0.08167016806722693) 50%, rgba(255,255,255,1) 100%);
+    background: var(--background-5percent);
 }
 
 h2 {
     margin: 0 auto;
     text-align: center;
-    font-family: Constantia;
+    font-family: Candara;
     font-weight: 100;
-    font-size: 2.1em;
-    letter-spacing: 2px;
+    font-size: 2em;
     color: #000;
 }
 
 .card {
-    margin: 0 2em;
+    margin: 0 1.5em;
     position: relative;
-    width: 23em;
-    height: 35em;
     background: #fff;
-    border: 1px solid lightgray;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, .2);
-}
-
-.card .container {
-    text-align: left;
-    margin: 2em auto;
-    width: 80%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .2);
 }
 
 .screenshot {
-    width: 100%;
-    height: 14em;
-    border-bottom: 1px solid lightgray;
+    width: 27.3em;
+    height: 21.8em;
 }
 
 h3 {
-    font-family: Bahnschrift;
+    font-family: Candara-bold;
     letter-spacing: 2px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #050B44;
 }
 
-.app-description {
-    margin: 1.5em 0 0.5em 0;
-    height: 12em;
-    font-family: Georgia;
-    font-size: 0.9em;
-    text-align: justify;
-    line-height: 1.7em;
-    color: #474B75;
-    letter-spacing: 1px;
+.card .color-layer {
+    display: none;
 }
 
-.button-container {
-    position: relative;
+.app-info {
+    display: none;
+    padding: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    flex-direction: column;
     justify-content: space-between;
+    font-family: Candara-regular;
+}
+
+.card:hover .color-layer {
+    display: block;
+}
+
+.card:hover .app-info {
+    display: flex;
+}
+
+.app-name {
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.app-description {
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.app-info a {
+    color: var(--orange);
 }
 
 .button {
-    width: 10.5em;
-    line-height: 3.3em;
+    padding: 1em 2em;
     background-color: #050B44;
     text-align: center;
     color: #fff;
@@ -402,38 +390,20 @@ h3 {
 }
 
 .button:hover {
-    background-color: #474B75;
-}
-
-.profile-img {
-    margin-right: 5em;
-    border-radius: 50%;
-    width: 15.6em;
-    height: 15.6em;
-    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, .2);
+    background-color: var(--orange);
 }
 
 .conocimientos {
-    background: linear-gradient(90deg, rgba(255,255,255,1) 1%, rgba(0,3,33,0.08167016806722693) 50%, rgba(255,255,255,1) 100%);
+    background: var(--background-5percent);
 }
 
 .stack {
-    width: 19em;
-    height: 16em;
+    margin: 0 5em;
     position: relative;
-    margin: 0rem 1rem;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, .2);
-    color: #000;
 }
 
-.stack .container {
-    margin: 2.5em auto;
-    width: 70%;
-}
-
-.stack .container h3 {
+.stack h3 {
+    text-align: left;
     margin-bottom: 1.5em;
 }
 
@@ -446,11 +416,11 @@ h3 {
 }
 
 .items {
-    margin: 0.3em 0;
+    margin: 1em 0;
     text-align: left;
-    font-family: Georgia;
-    font-size: 1em;
-    color: #474B75;
+    font-family: Candara-regular;
+    color: var(--darkest-blue);
+    opacity: .7;
 }
 
 .form-contacto {
@@ -459,33 +429,19 @@ h3 {
     width: 40%;
 }
 
-#msg {
-    text-align: center;
-    font-family: Constantia, 'sans-serif';
-    font-size: 0.9em;
-    color: #474B75;
-    letter-spacing: 1px;
-}
-
-.send {
-    font-weight: bold;
-    color: green;
-}
-
 #form-name, #form-email, #form-msg {
     margin: 1em auto 3em auto;
     width: 100%;
     border: none;
     padding: 0.5em;
-    font-family: Georgia;
+    font-family: Candara-regular;
     border-bottom: 1px solid rgba(71, 75, 117, .4);
     outline: none;
     resize: none;
 }
 
 ::placeholder {
-    font-family: Georgia;
-    letter-spacing: 1px;
+    font-family: Candara-regular;
     color: rgba(71, 75, 117, .5);
 }
 
@@ -495,31 +451,3 @@ h3 {
     border: none;
     outline: none;
 }
-
-footer {
-    padding: 7rem 0rem;
-    display: block;
-    width: 100%;
-    background: #000321;
-}
-
-footer hr {
-    opacity: .3;
-}
-
-footer .wrapper {
-    width: 25%;
-}
-
-footer p {
-    margin: 0.5em 0;
-    font-family: Candara-bold, 'sans-serif';
-    font-size: 0.9em;
-    color: #fff;
-}
-
-footer .container:first-child p {
-    text-align: left;
-    cursor: pointer;
-}
-

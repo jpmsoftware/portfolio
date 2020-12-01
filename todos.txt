@@ -1,3 +1,0 @@
-- responsive
-- code cleanup
-- sticky nav-bar too agressive
