@@ -1,10 +1,6 @@
-@keyframes FadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+@keyframes FadeIn { 
+    0% { opacity: 0; }
+    100% { opacity: .8; }
 }
 
 @keyframes FadeOut {
@@ -13,15 +9,9 @@
 }
 
 @keyframes MoveDown {
-    0% {
-        margin-top: 6rem;
-    }
-    50% {
-        margin-top: 12rem
-    }
-    100% {
-        margin-top: 6rem;
-    }
+    0% { top: 150%; }
+    50% { top: 220%; }
+    100% { top: 150%; }
 }
 
 @keyframes SlideDown {

@@ -1,9 +1,7 @@
-// Get DOM elements
 const menu = document.querySelector('.menu');
 const btnEnviar = document.querySelector('#enviar');
 var sections = {};
 
-// Events Handlers
 menu.addEventListener('click', (e) => { MenuScroll(e) })
 
 // Get sections coordinates
@@ -33,15 +31,15 @@ function MenuScroll(e) {
             break;
 
         case 'proyectos':
-            window.scrollTo(0, sections.proyectos - 48);
+            window.scrollTo(0, sections.proyectos);
             break;
 
         case 'acerca':
-            window.scrollTo(0, sections.acerca - 48);
+            window.scrollTo(0, sections.acerca);
             break;
 
         case 'contacto':
-            window.scrollTo(0, sections.contacto - 48);
+            window.scrollTo(0, sections.contacto);
             break;
     }
 }
