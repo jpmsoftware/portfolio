@@ -35,26 +35,6 @@ h1, h4, hr, span {
     padding: 5em 0 10em 0;
 }
 
-.contacto {
-    padding: 5em 0 14em 0;
-}
-
-.fr {
-    display: flex;
-    flex-direction: row;
-}
-
-.fc {
-    display: flex;
-    flex-direction: column;
-}
-
-.underline {
-    margin: 2em auto;
-    width: 4em;
-    opacity: .2;
-}
-
 .center-v {
     margin: auto 0;
 }
@@ -78,25 +58,6 @@ body {
     position: relative;
     width: 100%;
     z-index: 0;
-}
-
-.header {
-    position: relative;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0.7em 0;
-    z-index: 1;
-}
-
-.sticky {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgb(20, 20, 50);
-    padding: 0.5em;
-    height: 5em;
-    animation: FadeIn .5s 1, SlideDown .5s 1;
 }
 
 .home {
@@ -137,17 +98,28 @@ body {
     text-align: center;
 }
 
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.7em 0;
+    z-index: 1;
+}
+
 .wrapper {
     margin: 0 auto;
     position: relative;
     width: 75%;
+    display: flex;
     justify-content: space-between;
 }
 
 .logo {
-    position: relative;
-    margin: auto 0;
     cursor: pointer;
+    position: relative;
+    display: flex;
+    margin: auto 0;
 }
 
 .symbol {
@@ -156,6 +128,8 @@ body {
 
 .logo > div {
     margin: auto 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo p {
@@ -174,13 +148,8 @@ body {
 
 .menu {
     margin: auto 0;
+    display: flex;
     list-style-type: none;
-}
-
-.icon-github, .icon-linkedin {
-    margin-left: 1.5em;
-    cursor: pointer;
-    width: 1.4em;
 }
 
 .menu-item {
@@ -200,32 +169,19 @@ body {
     border-bottom: 3px solid var(--orange);
 }
 
-.burger {
-    display: none;
+.icon-github, .icon-linkedin {
+    margin-left: 1.5em;
     cursor: pointer;
-}
-
-.burger div {
-    margin: 0.5rem 0;
-    width: 1.75rem;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 4px;
+    width: 1.4em;
 }
 
 .container {
     margin: 0 auto;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-}
-
-.proyectos .container {
-    width: 80%;
-}
-
-.conocimientos .container, .acerca .container {
-    width: 60%;
 }
 
 h1 {
@@ -238,19 +194,10 @@ h1 {
     letter-spacing: 4px;
 }
 
-.line-horizontal {
-    margin: 1em auto 4em auto;
-    width: 3em;
-    border: 1px solid var(--orange);
-}
-
-.card .line-horizontal {
-    margin: 0 auto;
-}
-
-.gray {
-    color: black;
-    opacity: .5;
+.underline {
+    margin: 2em auto;
+    width: 4em;
+    opacity: .2;
 }
 
 .text {
@@ -263,22 +210,6 @@ h1 {
     text-align: center;
 }
 
-.dark {
-    color: var(--dark-blue);
-    opacity: .7;
-    max-width: 50rem;
-}
-
-#presentation {
-    margin: 1rem auto 1rem auto;
-    width: 50%;
-    display: block;
-    line-height: 2.25rem;
-    font-size: 17px;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
 .icon-arrow-down {
     position: absolute;
     left: 50%;
@@ -286,33 +217,6 @@ h1 {
     width: 6em;
     opacity: .8;
     animation: MoveDown 3s infinite;
-}
-
-.apt {
-    margin: 11em auto 0 auto;
-    width: 45%;
-    border: 1px solid #fff;
-    justify-content: space-between;
-}
-
-.item p:first-child {
-    font-size: 2em;
-    color: #E8B62E;
-}
-
-.item p:last-child {
-    font-family: Constantia;
-    font-style: italic;
-    margin: auto 0 auto 1em;
-    color: #474B75;
-}
-
-h6 {
-    margin: 1rem 0 0.5rem 0;
-    font-size: 1.25rem;
-    color: #20436E;
-    text-align: center;
-    margin-bottom: 0.5rem;
 }
 
 .proyectos {
@@ -330,6 +234,17 @@ h2 {
     color: #000;
 }
 
+.line-horizontal {
+    margin: 1em auto 4em auto;
+    width: 3em;
+    border: 1px solid var(--orange);
+}
+
+.proyectos .container {
+    flex-direction: row;
+    width: 80%;
+}
+
 .card {
     margin: 0 2em;
     position: relative;
@@ -340,20 +255,13 @@ h2 {
     font-family: 'Candara-regular', sans-serif;
 }
 
-.card, .screenshot, .color-layer {
-    border-radius: 8px;
-}
-
 .screenshot {
     width: 100%;
     height: 100%;
 }
 
-h3 {
-    font-family: Candara-bold;
-    letter-spacing: 2px;
-    font-size: 1.5em;
-    color: #050B44;
+.card, .screenshot, .color-layer {
+    border-radius: 8px;
 }
 
 .card .color-layer {
@@ -372,6 +280,15 @@ h3 {
     color: #fff;
     font-size: 1.5em;
     animation: FadeIn .7s 1;
+}
+
+.card .line-horizontal {
+    margin: 0 auto;
+}
+
+.gray {
+    color: black;
+    opacity: .5;
 }
 
 .app-description {
@@ -399,20 +316,15 @@ h3 {
     padding-left: 3em;
 }
 
-.button {
-    padding: 1em 2em;
-    background-color: #050B44;
-    text-align: center;
-    color: #fff;
-    font-family: Candara-bold;
-    font-size: 0.8em;
-    letter-spacing: 1px;
-    transition: all .4s;
-    border-radius: 2px;
+.acerca .container, .conocimientos .container {
+    margin-top: 5em;
+    flex-direction: row;
+    width: 60%;
 }
 
-.button:hover {
-    background-color: var(--orange);
+.dark {
+    color: var(--dark-blue);
+    max-width: 50rem;
 }
 
 .conocimientos {
@@ -420,25 +332,44 @@ h3 {
 }
 
 .stack {
-    width: 325px;
     margin: 0 2em;
     position: relative;
+    width: 325px;
     border-radius: 5px;
-    padding: 3em 6em;
-    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, .2);
+    padding: 3.5em 2em 2.5em 2em;
+    border: 2px solid var(--dark-blue);
 }
 
-.stack h3 {
-    text-align: left;
-    margin-bottom: 1.5em;
-}
-
-.icon-stack {
-    width: 4em;
+.icon {
     position: absolute;
-    top: 0%;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 80px;
+    height: 80px;
+    background: var(--dark-blue);
+    border-radius: 50%;
+}
+
+.icon-image {
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 2.5em;
+    height: 2.5em;
+}
+h3 {
+    margin-bottom: 0.5em;
+    font-family: Candara-bold;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    color: #050B44;
+}
+
+.stack-info {
+    font-family: 'Candara';
+    color: #000;
 }
 
 .items {
@@ -449,9 +380,15 @@ h3 {
     opacity: .7;
 }
 
+.contacto {
+    padding: 5em 0 14em 0;
+}
+
 .form-contacto {
     position: relative;
     margin: 4em auto;
+    display: flex;
+    flex-direction: column;
     width: 35%;
 }
 
@@ -468,12 +405,25 @@ h3 {
 
 ::placeholder {
     font-family: Candara-regular;
-    color: rgba(71, 75, 117, .5);
+    color: rgba(53, 56, 88, 0.5);
 }
 
 .button {
-    cursor: pointer;
+    padding: 1em 2em;
+    background-color: #050B44;
+    text-align: center;
+    color: #fff;
+    font-family: Candara-bold;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    border-radius: 3px;
     align-self: flex-end;
     border: none;
     outline: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    transition: all .4s;
+    background-color: var(--orange);
 }

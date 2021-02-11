@@ -1,31 +1,30 @@
 @media only screen and (max-width: 960px) {
-    .symbol {
-        width: 4em;
-    }
-    .logo p {
-        font-size: 1em;
-    }
-    .wrapper {
-        width: 90%;
-    }
-    .background-img {
-        background-image: url('../img/background_mobile.jpg');;
+    .home {
+        height: 640px;
     }
     body {
         width: 100%;
     }
-    .home {
-        height: 640px;
+    .proyectos, .acerca, .conocimientos, .contacto {
+        padding: 2em 0 4em 0;
+    }
+    .background-img {
+        background-image: url('../img/background_mobile.jpg');
+    }
+    .wrapper {
+        width: 90%;
+    }
+    .symbol {
+        width: 4em;
+    }
+    .logo p {
+        font-size: 1.2em;
+    }
+    .menu-item {
+        display: none;
     }
     .home .container {
         margin-top: 0em;
-    }
-    .menu {
-        display: none;
-    }
-    .burger {
-        display: block;
-        margin: auto 0;
     }
     h1 {
         margin: 3.5em auto 0 auto;
@@ -34,42 +33,60 @@
     }
     .text {
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
         font-size: 1em;
+    }
+    .icon-arrow-down {
+        position: absolute;
+        bottom: -60%;
+        animation: none;
+    }
+    .proyectos .container {
+        flex-direction: column;
+        width: 95%;
+    }
+    .card {
+        margin: 2em auto;
+        width: 20em;
+        height: 16em;
+    }
+    .screenshot {
+        width: 20em;
+        height: 16em;
+    }
+    .color-layer {
+        padding: 2em 2em;
     }
     .app-name {
         font-size: 1em;
     }
     .app-description {
         line-height: 1.5em;
-    }
-    .proyectos .container {
-        flex-direction: column;
-    }
-    .card {
-        margin: 2em auto;
-    }
-    .screenshot {
-        width: 20em;
-        height: 16em;
+        font-size: 0.9em;
     }
     .button {
         width: 8em;
         font-size: 0.9em;
     }
     .acerca .container {
-        flex-direction: column;
+        width: 80%;
     }
     .conocimientos .container {
         flex-direction: column;
+        width: 90%;
     }
     .stack {
-        margin: 1em 0;
+        margin: 2em auto;
+        width: 85%;
     }
-    .icon-github {
-        display: none;
+    .icon {
+        width: 60px;
+        height: 60px;
     }
     .form-contacto {
         width: 85%;
+    }
+    .button {
+        padding: 0.8em 1em;
     }
 }

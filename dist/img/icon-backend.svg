@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="188.3" height="286.668" viewBox="0 0 188.3 286.668">
+  <g id="icon-backend" transform="translate(-338.931 -355.402)">
+    <g id="g6070" transform="translate(338.931 355.402)">
+      <path id="rect5980" d="M10.164-8992.3c-6.955,0-12.553,6.394-12.553,14.334v258c0,7.94,5.6,14.333,12.553,14.333H173.358c6.955,0,12.553-6.393,12.553-14.333v-258c0-7.94-5.6-14.334-12.553-14.334Zm2.092,21.5H171.266v41.955H12.257Zm0,51.509H171.266v40.462H12.257Zm0,50.019H171.266v40.611H12.257Zm0,50.167H171.266v40.462H12.257Zm0,50.02H171.266v41.955H12.257Z" transform="translate(2.389 8992.298)" fill="#fff"/>
+      <g id="g6019" transform="translate(23.291 38.347)">
+        <rect id="rect5988" width="9.556" height="19.111" transform="translate(21.537)" fill="#fff"/>
+        <rect id="rect5990" width="9.556" height="19.111" fill="#fff"/>
+        <rect id="rect5992" width="9.556" height="19.111" transform="translate(43.075)" fill="#fff"/>
+      </g>
+      <g id="g6024" transform="translate(23.291 88.743)">
+        <rect id="rect6026" width="9.556" height="19.111" transform="translate(21.537)" fill="#fff"/>
+        <rect id="rect6028" width="9.556" height="19.111" fill="#fff"/>
+        <rect id="rect6030" width="9.556" height="19.111" transform="translate(43.075)" fill="#fff"/>
+      </g>
+      <g id="g6032" transform="translate(23.291 139.139)">
+        <rect id="rect6034" width="9.556" height="19.111" transform="translate(21.537)" fill="#fff"/>
+        <rect id="rect6036" width="9.556" height="19.111" fill="#fff"/>
+        <rect id="rect6038" width="9.556" height="19.111" transform="translate(43.075)" fill="#fff"/>
+      </g>
+      <g id="g6040" transform="translate(23.291 189.536)">
+        <rect id="rect6042" width="9.556" height="19.111" transform="translate(21.537)" fill="#fff"/>
+        <rect id="rect6044" width="9.556" height="19.111" fill="#fff"/>
+        <rect id="rect6046" width="9.556" height="19.111" transform="translate(43.075)" fill="#fff"/>
+      </g>
+      <g id="g6048" transform="translate(23.291 239.932)">
+        <rect id="rect6050" width="9.556" height="19.111" transform="translate(21.537)" fill="#fff"/>
+        <rect id="rect6052" width="9.556" height="19.111" fill="#fff"/>
+        <rect id="rect6054" width="9.556" height="19.111" transform="translate(43.075)" fill="#fff"/>
+      </g>
+      <rect id="rect6056" width="9.556" height="9.556" transform="translate(138.756 47.778)" fill="#fff"/>
+      <rect id="rect6060" width="9.556" height="9.556" transform="translate(138.756 97.945)" fill="#fff"/>
+      <rect id="rect6064" width="9.556" height="9.556" transform="translate(138.756 198.279)" fill="#fff"/>
+      <rect id="rect6066" width="9.556" height="9.556" transform="translate(137.288 149.067)" fill="#fff"/>
+      <rect id="rect6068" width="9.556" height="9.556" transform="translate(138.756 248.924)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
