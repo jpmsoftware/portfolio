@@ -27,16 +27,19 @@ h1, h4, hr, span {
 }
 
 .proyectos, .acerca, .conocimientos {
-    padding: 5em 0 10em 0;
+    padding: 2.5em 0 10em 0;
 }
 
 html {
     scroll-behavior: smooth;
+    position: relative;
+    height: 100%;
 }
 
 body {
     position: relative;
     width: 100%;
+    height: 100%;
     z-index: 0;
 }
 
@@ -58,10 +61,9 @@ body {
     height: 100%;
 }
 
-.background img {
+.background-img {
     width: 100%;
     height: 100%;
-    background-image: url('../img/background_1920.jpg');
 }
 
 .color-layer {
@@ -70,12 +72,18 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--darkest-blue);
-    opacity: .9;
+    background: var(--darkest-blue);
     flex-direction: column;
     justify-content: space-between;
-    padding: 2em 5em;
+    padding: 2em 4em;
     text-align: center;
+    opacity: .7;
+    z-index: 0;
+}
+
+video {
+    position: absolute;
+    top: 50px;
 }
 
 .header {
@@ -83,7 +91,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0.7em 0;
+    padding: 2em 0;
     z-index: 1;
 }
 
@@ -102,14 +110,8 @@ body {
     margin: auto 0;
 }
 
-.symbol {
-    width: 4.5em;
-}
-
-.logo>div {
-    margin: auto 0;
-    display: flex;
-    flex-direction: column;
+.logo-img {
+    width: 3em;
 }
 
 .logo p {
@@ -122,8 +124,9 @@ body {
 
 .separator {
     margin: 0.2em auto 0 auto;
-    width: 3em;
+    width: 2.5em;
     border: 1px solid var(--orange);
+    border-radius: 2px;
 }
 
 .menu {
@@ -183,8 +186,8 @@ h1 {
 .text {
     margin: 0 auto;
     color: #fff;
-    opacity: .8;
-    line-height: 1.9em;
+    opacity: .9;
+    line-height: 2.2em;
     font-family: Candara-regular;
     max-width: 36em;
     text-align: center;
@@ -194,7 +197,7 @@ h1 {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    width: 6em;
+    width: 2.5em;
     opacity: .8;
     animation: MoveDown 3s infinite;
 }
@@ -211,59 +214,121 @@ h2 {
     font-family: Candara;
     font-weight: 100;
     font-size: 2em;
-    color: #000;
+    color: var(--dark-blue);
+    letter-spacing: 2px;
 }
 
 .line-horizontal {
     margin: 1em auto 4em auto;
     width: 3em;
     border: 1px solid var(--orange);
+    border-radius: 5px;
 }
 
 .proyectos .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row: auto auto;
-    column-gap: 70px;
-    row-gap: 70px;
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .card {
     position: relative;
-    background: #fff;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, .2);
-    width: 32em;
-    height: 22em;
+    margin: 3em auto;
+    width: 1000px;
+    height: 700px;
+    padding: 4em;
     font-family: 'Candara-regular', sans-serif;
+    background: var(--dark-blue);
+    box-shadow: 0px 0px 2px 0px lightgray;
+    border-radius: 10px;
 }
 
-.screenshot {
-    width: 100%;
-    height: 100%;
-}
-
-.card, .screenshot, .color-layer {
-    border-radius: 4px;
-}
-
-.card .color-layer {
-    display: none;
-}
-
-.card:hover .color-layer {
+.card-header {
     display: flex;
+    justify-content: space-between;
 }
 
 .app-name {
-    display: block;
-    font-size: 1em;
+    font-size: 2.5em;
     letter-spacing: 2px;
-    margin: 0 auto;
     color: #fff;
-    font-size: 1.5em;
+}
+
+.links {
+    margin: auto 0;
+}
+
+.links a {
+    margin: 0 .5em;
+    padding: .5em 2em;
+    text-align: center;
+    color: #fff;
+    font-family: Candara-bold;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+
+.links a:hover {
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+.card-content {
+    margin-top: 5em;
+    display: flex;
+}
+
+.app-description {
+    margin-right: 1.5em;
+    text-align: left;
+    color: #fff;
+    opacity: .8;
+    font-size: 1em;
+    line-height: 1.5em;
     animation: FadeIn .7s 1;
+    flex: 1;
+}
+
+.colors {
+    height: 50px;
+    display: flex;
+}
+
+.colors * {
+    margin-right: .5em;
+    border-radius: 4px;
+    width: 80px;
+    height: 40px;
+}
+
+.green {
+    background: #3BB143;
+}
+
+.blue {
+    background: #4A4AFF;
+}
+
+.black {
+    background: #000;
+}
+
+.dark-blue {
+    border: 1px solid lightgray;
+    background: #050B44;
+}
+
+.orange {
+    background: #E8B62E;
+}
+
+.screenshot {
+    width: 500px;
+    height: 300px;
+    flex: 1;
+    border-radius: 3px;
+    background: #fff;
 }
 
 .card .line-horizontal {
@@ -275,42 +340,29 @@ h2 {
     opacity: .5;
 }
 
-.app-description {
-    list-style-type: disc;
-    text-align: left;
-    color: #fff;
-    opacity: .8;
-    font-size: 1em;
-    line-height: 2em;
-    margin-bottom: 2em;
-    animation: FadeIn .7s 1;
-}
-
 .tech {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
+    display: flex;  
+    position: absolute;
+    bottom: 5%;
 }
 
-.tech p {
-    color: var(--orange);
-    border: 1px solid var(--orange);
-    padding: 5px 8px;
-    border-radius: 2px;
+.tech * {
+    margin-right: 1.5em;
+    width: 100px;
+    opacity: .8;
 }
 
 .link {
-    color: var(--orange);
-    padding: 5px 15px;
-    border: 1px solid var(--orange);
-    border-radius: 15px;
-    animation: FadeIn .7s 1;
+    margin: 0 0.5em;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: .5em 1em;
+    border-radius: 2px;
 }
 
 .link:hover {
-    transition: all .3s;
-    padding-right: 3em;
-    padding-left: 3em;
+    border: 1px solid var(--orange);
+    color: var(--orange);
 }
 
 .acerca .container, .conocimientos .container {
@@ -320,7 +372,8 @@ h2 {
 }
 
 .dark {
-    color: var(--dark-blue);
+    color: #000;
+    opacity: .7;
     max-width: 50rem;
 }
 
@@ -370,14 +423,6 @@ h3 {
     color: #000;
 }
 
-.items {
-    margin: 1em 0;
-    text-align: left;
-    font-family: Candara-regular;
-    color: var(--darkest-blue);
-    opacity: .7;
-}
-
 .contacto {
     padding: 5em 0 14em 0;
 }
@@ -396,25 +441,28 @@ h3 {
     border: none;
     padding: 0.5em;
     font-family: Candara-regular;
-    border-bottom: 1px solid rgba(71, 75, 117, .4);
+    font-size: 1em;
+    color: #000;
+    border-bottom: 1px solid lightgray;
     outline: none;
     resize: none;
 }
 
 ::placeholder {
     font-family: Candara-regular;
-    color: rgba(53, 56, 88, 0.5);
+    font-size: 1.2em;
+    color: rgb(124, 124, 124);
 }
 
 .button {
-    padding: 1em 3em;
+    padding: 1.2em 3.5em;
     background-color: #050B44;
     text-align: center;
     color: #fff;
     font-family: Candara-bold;
     font-size: 0.8em;
-    letter-spacing: 1px;
-    border-radius: 20px;
+    letter-spacing: 2px;
+    border-radius: 25px;
     align-self: flex-end;
     border: none;
     outline: none;
@@ -427,7 +475,7 @@ h3 {
 }
 
 .block-scroll {
-    overflow-y: hidden;
+    overflow-y: hidden
 }
 
 .hidden {
@@ -447,31 +495,22 @@ h3 {
 
 .lds-dual-ring {
     position: absolute;
-    top: 8%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
     display: block;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 .lds-dual-ring:after {
+    margin: .5em auto;
     content: " ";
     display: block;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     border: 6px solid var(--orange);
     border-color: var(--orange) transparent var(--orange) transparent;
     animation: lds-dual-ring 1.2s linear infinite;
-}
-
-@keyframes lds-dual-ring {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }

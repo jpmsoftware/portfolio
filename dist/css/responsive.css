@@ -33,20 +33,26 @@
     }
     .text {
         margin: 0 auto;
-        width: 100%;
+        width: 90%;
         font-size: 1em;
+        line-height: 1.8em;
+    }
+    .dark {
+        width: 100%;
+        text-align: justify;
     }
     .icon-arrow-down {
         position: absolute;
-        bottom: -60%;
+        bottom: -50%;
         animation: none;
     }
     .proyectos .container {
-        flex-direction: column;
         width: 95%;
+        grid-template-columns: 1fr;
+        grid-row: auto auto auto auto;
     }
     .card {
-        margin: 2em auto;
+        margin: 0em auto;
         width: 20em;
         height: 16em;
     }
@@ -57,12 +63,22 @@
     .color-layer {
         padding: 2em 2em;
     }
+    .proyectos .color-layer {
+        padding: 1em 0.5em;
+    }
     .app-name {
         font-size: 1em;
     }
     .app-description {
         line-height: 1.5em;
         font-size: 0.9em;
+    }
+    .tech {
+        display: none;
+    }
+    .link {
+        padding: 0.5em 1em;
+        font-size: 0.8em;
     }
     .button {
         width: 8em;

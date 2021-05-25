@@ -2,124 +2,123 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/animations.css">
-    <link rel="icon" href="./img/symbol.png">
-    <title>Desarrollo web full-stack</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="icon" href="./img/logo3.svg" />
+    <title>Juan Pablo Miranda | Full Stack Developer</title>
 </head>
 
 <body>
     <section class="home">
         <div class="background">
-            <img class="background-img">
+            <img src="./img/background_1_m.jpg" class="background-img" />
             <div class="color-layer"></div>
         </div>
         <header class="header">
             <div class="wrapper">
                 <div class="logo">
-                    <img src="./img/symbol.svg" alt="logo-symbol" class="symbol">
-                    <div>
-                        <p>jpmsoftware</p>
-                        <hr class="separator">
-                    </div>
+                    <img src="./img/logo3.svg" alt="logo-symbol" class="logo-img" />
+                    <p>jpmsoftware</p>
                 </div>
                 <nav class="menu">
-                    <li class="menu-item"><a href="javascript:void(0)" id="home">HOME</a></li>
-                    <li class="menu-item"><a href="javascript:void(0)" id="proyectos">PROYECTOS</a></li>
-                    <li class="menu-item"><a href="javascript:void(0)" id="acerca">ACERCA</a></li>
-                    <li class="menu-item"><a href="javascript:void(0)" id="contacto">CONTACTO</a></li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" id="home">HOME</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" id="proyectos">PROYECTOS</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" id="acerca">ACERCA</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0)" id="contacto">CONTACTO</a>
+                    </li>
                     <a href="https://github.com/jpmsoftware" target="_blank"><img src="./img/icon-github.svg"
-                            alt="github" class="icon-github"></a>
+                            alt="github" class="icon-github" /></a>
                     <a href="https://www.linkedin.com/in/juan-pablo-miranda-404257205" target="_blank"><img
-                            src="./img/icon-linkedin.png" alt="linkedin" class="icon-linkedin"></a>
+                            src="./img/icon-linkedin.png" alt="linkedin" class="icon-linkedin" /></a>
                 </nav>
             </div>
         </header>
         <div class="container">
             <h1>Juan Pablo Miranda</h1>
-            <hr class="underline">
+            <hr class="underline" />
             <p class="text">
-                Soy un programador de Montevideo, enfocado en desarrollo web,
-                en busca de mi primer experiencia laboral en TI
+                Soy un programador de Montevideo, actualmente enfocado en desarrollo
+                web.<br />
+                Me gusta trabajar en proyectos originales y desafiantes que requieran
+                del trabajo en equipo y del constante aprendizaje de nuevas
+                herramientas
             </p>
-            <img src="./img/icon-arrow-down.svg" alt="" class="icon-arrow-down">
+            <img src="./img/icon-arrow-down-2.svg" alt="" class="icon-arrow-down" />
         </div>
     </section>
 
     <section class="proyectos">
         <h2>Proyectos</h2>
-        <hr class="line-horizontal">
+        <hr class="line-horizontal" />
         <div class="container">
             <div class="card">
-                <img src="./img/screenshot_1.jpg" alt="screenshot" class="screenshot">
-                <div class="color-layer">
-                    <h4 class="app-name">EVERGREEN ECOMMERCE</h4>
-                    <hr class="line-horizontal gray">
-                    <span>
-                        Sistema completo de E-Commerce para la venta de productos veganos
-                    </span>
-                    <div class="tech">
-                        <p>Node JS</p>
-                        <p>Express</p>
-                        <p>My SQL</p>
-                        <p>GitHub</p>
+                <div class="card-header">
+                    <h4 class="app-name">Evergreen</h4>
+                    <div class="links">
+                        <a href="https://vegan-store-web.herokuapp.com/" target="_blank">> VER DEMO</a>
+                        <a href="https://github.com/jpmsoftware/vegan-store-web" target="_blank">> VER CÓDIGO</a>
                     </div>
-                    <p><a class="link" href="https://vegan-store-web.herokuapp.com/" target="_blank">Ver demo</a></p>
+                </div>
+                <div class="card-content">
+                    <span class="app-description">
+                        Desarrollo de una plataforma de E-Commerce completa y funcional
+                        para la comercialización de productos veganos
+                        <br />
+                        Implementación de base de datos en MySQL para el manejo del
+                        inventario y sus respectivas operaciones CRUD
+                        <br />
+                        Autenticación de usuarios con oAuth<br />
+                        <br /><br />COLORES:
+                        <div class="colors">
+                            <div class="green"></div>
+                            <div class="blue"></div>
+                            <div class="black"></div>
+                        </div>
+                    </span>
+                    <img src="./img/screenshot_1.jpg" alt="screenshot" class="screenshot" />
+                </div>
+                <div class="tech">
+                    <img src="./img/Node.js_logo.svg" alt="" />
+                    <img src="./img/MySQL-Logo.wine.svg" alt="" />
+                    <img src="./img//heroku-logo.svg" alt="" />
                 </div>
             </div>
-            <div class="card">
-                <img src="./img/screenshot_2.jpg" alt="screenshot" class="screenshot">
-                <div class="color-layer">
-                    <h4 class="app-name">URUNOMICS</h4>
-                    <hr class="line-horizontal gray">
-                    <span>
 
-                    </span>
-                    <div class="tech">
-                        <p>Node JS</p>
-                        <p>Express</p>
-                        <p>Chart JS</p>
-                        <p>JSON</p>
-                        <p>GitHub</p>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="app-name">Portfolio</h4>
+                    <div class="links">
+                        <a href="https://www.jpmsoftware.com/" target="_blank">> VER DEMO</a>
+                        <a href="https://github.com/jpmsoftware/Portfolio" target="_blank">> VER CÓDIGO</a>
                     </div>
-                    <p><a class="link" href="https://urunomics.herokuapp.com/" target="_blank">Ver demo</a></p>
                 </div>
-            </div>
-            <div class="card">
-                <img src="./img/screenshot_3.png" alt="screenshot" class="screenshot">
-                <div class="color-layer">
-                    <h4 class="app-name">Dashboard de noticias</h4>
-                    <hr class="line-horizontal gray">
-                    <span>
-
+                <div class="card-content">
+                    <span class="app-description">
+                        Diseño de sitio web estático para la muestra de proyectos
+                        personales <br>Implementación de formulario de contacto de Netlify
+                        <br />
+                        <br /><br />COLORES:
+                        <div class="colors">
+                            <div class="orange"></div>
+                            <div class="dark-blue"></div>
+                        </div>
                     </span>
-                    <div class="tech">
-                        <p>Node JS</p>
-                        <p>Express</p>
-                        <p>SerpWow (API)</p>
-                        <p>GitHub</p>
-                    </div>
-                    <p><a class="link" href="https://uy-news.herokuapp.com/" target="_blank">Ver demo</a></p>
+                    <img src="./img/screenshot_2.jpg" alt="screenshot" class="screenshot" />
                 </div>
-            </div>
-            <div class="card">
-                <img src="" alt="screenshot" class="screenshot">
-                <div class="color-layer">
-                    <h4 class="app-name">Web portfolio</h4>
-                    <hr class="line-horizontal gray">
-                    <span>
-
-                    </span>
-                    <div class="tech">
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>Javascript</p>
-                        <p>GitHub</p>
-                    </div>
-                    <p><a class="link" href="https://uy-news.herokuapp.com/" target="_blank">Ver demo</a></p>
+                <div class="tech">
+                    <img src="./img/HTML5_logo_and_wordmark.svg" alt="" />
+                    <img src="./img/css-logo.svg" alt="" />
+                    <img src="./img/Netlify_logo.svg" alt="" />
                 </div>
             </div>
         </div>
@@ -127,53 +126,63 @@
 
     <section class="acerca">
         <h2>Acerca de mi</h2>
-        <hr class="line-horizontal">
+        <hr class="line-horizontal" />
         <div class="container">
-            <p class="text dark">Conocí la programación siendo muy joven y de inmediato comencé a experimentar y a
-                crear programas muy simples en un viejo entorno de desarrollo llamado Turbo C.<br><br>
-                Años más tarde decidí ir un paso más allá y comencé a formarme de manera autodidacta en el
-                desarrollo web. Decidí que, con el objetivo de tener un panorama más completo, lo mejor era seguir un
-                plan
-                de estudios con un enfoque 'full-stack'
-                <br><br>
-                Actualmente me encuentro en la búsqueda de mi primer experiencia laboral formal en TI y,
-                si bien personalmente he aprendido y utilizado las tecnologías que describo debajo para llevar a cabo
-                mis proyectos
-                personales, cuento con la motivación y la disposición para continuar aprendiendo nuevas tecnologías y
-                trabajar en nuevos desafíos
+            <p class="text dark">
+                Conocí la programación siendo muy joven y de inmediato comencé a
+                experimentar y a crear programas muy simples en un viejo entorno de
+                desarrollo llamado Turbo C.<br /><br />
+                Años más tarde decidí ir un paso más allá y comencé a formarme de
+                manera autodidacta en el desarrollo web. Decidí que, con el objetivo
+                de tener un panorama más completo, lo mejor era seguir un plan de
+                estudios con un enfoque 'full-stack'
+                <br /><br />
+                Actualmente me encuentro en la búsqueda de mi primer experiencia
+                laboral formal en TI y, si bien personalmente he aprendido y utilizado
+                las tecnologías que describo debajo para llevar a cabo mis proyectos
+                personales, cuento con la motivación y la disposición para continuar
+                aprendiendo nuevas tecnologías y trabajar en nuevos desafíos
             </p>
         </div>
     </section>
 
     <section class="conocimientos">
         <h2>Conocimientos</h2>
-        <hr class="line-horizontal">
+        <hr class="line-horizontal" />
         <div class="container">
             <div class="stack">
                 <h3>Front-End</h3>
-                <div class="icon"><img src="./img/icon-frontend.svg" class="icon-image"></div>
+                <div class="icon">
+                    <img src="./img/icon-frontend.svg" class="icon-image" />
+                </div>
                 <span class="stack-info">
-                    Para el lado del cliente he utilizado <strong>HTML, CSS, Javascript, React JS</strong>
-                    y <strong>SASS</strong> cuando se trata de proyectos grandes a fin de mantener una mejor
-                    organización
+                    Para el lado del cliente he utilizado
+                    <strong>HTML, CSS, Javascript, React JS</strong> y
+                    <strong>SASS</strong> cuando se trata de proyectos grandes a fin de
+                    mantener una mejor organización
                 </span>
             </div>
             <div class="stack">
                 <h3 class>Back-End</h3>
-                <div class="icon"><img src="./img/icon-backend.svg" class="icon-image"></div>
+                <div class="icon">
+                    <img src="./img/icon-backend.svg" class="icon-image" />
+                </div>
                 <span class="stack-info">
-                    Para el lado del servidor utilizo el entorno <strong>Node JS</strong> junto con su framework para la
-                    creación
-                    y puesta en marcha de servidores HTTP: <strong>Express</strong>, y <strong>My SQL</strong> como
-                    motor de base de datos</strong>
+                    Para el lado del servidor utilizo el entorno
+                    <strong>Node JS</strong> junto con su framework para la creación y
+                    puesta en marcha de servidores HTTP: <strong>Express</strong>, y
+                    <strong>My SQL</strong> como motor de base de datos
                 </span>
             </div>
             <div class="stack">
                 <h3 class="app-title">Tools</h3>
-                <div class="icon"><img src="./img/icon-tools.svg" class="icon-image"></div>
+                <div class="icon">
+                    <img src="./img/icon-tools.svg" class="icon-image" />
+                </div>
                 <span class="stack-info">
-                    Utilizo los programas <strong>GIMP</strong> y <strong>Adobe XD</strong>
-                    para la edición de imágenes, íconos y creación de las User Interfaces<br>
+                    Utilizo los programas <strong>GIMP</strong> y
+                    <strong>Adobe XD</strong> para la edición de imágenes, íconos y
+                    creación de las User Interfaces<br />
                     También utilizo <strong>GIT</strong> para el control de versiones
                 </span>
             </div>
@@ -182,12 +191,13 @@
 
     <section class="contacto">
         <h2>Contacto</h2>
-        <hr class="line-horizontal">
+        <hr class="line-horizontal" />
         <form method="POST" data-netlify="true" class="form-contacto">
-            <input type="text" name="name" placeholder="Nombre" required id="form-name">
-            <input type="email" name="email" placeholder="E-Mail" required id="form-email">
-            <textarea name="msg" cols="30" rows="10" placeholder="Tu mensaje" required id="form-msg"></textarea>
-            <input type="submit" class="button" id="enviar" value="ENVIAR">
+            <input type="text" name="name" placeholder="Nombre" required id="form-name" autocomplete="off" />
+            <input type="email" name="email" placeholder="E-Mail" required id="form-email" autocomplete="off" />
+            <textarea name="msg" cols="30" rows="10" placeholder="Tu mensaje" required id="form-msg"
+                autocomplete="none"></textarea>
+            <input type="submit" class="button" id="enviar" value="ENVIAR" />
         </form>
     </section>
 

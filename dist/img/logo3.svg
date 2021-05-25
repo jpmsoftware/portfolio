@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="193.363" height="209.363" viewBox="0 0 193.363 209.363">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e8b62e"/>
+      <stop offset="1" stop-color="#745b17"/>
+    </linearGradient>
+    <filter id="Rectangle_1" x="0" y="16" width="193.363" height="193.363" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_9" data-name="Group 9" transform="translate(-810.977 -161.978)">
+    <g id="Group_9-2" data-name="Group 9" transform="translate(-23.341 -114.342)">
+      <g transform="matrix(1, 0, 0, 1, 834.32, 276.32)" filter="url(#Rectangle_1)">
+        <rect id="Rectangle_1-2" data-name="Rectangle 1" width="124" height="124" rx="4" transform="translate(96.68 22) rotate(45)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <text id="_" data-name="»" transform="translate(869.977 305.978)" fill="#fff" font-size="150" font-family="BookAntiqua, Book Antiqua" letter-spacing="-0.299em"><tspan x="0" y="0">»</tspan></text>
+  </g>
+</svg>

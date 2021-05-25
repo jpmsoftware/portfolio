@@ -10,11 +10,20 @@
 
 @keyframes MoveDown {
     0% { top: 150%; }
-    50% { top: 220%; }
+    50% { top: 200%; }
     100% { top: 150%; }
 }
 
 @keyframes SlideDown {
     0% { margin-top: -50px; }
     100% { margin-top: 0px; }
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
