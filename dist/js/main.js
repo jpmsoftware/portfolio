@@ -10,8 +10,6 @@ menuItems.addEventListener('click', (e) => {
 })
 
 window.onload = () => {
-    
-
     window.setTimeout(() => {
         // Unblock scroll and hide loading div (with animation .5seconds)
         document.querySelector('body').classList.remove('block-scroll');
