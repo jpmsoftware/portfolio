@@ -8,33 +8,12 @@
     100% { opacity: 0; }
 }
 
-@keyframes move-down {
-    0% { 
-        top: 150%; 
-        opacity: .3;
-    }
-    25% { opacity: 1; }
-    50% { 
-        top: 200%; 
-        opacity:  1;
-    }
-    60% { opacity: 1; }
-    100% { 
-        top: 150%; 
-        opacity: .3;
-    }
+@keyframes move-left {
+    0% { margin-left: 40px; }
+    100% { margin-left: 0px; }
 }
 
-@keyframes slide-down {
-    0% { margin-top: -50px; }
-    100% { margin-top: 0px; }
-}
-
-@keyframes lds-dual-ring {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+@keyframes loading-animation {
+    0% { width: 0%; }
+    100% { width: 100%; }
 }

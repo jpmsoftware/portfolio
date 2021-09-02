@@ -1,20 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="193.362" height="193.362" viewBox="0 0 193.362 193.362">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="59.999" viewBox="0 0 60 59.999">
   <defs>
     <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#e8b62e"/>
-      <stop offset="1" stop-color="#745b17"/>
+      <stop offset="0" stop-color="#e60e42"/>
+      <stop offset="1" stop-color="#279de2"/>
     </linearGradient>
-    <filter id="Rectangle_1" x="0" y="0" width="193.362" height="193.362" filterUnits="userSpaceOnUse">
-      <feOffset dy="3" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feFlood flood-opacity="0.161"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
   </defs>
-  <g id="Group_9" data-name="Group 9" transform="translate(-834.319 -292.319)">
-    <g transform="matrix(1, 0, 0, 1, 834.32, 292.32)" filter="url(#Rectangle_1)">
-      <rect id="Rectangle_1-2" data-name="Rectangle 1" width="124" height="124" rx="4" transform="translate(96.68 6) rotate(45)" fill="url(#linear-gradient)"/>
-    </g>
-  </g>
+  <path id="logo" d="M-14,4H42a2,2,0,0,1,2,2V62a2,2,0,0,1-2,2H-14a2,2,0,0,1-2-2V6A2,2,0,0,1-14,4Z" transform="translate(16 -4)" fill="url(#linear-gradient)"/>
 </svg>
