@@ -129,6 +129,16 @@ header {
     flex-direction: column;
 }
 
+.links {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.links * {
+    margin-top: .5em;
+}
+
 .text {
     margin-top: 3em;
     line-height: 2.5em;
@@ -292,8 +302,9 @@ section {
 }
 
 .icon {
-    width: 28px;
-    height: 28px;
+    margin-right: .5em;
+    width: 18px;
+    height: 18px;
 }
 
 /* GENERIC RULES */
