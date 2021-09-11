@@ -13,27 +13,34 @@
 </head>
 
 <body>
-    <svg class="background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920"
-        height="945" viewBox="0 0 1920 945">
+    <svg class="background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
+        height="100%">
         <defs>
             <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
                 <stop offset="0" stop-color="#090c33" />
                 <stop offset="1" stop-color="#000321" />
             </radialGradient>
         </defs>
-        <path id="color-layer" d="M0,0H1920V695.485s-193.609,86.731-660.387,168.553S0,945,0,945Z"
+        <path id="color-layer" d="M0,0
+                                  H1920
+                                  V695.485
+                                  s-193.609, 
+                                  86.731-660.387, 
+                                  186.553S0,
+                                  945,0,945Z"
             fill="url(#radial-gradient)" />
     </svg>
 
     <div class="wrapper">
         <header>
-            <div class="logo">
+            <a href="."><div class="logo">
                 <img src="./img/logo.svg" alt="logo">
                 <div class="span-container">
                     <h2>Juan P. Miranda</h2>
                     <h3>FULL STACK DEVELOPER</h3>
                 </div>
-            </div>
+        </div></a>
+            
 
             <nav class="menu" id="menu">
                 <li id="home">HOME</li>
@@ -138,7 +145,7 @@
                     </div>
                 </div>
 
-                <img class="arrow-right" src="./img/angle-right-solid.svg" alt="">
+                <img class="arrow-right" id="arrow-right" src="./img/angle-right-solid.svg" alt="">
             </div>
 
         </section>
@@ -175,8 +182,10 @@
                             consequat.
                         </span>
                         <div class="links">
-                            <a href="https://github.com/jpmsoftware" target="blank""><img src="./img/icon-github.svg" class="icon" alt="">GITHUB</a>
-                            <a href="" target="_blank"><img src="./img/icon-linkedin.svg" class="icon" alt="">LINKEDIN</a>
+                            <a href="https://github.com/jpmsoftware" target="blank""><img src=" ./img/icon-github.svg"
+                                class="icon" alt="">GITHUB</a>
+                            <a href="" target="_blank"><img src="./img/icon-linkedin.svg" class="icon"
+                                    alt="">LINKEDIN</a>
                         </div>
                     </div>
 

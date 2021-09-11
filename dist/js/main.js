@@ -2,6 +2,7 @@ var sectionsElements = document.getElementsByTagName('section');
 var sliderElements = document.getElementsByClassName('slider-item');
 const menu = document.getElementById('menu');
 const menuMobileIcon = document.getElementById('menu-mobile');
+const arrowItem = document.getElementById('arrow-right');
 var sliderIndex = 0;
 var timer = 0;
 
@@ -18,9 +19,20 @@ document.querySelectorAll('.menu li').forEach((item) => {
             }
         }
         
-        selectedId = 'proyectos' ? autoSlide() : '';
-        
+        if(selectedId === 'proyectos') {
+            sliderIndex = 0;
+            autoSlide();
+        }
     });
+});
+
+function openSection(section) {
+    
+}
+
+arrowItem.addEventListener('click', () => {
+    sliderIndex+1;
+    autoSlide();
 });
 
 menuMobileIcon.addEventListener('click', () => {
@@ -60,8 +72,8 @@ function autoSlide() {
     }
 
     sliderElements[sliderIndex].style.display = 'block';
-    
-    sliderIndex++;
 
     timer = setTimeout(autoSlide, 10000);
+
+    sliderIndex++;
 }

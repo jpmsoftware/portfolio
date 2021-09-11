@@ -13,6 +13,11 @@
     100% { margin-left: 0px; }
 }
 
+@keyframes menu-slide {
+    0% { margin-right: 500px; }
+    100% { margin-right: 0; }
+}
+
 @keyframes loading-animation {
     0% { width: 0%; }
     100% { width: 100%; }
