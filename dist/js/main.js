@@ -58,6 +58,10 @@ function showSection(selSection) {
         } 
     }
 
+    if(menu.style.display === 'block') {
+        menu.style.display = 'none'
+    }
+
     // Update prevSection
     prevSection = selSection;
 }

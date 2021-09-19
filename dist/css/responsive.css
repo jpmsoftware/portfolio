@@ -1,10 +1,19 @@
 @media only screen and (max-width: 960px) {
+    
+    body {
+        overflow: scroll;
+    }
+
     header {
         padding: 1em 0 0 0;
     }
 
     .wrapper {
         width: 90%;
+    }
+
+    section, .slider-item {
+        animation: none;
     }
 
     .menu {
@@ -17,9 +26,9 @@
         width: 100%;
         height: 1000px;
         flex-direction: column;
-        background: #000;
+        background: var(--light-blue);
         z-index: 1;
-        animation: fade-in .5s 1, menu-slide .5s 1;
+        animation: fade-in .2s 1, menu-slide .3s 1;
     }
 
     .menu li {
@@ -55,14 +64,15 @@
 
     .text {
         margin-top: 2em;
-        line-height: 24px;
+        line-height: 1.8em;
+        text-align: justify;
         font-size: .9em;
         opacity: .8;
         width: 100%;
     }
 
     .cta {
-        margin-top: 2em;
+        margin-top: 3em;
     }
 
     .content {
@@ -83,6 +93,11 @@
         flex-direction: column;
     }
 
+    .form-container > div {
+        width: 100%;
+        text-align: justify;
+    }
+
     .form-container .text {
         margin-top: .5em;
     }
@@ -90,6 +105,7 @@
     .links {
         margin-top: 1em;
         flex-direction: row;
+        font-size: .8em;
     }
 
     .links a:last-child {
