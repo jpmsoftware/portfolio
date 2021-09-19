@@ -1,22 +1,13 @@
-const sections = document.getElementsByTagName('section');
-const sliderElements = document.getElementsByClassName('slider-item');
-const loadTemplate = document.getElementById('load-template');
-const links = document.getElementsByClassName('link');
-const menuMobileIcon = document.getElementById('menu-mobile');
-const arrowItem = document.getElementById('arrow-right');
+var loadTemplate = document.getElementById('load-template');
+var sections = document.getElementsByTagName('section');
+var links = document.getElementsByClassName('link');
 var prevSection = 'home';
+var sliderElements = document.getElementsByClassName('slider-item');
+var menuIcon = document.getElementById('menu-mobile');
 var sliderIndex = 0;
 var timer = 0;
 
 loadTemplate.classList.toggle('hidden');
-
-window.onload = () => {
-    loadTemplate.style.animation = 'fade-out .5s 1';
-    setTimeout(() => {
-        loadTemplate.classList.toggle('hidden');
-        showSection('home');
-    }, 500);
-}
 
 Array.from(links).forEach((link) => {
     link.addEventListener('click', (e) => {
@@ -24,35 +15,12 @@ Array.from(links).forEach((link) => {
     });
 });
 
-function showSection(section) { 
-
-    for(var i = 0; i < sections.length; i++) {
-        //Show section
-        if(sections[i].id === section) {
-            sections[i].style.display = 'block';
-            // Update prevSection
-            prevSection = section;
-            if(section === "proyectos") {
-                sliderIndex = 0;
-                autoSlide();
-            }
-        }
-        
-        // Hide previous section
-        else if(sections[i].id === prevSection) {
-            sections[i].style.display = 'none';
-        } 
-        
-    }   
-}
-
-arrowItem.addEventListener('click', () => {
-    sliderIndex+1;
+document.getElementById('arrow').addEventListener('click', () => {
+    sliderIndex + 1;
     autoSlide();
 });
 
-menuMobileIcon.addEventListener('click', () => {
-
+menuIcon.addEventListener('click', () => {
     if(menu.style.display === 'block') {
         menu.style.display = 'none';
         document.querySelector('header').appendChild(menu);
@@ -63,6 +31,37 @@ menuMobileIcon.addEventListener('click', () => {
     }
 });
 
+window.onload = () => {
+    loadTemplate.style.animation = 'fade-out .3s 1';
+    setTimeout(() => {
+        loadTemplate.classList.toggle('hidden');
+        showSection('home');
+    }, 300);
+}
+
+function showSection(selSection) { 
+
+    for(var i = 0; i < sections.length; i++) {
+        // Show section
+        if(sections[i].id === selSection) {
+            sections[i].style.display = 'block';
+            
+            if(selSection === "proyectos") {
+                sliderIndex = 0;
+                autoSlide();
+            }
+        }
+        
+        // Hide previous section
+        else if(sections[i].id === prevSection) {
+            sections[i].style.display = 'none';
+        } 
+    }
+
+    // Update prevSection
+    prevSection = selSection;
+}
+
 function autoSlide() {
 
     clearTimeout(timer);
@@ -70,7 +69,6 @@ function autoSlide() {
     sliderIndex > 2 ? sliderIndex = 0 : '';
 
     for(var i = 0 ; i < sliderElements.length; i++) {
-        /* Hide all */
         sliderElements[i].style.display = 'none';
     }
 
