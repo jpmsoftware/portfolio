@@ -1,200 +1,175 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/animations.css" />
-    <link rel="icon" href="./img/logo.svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./img/favicon.svg">
     <title id="title">Home</title>
 </head>
+
 <body>
-    <div class="load-template hidden" id="load-template">
-        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-    </div>
-    <svg class="background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
-        height="100%">
-        <defs>
-            <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
-                <stop offset="0" stop-color="#090c33" />
-                <stop offset="1" stop-color="#000321" />
-            </radialGradient>
-        </defs>
-        <path id="color-layer" d="M0,0
-                                  H1920
-                                  V695.485
-                                  s-193.609, 
-                                  86.731-660.387, 
-                                  186.553S0,
-                                  945,0,945Z"
-            fill="url(#radial-gradient)" />
-    </svg>
-    <div class="wrapper">
-        <header>
-            <a href="."><div class="logo">
-                <img src="./img/logo.svg" alt="logo">
-                <div class="flex column">
-                    <h2>Juan P. Miranda</h2>
-                    <h3>FULL STACK DEVELOPER</h3>
-                </div>
-            </div></a>
-            <nav class="menu" id="menu">
-                <li id="home" class="link">Home</li>
-                <li id="proyectos" class="link">Proyectos</li>
-                <li id="acerca" class="link">Acerca</li>
-                <li id="contacto" class="link">Contacto</li>
+    <header>
+        <div class="wrapper">
+            <a href=".">
+                <img src="./img/logo.svg" alt="logo-image" class="logo">
+            </a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home" name="home" class="menu-item">Home</a></li>
+                    <li><a href="#proyectos" name="proyectos" class="menu-item">Proyectos</a></li>
+                    <li><a href="#acerca" name="acerca" class="menu-item">Acerca</a></li>
+                    <li><a href="#contacto" name="contacto" class="menu-item">Contacto</a></li>
+                </ul>
             </nav>
-            <div class="menu-mobile" id="menu-mobile">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </header>
+        </div>
+    </header>
+    <div class="scroll-navigation">
+        <a href="#home" class="nav-item current" name="home"></a>
+        <a href="#proyectos" class="nav-item" name="proyectos"></a>
+        <a href="#acerca" class="nav-item" name="acerca"></a>
+        <a href="#contacto" class="nav-item" name="contacto"></a>
 
-        <section id="home">
-            <div class="container">
+    </div>
+
+    <section class="home" id="home">
+        <div class="wrapper">
+            <div class="content">
                 <h1>Desarrollo web full stack</h1>
-                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. <br>
-                    Ut enim ad minim veniam , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
-                    Duis aute <br>irure dolor in reprehenderit in voluptate velit esse cillum dolore eu dolor fugiat
-                    nulla
-                    pariatur.
-                </span>
-                <a class="cta link" id="proyectos">Ver proyectos<i class="fa fa-chevron-right"></i></a>
-            </div>
-        </section>
-
-        <section id="proyectos">
-            <div class="container">
-                <div class="slider-item">
-                    <h1>Lorem ipsum 1</h1>
-                    <div class="content">
-                        <div class="thumb-container">
-                            <img class="thumb" src="./img/thumb.png">
-                            <div class="progress-bar">
-                                <div class="progress"></div>
-                            </div>
-                        </div>
-                        <div class="app-description">
-                            <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam , quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                                ea
-                                commodo consequat, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
-                            </span>
-                            <div class="buttons-container">
-                                <a class="cta" href="">Ver demo</a>
-                                <a class="cta" href="">Ver código</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <h1>Lorem ipsum 2</h1>
-                    <div class="content">
-                        <div class="thumb-container">
-                            <img class="thumb" src="./img/thumb.png">
-                            <div class="progress-bar">
-                                <div class="progress"></div>
-                            </div>
-                        </div>
-                        <div class="app-description">
-                            <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam , quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                                ea
-                                commodo consequat, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
-                            </span>
-                            <div class="buttons-container">
-                                <a class="cta" href="">Ver demo</a>
-                                <a class="cta" href="">Ver código</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-item">
-                    <h1>Lorem ipsum 3</h1>
-                    <div class="content">
-                        <div class="thumb-container">
-                            <img class="thumb" src="./img/thumb.png">
-                            <div class="progress-bar">
-                                <div class="progress"></div>
-                            </div>
-                        </div>
-                        <div class="app-description">
-                            <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam , quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                                ea
-                                commodo consequat, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo consequat.
-                            </span>
-                            <div class="buttons-container">
-                                <a class="cta" href="">Ver demo</a>
-                                <a class="cta" href="">Ver código</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <img class="arrow" id="arrow" src="./img/angle-right-solid.svg" alt="">
-            </div>
-        </section>
-
-        <section id="acerca">
-            <div class="container">
-                <h1>Acerca</h1>
-                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. <br>
-                    Ut enim ad minim veniam , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
-                    Duis aute irure dolor in <br>reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                </span>
-                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. <br>
-                    Ut enim ad minim veniam , quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
-                    Duis aute irure dolor in <br>reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
+                <h5>End-to-end software development</h5>
+                <span>
+                    Soy un desarrollador web full stack de Montevideo, Uruguay<br> Me gusta llevar a cabo ideas
+                    originales y
+                    desafiantes<br>
+                    Mis intereses son muy diversos y van desde el diseño hasta el diseño en 3D<br>
+                    Desde el año 2019 he ido creando diferentes proyectos personales, algunos de los cuales podrás explorar en
+                    este
+                    sitio
                 </span>
             </div>
-        </section>
 
-        <section id="contacto">
-            <div class="container">
-                <h1>Contacto</h1>
-                <div class="form-container">
+            <img src="./img/arrow.svg" alt="arrow" class="arrow">
+        </div>
+    </section>
+
+    <section class="proyectos" id="proyectos">
+        <div class="wrapper">
+            <div class="content">
+                <h1>Proyectos</h1>
+                <div class="project-heading">
+                    <h4>Green Market.uy</h4>
+                    <span class="button-next">siguiente</span>
+                </div>
+
+                <div class="container">
                     <div>
-                        <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor
-                            incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam , quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip.
+                        <span class="app-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus ex, ornare nec nisl
+                            sed,
+                            malesuada cursus sapien. Mauris nulla arcu, venenatis a rhoncus ut, sodales hendrerit
+                            metus. Nunc non gravida tortor. Nulla justo dui, placerat dictum tincidunt ut, venenatis
+                            sit amet dolor. Donec mattis mauris vitae nisl condimentum finibus sit amet at magna.
+                            Nam mollis arcu convallis, vestibulum turpis vitae, suscipit massa.
+                            Fusce finibus pretium eros, sit amet consequat ligula.
                         </span>
-                        <div class="links">
-                            <a href="https://github.com/jpmsoftware" target="blank""><img src=" ./img/icon-github.svg"
-                               class="icon" alt="">GITHUB
-                            </a>
-                            <a href="https://www.linkedin.com/in/juan-pablo-miranda-604295215" target="_blank"><img src="./img/icon-linkedin.svg" class="icon"
-                               alt="">LINKEDIN
-                            </a>
+                        <div class="tags-container">
+                            <span>Node JS</span>
+                            <span>My SQL</span>
+                            <span>SASS</span>
+                        </div>
+                        <div class="buttons-container">
+                            <a href="." class="button">ver demo</a>
+                            <a href="." class="button">ver código</a>
                         </div>
                     </div>
-                    <form name="contact" method="POST" class="form-contacto" data-netlify="true">
-                        <input type="text" placeholder="Nombre" required>
-                        <input type="email" placeholder="E-mail" required>
-                        <textarea placeholder="Tu mensaje" required></textarea>
-                        <input class="cta" type="submit" name="" id="" value="Enviar mensaje">
+
+                    <img src="" alt="screenshot" class="screenshot">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="acerca" id="acerca">
+        <div class="wrapper">
+            <div class="content">
+                <h1>Acerca de mi</h1>
+                <h5></h5>
+                <div class="container">
+                    <span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus ex, ornare nec nisl sed,
+                        malesuada cursus sapien. Mauris nulla arcu, venenatis a rhoncus ut, sodales hendrerit metus.
+                        Nunc non gravida tortor. Nulla justo dui, placerat dictum tincidunt ut, venenatis sit amet
+                        dolor.
+                        Donec mattis mauris vitae nisl condimentum finibus sit amet at magna.
+                        Nam mollis arcu convallis, vestibulum turpis vitae, suscipit massa.
+                        Fusce finibus pretium eros, sit amet consequat ligula.
+                    </span>
+                    <div class="skills-container">
+                        <ul>
+                            <h5>Front-End</h5>
+                            <li>HTML, CSS, Javascript</li>
+                            <li>React JS</li>
+                            <li>SASS</li>
+                        </ul>
+                        <ul>
+                            <h5>Back-End</h4>
+                                <li>Node JS</li>
+                                <li>Mongo DB</li>
+                                <li>My SQL</li>
+                        </ul>
+                        <ul>
+                            <h5>Otros</h4>
+                                <li>GIT</li>
+                                <li>Figma</li>
+                                <li>Adobe XD</li>
+                                <li>GIMP</li>
+                                <li>Blender</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <div class="wrapper">
+            <div class="content">
+                <h1>Contacto</h1>
+                <div class="container">
+                    <div>
+                        <span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus ex, ornare nec nisl
+                            sed,
+                            malesuada cursus sapien. Mauris nulla arcu, venenatis a rhoncus ut, sodales hendrerit metus.
+                            También puedes contactarme a través de los siguientes medios:
+                        </span>
+                        <div class="contact-social-media">
+                            <div>
+                                <img src="./img/icon-github.svg" alt="github">
+                                <a href="">GITHUB</a>
+                            </div>
+                            <div>
+                                <img src="./img/icon-linkedin.svg" alt="github">
+                                <a href="">LINKEDIN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="/enviar" method="POST">
+                        <input type="text" placeholder="Tu nombre" required>
+                        <input type="email" placeholder="Tu E-Mail" required>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje" required></textarea>
+                        <input type="submit" class="button" value="enviar">
                     </form>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
     <script src="./js/main.js"></script>
 </body>
+
 </html>
