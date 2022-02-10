@@ -1,125 +1,83 @@
 @media only screen and (max-width: 960px) {
-    
-    body {
-        overflow: scroll;
-    }
-
-    header {
-        padding: 1em 0 0 0;
-    }
-
-    .wrapper {
-        width: 90%;
-    }
-
-    section, .slider-item {
-        animation: none;
+    .logo {
+        width: 5em;
     }
 
     .menu {
-        margin-top: 0;
-        padding-top: 4em;
         display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 1000px;
-        flex-direction: column;
-        background: var(--light-blue);
-        z-index: 1;
-        animation: fade-in .2s 1, menu-slide .3s 1;
     }
 
-    .menu li {
-        margin:0;
-        font-size: 2em;
-        padding: 1.5em;
-    }
-
-    .menu li:hover {
-        border-bottom: none;
-    }
-
-    .menu-mobile {
-        display: block;
-        z-index: 2;
-    }
-
-    .container {
-        margin-top: 1em;
+    .wrapper {
+        width: 85%;
     }
 
     h1 {
-        margin-top: 1em;
         font-size: 2em;
-        letter-spacing: 0;
-    }
-    
-    .app-description {
-        margin-top: 1em;
-        margin-left: 0;
-        width: 100%;
     }
 
-    .text {
-        margin-top: 2em;
-        line-height: 1.8em;
-        text-align: justify;
-        font-size: .9em;
-        opacity: .8;
-        width: 100%;
-    }
-
-    .cta {
+    .home h1 {
         margin-top: 3em;
     }
 
-    .content {
-        flex-direction: column;
+    h5 {
+        font-size: 1em;
+        margin-bottom: 2em;
     }
 
-    .thumb-container {
-        width: 100%;
-        height: 50%;
-    }
-
-    .arrow-right {
-        right: 0;
-        top: 7%;
-    }
-
-    .form-container {
-        flex-direction: column;
-    }
-
-    .form-container > div {
-        width: 100%;
+    span {
+        line-height: 1.75em;
+        font-size: .9em;
         text-align: justify;
     }
 
-    .form-container .text {
-        margin-top: .5em;
+    .scroll-navigation {
+        display: none;
     }
 
-    .links {
-        margin-top: 1em;
-        flex-direction: row;
-        font-size: .8em;
+    section {
+        padding: 2em 0;
     }
 
-    .links a:last-child {
-        margin-left: 2em;
+    .project-name {
+        font-size: 1.25em;
     }
-    
-    .form-contacto {
-        margin: 1em 0 0 0;
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container > div {
         width: 100%;
     }
 
-    .form-contacto input[type="text"], 
-    .form-contacto input[type="email"], 
-    .form-contacto textarea {
+    .project-description {
+        font-size: .9em;
+    }
+
+    .about span {
+        width: 100%;
+    }
+
+    .skills-container {
+        margin-top: 2em;
+        margin-left: 0;
+    }
+
+    .about ul:nth-child(2), .about ul:nth-child(3) {
+        margin-top: 1em;
+    }
+
+    .contact .container > div {
+        width: 100%;
+    }
+
+    .contact-social-media {
+        margin-top: 2em;
+        width: 80%;
+    }
+
+    form {
+        margin-top: 4em;
         width: 100%;
     }
 }

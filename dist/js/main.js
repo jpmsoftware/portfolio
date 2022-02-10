@@ -1,6 +1,7 @@
 var menuItems = document.getElementsByClassName('menu-item');
 var navItems = document.getElementsByClassName('nav-item');
 var currentSection = document.getElementById('home');
+var buttonNext = document.getElementById('button-next');
 
 Array.from(menuItems).forEach((item) => {
     item.addEventListener('click', (e) => {
@@ -44,6 +45,25 @@ window.addEventListener('wheel', (e) => {
     }
 });
 
+buttonNext.addEventListener('click', () => {
+    let projects = document.getElementsByClassName('project');
+    let current, next;
+
+    for (var i = 0; i < projects.length; i++) {
+        if (projects[i].classList.contains('visible')) {
+            current = i;
+            next = i + 1;
+        }
+    }
+
+    // reset
+    if(next >= projects.length) { next = 0; }
+    
+    projects[next].classList.add('visible');
+    projects[current].classList.toggle('visible');
+    
+});
+
 function updatePosition(e) {
     if (e.target.classList.length <= 1) {
         Array.from(navItems).forEach((item) => {
@@ -55,3 +75,4 @@ function updatePosition(e) {
         });
     }
 }
+
