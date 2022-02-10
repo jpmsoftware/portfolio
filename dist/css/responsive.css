@@ -1,4 +1,8 @@
 @media only screen and (max-width: 960px) {
+    body, html {
+        height: auto;
+    }
+
     .logo {
         width: 5em;
     }
