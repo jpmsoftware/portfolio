@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/animations.css" />
-    <link rel="icon" href="./img/favicon.svg">
-    <title id="title">Home</title>
+    <link rel="icon" href="./img/favicon.png">
+    <title id="title">Juan Pablo Miranda</title>
 </head>
 
 <body>
     <header>
         <div class="wrapper">
-            <a href=".">
-                <img src="./img/logo.svg" alt="logo-image" class="logo">
+            <a href="." class="logo" style="display: flex">
+                <img src="./img/logo.svg" alt="logo">
             </a>
+
             <nav class="menu">
                 <ul>
                     <li><a href="#home" name="home" class="menu-item">Home</a></li>
@@ -25,119 +26,90 @@
                     <li><a href="#contact" name="contact" class="menu-item">Contacto</a></li>
                 </ul>
             </nav>
+
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </header>
-    <div class="scroll-navigation">
-        <a href="#home" class="nav-item current" name="home"></a>
-        <a href="#projects" class="nav-item" name="projects"></a>
-        <a href="#about" class="nav-item" name="about"></a>
-        <a href="#contact" class="nav-item" name="contact"></a>
-    </div>
 
     <section class="home" id="home">
         <div class="wrapper">
             <div class="content">
                 <h1>Desarrollo web full stack</h1>
-                <h5>End-to-end software development</h5>
-                <span>
-                    Soy un desarrollador web full stack de Montevideo, Uruguay<br> Me gusta llevar a cabo ideas
+                <span class="presentation">
+                    Soy un desarrollador web full stack de Montevideo, Uruguay. Me gusta llevar a cabo ideas
                     originales y
-                    desafiantes<br>
-                    Mis intereses son muy diversos y van desde el diseño hasta el diseño en 3D<br>
-                    Desde el año 2019 he ido creando diferentes projects personales, algunos de los cuales podrás explorar en
+                    desafiantes
+                    Desde el año 2019 he ido creando diferentes proyectos personales, <br>algunos de los cuales podrás
+                    explorar en
                     este
                     sitio
                 </span>
+                <a href="#projects" class="button-explore">Explorar</a>
             </div>
-
-            <img src="./img/arrow.svg" alt="arrow" class="arrow">
         </div>
     </section>
 
     <section class="projects" id="projects">
-        <div class="wrapper">
-            <div class="content">
-                <h1>Proyectos</h1>
-                <span class="button-next" id="button-next">siguiente →</span>
+        <h2>Proyectos</h2>
 
-                <div class="project visible">
-                    <h4 class="project-name">Green Market.uy (1)</h4>
-                    <div class="container">
-                        <div>
-                            <span class="project-description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus ex, ornare nec nisl
-                                sed,
-                                malesuada cursus sapien. Mauris nulla arcu, venenatis a rhoncus ut, sodales hendrerit
-                                metus. Nunc non gravida tortor. Nulla justo dui, placerat dictum tincidunt ut, venenatis
-                                sit amet dolor. Donec mattis mauris vitae nisl condimentum finibus sit amet at magna.
-                                Nam mollis arcu convallis, vestibulum turpis vitae, suscipit massa.
-                                Fusce finibus pretium eros, sit amet consequat ligula.
-                            </span>
-                            <div class="tags-container">
-                                <span>Node JS</span>
-                                <span>My SQL</span>
-                                <span>SASS</span>
-                            </div>
-                            <div class="buttons-container">
-                                <a href="." class="button">ver demo</a>
-                                <a href="." class="button">ver código</a>
-                            </div>
-                        </div>
-                        <img src="" alt="screenshot" class="screenshot">
+        <div class="projects-container">
+            <div class="project">
+                <img src="" alt="screenshot" class="screenshot">
+                <div class="project-info">
+                    <h3 class="project-name">Green Market.uy</h3>
+                    <span class="project-description">
+                        Plataforma de E-Commerce destinada a la comercialización de productos veganos
+                        Implementación de Login
+                    </span>
+                    <div class="tags-container">
+                        <span>Node JS</span>
+                        <span>My SQL</span>
+                        <span>SASS</span>
+                    </div>
+                    <div class="buttons-container">
+                        <a href="https://www.greenmarket.uy" class="button" target="_blank">ver proyecto</a>
                     </div>
                 </div>
+            </div>
 
-                <div class="project">
-                    <h4 class="project-name">Green Market.uy (2)</h4>
-                    <div class="container">
-                        <div>
-                            <span class="project-description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus ex, ornare nec nisl
-                                sed,
-                                malesuada cursus sapien. Mauris nulla arcu, venenatis a rhoncus ut, sodales hendrerit
-                                metus. Nunc non gravida tortor. Nulla justo dui, placerat dictum tincidunt ut, venenatis
-                                sit amet dolor. Donec mattis mauris vitae nisl condimentum finibus sit amet at magna.
-                                Nam mollis arcu convallis, vestibulum turpis vitae, suscipit massa.
-                                Fusce finibus pretium eros, sit amet consequat ligula.
-                            </span>
-                            <div class="tags-container">
-                                <span>Node JS</span>
-                                <span>My SQL</span>
-                                <span>SASS</span>
-                            </div>
-                            <div class="buttons-container">
-                                <a href="." class="button">ver demo</a>
-                                <a href="." class="button">ver código</a>
-                            </div>
-                        </div>
-                        <img src="" alt="screenshot" class="screenshot">
+            <div class="project">
+                <img src="" alt="screenshot" class="screenshot">
+                <div class="project-info">
+                    <h3 class="project-name">Urunomics</h3>
+                    <span class="project-description">
+                        Plataforma de E-Commerce destinada a la comercialización de productos veganos
+                        Implementación de Login
+                    </span>
+                    <div class="tags-container">
+                        <span>Node JS</span>
+                        <span>My SQL</span>
+                        <span>SASS</span>
+                    </div>
+                    <div class="buttons-container">
+                        <a href="https://www.urunomics.com" class="button" target="_blank">ver proyecto</a>
                     </div>
                 </div>
+            </div>
 
-                <div class="project">
-                    <h4 class="project-name">Green Market.uy (3)</h4>
-                    <div class="container">
-                        <div>
-                            <span class="project-description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus ex, ornare nec nisl
-                                sed,
-                                malesuada cursus sapien. Mauris nulla arcu, venenatis a rhoncus ut, sodales hendrerit
-                                metus. Nunc non gravida tortor. Nulla justo dui, placerat dictum tincidunt ut, venenatis
-                                sit amet dolor. Donec mattis mauris vitae nisl condimentum finibus sit amet at magna.
-                                Nam mollis arcu convallis, vestibulum turpis vitae, suscipit massa.
-                                Fusce finibus pretium eros, sit amet consequat ligula.
-                            </span>
-                            <div class="tags-container">
-                                <span>Node JS</span>
-                                <span>My SQL</span>
-                                <span>SASS</span>
-                            </div>
-                            <div class="buttons-container">
-                                <a href="." class="button">ver demo</a>
-                                <a href="." class="button">ver código</a>
-                            </div>
-                        </div>
-                        <img src="" alt="screenshot" class="screenshot">
+            <div class="project">
+                <img src="" alt="screenshot" class="screenshot">
+                <div class="project-info">
+                    <h3 class="project-name">Green Market.uy</h3>
+                    <span class="project-description">
+                        Plataforma de E-Commerce destinada a la comercialización de productos veganos
+                        Implementación de Login
+                    </span>
+                    <div class="tags-container">
+                        <span>Node JS</span>
+                        <span>My SQL</span>
+                        <span>SASS</span>
+                    </div>
+                    <div class="buttons-container">
+                        <a href="https://www.jpmsoftware.com" class="button" target="_blank">ver proyecto</a>
                     </div>
                 </div>
             </div>
@@ -145,81 +117,73 @@
     </section>
 
     <section class="about" id="about">
-        <div class="wrapper">
-            <div class="content">
-                <h1>Acerca de mi</h1>
-                <div class="container">
-                    <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus ex, ornare nec nisl sed,
-                        malesuada cursus sapien. Mauris nulla arcu, venenatis a rhoncus ut, sodales hendrerit metus.
-                        Nunc non gravida tortor. Nulla justo dui, placerat dictum tincidunt ut, venenatis sit amet
-                        dolor.
-                        Donec mattis mauris vitae nisl condimentum finibus sit amet at magna.
-                        Nam mollis arcu convallis, vestibulum turpis vitae, suscipit massa.
-                        Fusce finibus pretium eros, sit amet consequat ligula.
-                    </span>
-                    <div class="skills-container">
-                        <ul>
-                            <h4>Front-End</h4>
-                            <li>HTML, CSS, Javascript</li>
-                            <li>React JS</li>
-                            <li>SASS</li>
-                        </ul>
-                        <ul>
-                            <h4>Back-End</h4>
-                            <li>Node JS</li>
-                            <li>Mongo DB</li>
-                            <li>My SQL</li>
-                        </ul>
-                        <ul>
-                            <h4>Otros</h4>
-                            <li>GIT</li>
-                            <li>Figma</li>
-                            <li>Adobe XD</li>
-                            <li>GIMP</li>
-                            <li>Blender</li>
-                        </ul>
-                    </div>
+        <div class="about-container">
+            <h2>Acerca de mi</h2>
+            <div class="container">
+                <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus ex, ornare nec nisl sed,
+                    malesuada cursus sapien. Mauris nulla arcu, venenatis a rhoncus ut, sodales hendrerit metus.
+                    Nunc non gravida tortor. Nulla justo dui, placerat dictum tincidunt ut, venenatis sit amet
+                    dolor.
+                    Donec mattis mauris vitae nisl condimentum finibus sit amet at magna.
+                    Nam mollis arcu convallis, vestibulum turpis vitae, suscipit massa.
+                    Fusce finibus pretium eros, sit amet consequat ligula.
+                </span>
+                <div class="skills-container">
+                    <ul>
+                        <h4>Front-End</h4>
+                        <li>HTML, CSS, Javascript</li>
+                        <li>React JS</li>
+                        <li>SASS</li>
+                    </ul>
+                    <ul>
+                        <h4>Back-End</h4>
+                        <li>Node JS</li>
+                        <li>Mongo DB</li>
+                        <li>My SQL</li>
+                    </ul>
+                    <ul>
+                        <h4>Otros</h4>
+                        <li>GIT</li>
+                        <li>Figma</li>
+                        <li>Adobe XD</li>
+                        <li>GIMP</li>
+                        <li>Blender</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="contact" id="contact">
-        <div class="wrapper">
-            <div class="content">
-                <h1>Contacto</h1>
-                <div class="container">
-                    <div>
-                        <span>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacus ex, ornare nec nisl
-                            sed,
-                            malesuada cursus sapien. Mauris nulla arcu, venenatis a rhoncus ut, sodales hendrerit metus.
-                            También puedes contactarme a través de los siguientes medios:
-                        </span>
-                        <div class="contact-social-media">
-                            <div>
-                                <img src="./img/icon-github.svg" alt="github">
-                                <a href="">GITHUB</a>
-                            </div>
-                            <div>
-                                <img src="./img/icon-linkedin.svg" alt="github">
-                                <a href="">LINKEDIN</a>
-                            </div>
+        <div class="contact-container">
+            <h2>Contacto</h2>
+            <div class="container">
+                <div>
+                    <span>
+                        Envíame tu mensaje y me contactaré a la brevedad<br>
+                        También puedes contactarme a través de los siguientes medios:
+                    </span>
+                    <div class="contact-social-media">
+                        <div>
+                            <img src="./img/icon-github.svg" alt="github">
+                            <a href="" target="_blank">GITHUB</a>
+                        </div>
+                        <div>
+                            <img src="./img/icon-linkedin.svg" alt="github">
+                            <a href="" target="_blank">LINKEDIN</a>
                         </div>
                     </div>
-                    <form name="contact-form" method="POST" data-netlify="true">
-                        <input type="text" name="name" placeholder="Tu nombre" required>
-                        <input type="email" name="email" placeholder="Tu E-Mail" required>
-                        <textarea name="message" cols="30" rows="10" placeholder="Tu mensaje" required></textarea>
-                        <input type="submit" class="button" value="enviar">
-                    </form>
                 </div>
+                <form name="contact-form" method="POST" data-netlify="true">
+                    <input type="text" name="name" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu E-Mail" required autocomplete>
+                    <textarea name="message" cols="30" rows="10" placeholder="Tu mensaje" required></textarea>
+                    <input type="submit" class="button" value="Enviar">
+                </form>
             </div>
         </div>
     </section>
-
     <script src="./js/main.js"></script>
 </body>
-
 </html>

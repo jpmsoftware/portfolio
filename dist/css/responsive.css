@@ -3,24 +3,36 @@
         height: auto;
     }
 
-    .logo {
-        width: 5em;
+    .logo img {
+        height: 3em;
     }
 
     .menu {
         display: none;
     }
 
+    .burger {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger div {
+        margin: 5px 0;
+        width: 2em;
+        border: 1px solid #fff;
+    }
+
+    .presentation {
+        width: 90%;
+    }
+
     .wrapper {
-        width: 85%;
+        width: 90%;
     }
 
     h1 {
-        font-size: 2em;
-    }
-
-    .home h1 {
-        margin-top: 3em;
+        margin-top: 4em;
+        font-size: 2.25rem;
     }
 
     h5 {
@@ -28,26 +40,43 @@
         margin-bottom: 2em;
     }
 
-    span {
-        line-height: 1.75em;
-        font-size: .9em;
-        text-align: justify;
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
     }
 
-    .scroll-navigation {
-        display: none;
+    .screenshot {
+        width: 100%;
+        height: 25vh;
     }
 
-    section {
-        padding: 2em 0;
+    .buttons-container {
+        position: relative;
+    }
+
+    .button {
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    .project {
+        margin-bottom: 4em;
+        flex-direction: column;
     }
 
     .project-name {
-        font-size: 1.25em;
+        margin-top: .5em;
+        font-size: 1.5rem;
     }
 
     .container {
         flex-direction: column;
+    }
+
+    .tags-container {
+        margin: 1em 0;
+        text-align: left;
     }
 
     .container > div {
@@ -56,6 +85,15 @@
 
     .project-description {
         font-size: .9em;
+    }
+
+    .about-container {
+        width: 90%;
+    }
+
+    .about .container {
+        width: 100%;
+        text-align: justify;
     }
 
     .about span {
@@ -67,21 +105,34 @@
         margin-left: 0;
     }
 
-    .about ul:nth-child(2), .about ul:nth-child(3) {
-        margin-top: 1em;
+    .about ul {
+        margin-top: .5em;
+    }
+
+    .contact-container {
+        width: 90%;
     }
 
     .contact .container > div {
         width: 100%;
     }
 
+    .contact-container .container span {
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
     .contact-social-media {
         margin-top: 2em;
-        width: 80%;
+        width: 100%;
     }
 
     form {
         margin-top: 4em;
         width: 100%;
     }
+}
+
+@media only screen and (max-width: 1500px) {
+
 }
