@@ -3,31 +3,12 @@
     100% { opacity: .8; }
 }
 
-@keyframes fade-out {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-}
-
 @keyframes move-left {
-    0% { margin-left: 40px; }
-    100% { margin-left: 0px; }
+    0% { margin-left: 3em; }
+    100% { margin-left: 0; }
 }
 
 @keyframes menu-slide {
     0% { margin-right: 500px; }
     100% { margin-right: 0; }
-}
-
-@keyframes loading-animation {
-    0% { width: 0%; }
-    100% { width: 100%; }
-}
-
-@keyframes lds-ring {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
 }
