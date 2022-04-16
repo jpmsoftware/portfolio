@@ -2,12 +2,10 @@
     0% { opacity: 0; }
     100% { opacity: .8; }
 }
-
 @keyframes move-left {
     0% { margin-left: 3em; }
     100% { margin-left: 0; }
 }
-
 @keyframes menu-slide {
     0% { margin-right: 500px; }
     100% { margin-right: 0; }
