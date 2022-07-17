@@ -1,234 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="./css/responsive.css" />
   <link rel="stylesheet" href="./css/animations.css" />
-  <link rel="icon" href="./img/14502897621581665318-512.png">
+  <link rel="icon" href="./img/favicon.png">
   <title id="title">Juan Pablo Miranda</title>
 </head>
-
 <body>
   <header>
     <nav class="navbar">
+      <div class="logo">
+        <img src="./img/logo.svg" alt="logo">
+      </div>
       <ul class="menu" id="menu">
-        <li><a href="#home" class="menu-item">Home</a></li>
-        <li><a href="#about" class="menu-item">Acerca</a></li>
-        <li><a href="#projects" class="menu-item">Proyectos</a></li>
-        <li><a href="#contact" class="menu-item">Contacto</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="home" id="home">
-    <div class="container">
-      <h1>Desarrollo web <b>full stack</b></h1>
-      <span class="presentation">
-        Soy un desarrollador web full stack de Montevideo, Uruguay. Me gusta llevar a cabo ideas
-        originales y
-        desafiantes
-        Desde el año 2019 he ido creando diferentes proyectos personales, algunos de los cuales podrás
-        explorar en
-        este
-        sitio
-      </span>
-      <a href="#projects" class="cta">ver proyectos</a>
+    <div class="wrapper">
+      <div class="container">
+        <h1>Full Stack Web Development</h1>
+        <span class="text">
+          I am a Full stack Web Developer who enjoys developing interesting and creative ideas,
+          always willing to work in a creative and collaborative environment.
+          Since 2019 I've been creating various personal projects, you can explore some of them on this site
+        </span>
+        <a href="#projects" class="cta">View projects</a>
+      </div>
     </div>
+    <div class="background">
+      <img src="./img/background-image.jpg" alt="image">
+      <div class="mask"></div>
+    </div>
+    <img class="icon-arrow" src="./img/icon-arrow.svg" alt="icon">
   </section>
 
-  <section class="about" id="about">
-    <div class="container">
-      <h2>Acerca</h2>
-      <div class="content">
-        <div class="left-side">
-          <span class="about-text">
-            Mi interés por la programación comenzó desde muy joven cuando comencé a experimentar con un viejo entorno de
-            programación
-            en lenguaje C llamado Turbo C.
-            Con el tiempo mi interés se ha ido inclinando por el desarrollo de aplicaciones y sitios web.
-            <br><br>Me considero una persona creativa y detallista y dispuesto continuar aprendiendo aquellas
-            tecnologías que
-            sean necesarias
-            para el desarrollo y cumplimiento de un determinado proyecto
-          </span>
-        </div>
-        <div class="right-side">
-          <div class="stack">
-            <ul>
-              <h4>Front-End</h4>
-              <li>HTML, CSS, Javascript</li>
-              <li>React JS</li>
-              <li>SASS</li>
-            </ul>
-            <ul>
-              <h4>Back-End</h4>
-              <li>Node JS / Express</li>
-              <li>Mongo DB</li>
-              <li>My SQL</li>
-            </ul>
-            <ul>
-              <h4>Otros</h4>
-              <li>GIT</li>
-              <li>Figma</li>
-              <li>Adobe XD</li>
-              <li>GIMP</li>
-              <li>Blender</li>
-            </ul>
+  <section class="section-projects" id="projects">
+    <div class="wrapper">
+      <div class="container">
+        <h2>Projects/Experience</h2>
+        <p>Some of my most relevant projects are listed below</p>
+        <div class="projects">
+
+          <div class="project">
+            <a href="https://greenmarket-shop.herokuapp.com/" target="_blank">
+              <div class="background">
+                <img src="./img/screenshot_green-market.png" class="screenshot" alt="screenshot">
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3>Green Market</h3>
+                  <h4>ECOMMERCE</h4>
+                </div>
+              </div>
+            </a>
+            <img src="./img/icon-github.svg" class="icon-github" alt="github" data-link="https://github.com/jpmsoftware/green-market-ecommerce">
+          </div>
+
+          <div class="project">
+            <a href="https://urunomics.herokuapp.com/" target="_blank">
+              <div class="background">
+                <img src="./img/screenshot_urunomics.png" class="screenshot" alt="screenshot">
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3>Urunomics</h3>
+                  <h4>MISCELLANEOUS</h4>
+                </div>
+              </div>
+            </a>
+            <img src="./img/icon-github.svg" class="icon-github" alt="github" data-link="https://github.com/jpmsoftware/urunomics">
+          </div>
+
+          <div class="project">
+            <a href="https://live-free-channels.herokuapp.com/" target="_blank">
+              <div class="background">
+                <img src="./img/screenshot_live-tv.png" class="screenshot" alt="screenshot">
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3>Live Streaming Channels</h3>
+                  <h4>WORLDWIDE FREE TV (REACT)</h4>
+                </div>
+              </div>
+            </a>
+            <img src="./img/icon-github.svg" class="icon-github" alt="github" data-link="https://github.com/jpmsoftware/live-free-channels">
+          </div>
+
+          <div class="project">
+            <a href="https://www.jpmsoftware.com/" target="_blank">
+              <div class="background">
+                <img src="./img/screenshot_portfolio.png" class="screenshot" alt="screenshot">
+              </div>
+              <div class="project-info">
+                <div>
+                  <h3>Modern Web Portfolio</h3>
+                  <h4>Web Design & Development</h4>
+                </div>
+              </div>
+            </a>
+            <img src="./img/icon-github.svg" class="icon-github" alt="github" data-link="https://github.com/jpmsoftware/portfolio">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="projects" id="projects">
-    <div class="container">
-      <h2>Proyectos</h2>
-      <div class="projects-container">
-
-        <div class="project">
-          <div class="screenshot-container">
-            <img src="./img/screenshot_green_market.jpg" alt="screenshot" class="screenshot">
-          </div>
-          <div class="project-info">
-            <h3>Green Market</h3>
-            <hr class="separator">
-            <span class="project-description">
-              Plataforma de E-Commerce destinada a la comercialización de productos veganos
-              con diseño propio y base de datos en My SQL<br>
-              Desarrollada en el año 2020 como parte del proceso de aprendizaje y con el objetivo
-              de entender en su totalidad el funcionamiento y la interoperabilidad de una aplicación de
-              mediano porte y como interactúan sus distintos componentes
+  <section class="section-about" id="about">
+    <div class="wrapper">
+      <div class="container">
+        <h2>About</h2>
+        <div class="content">
+          <div class="left-side">
+            <span class="about-text">
+              My interest for progamming started at a young age, when I started experimenting with an old Development Environment
+              called Turbo C, mainly curious about how computer programs work.
+              As the time went by, my interest switched for the development of web sites and web apps.
+              <br><br>I consider myself a creative and detail-oriented person who is willing to continuously learn those technologies
+              that are necessary for the development and achievement of a determined project.
             </span>
-            <div class="tags-container">
-              <span>Node JS</span>
-              <span>My SQL</span>
-              <span>SASS</span>
+
+            <div class="soft-skills">
+              <p><img src="./img/icon1.svg" alt="creative"> Creative</p>
+              <p><img src="./img/icon2.svg" alt="detail-oriented"> Detail-oriented</p>
+              <p><img src="./img/icon3.svg" alt="team-player"> Team Player</p>
             </div>
-            <div class="links-container">
-              <a href="https://green-market-uy.herokuapp.com/" class="link" target="_blank">ver demo</a>
-              <a href="https://github.com/jpmsoftware/GreenMarket" class="link" target="_blank">ver código</a>
+          </div>
+          <div class="right-side">
+            <h5>My skills</h5>
+            <div class="skills">
+              <img src="./img/html5.png" alt="html5">
+              <img src="./img/css.png" alt="css">
+              <img src="./img/javascript.png" alt="javascript">
+              <img src="./img/sass.png" alt="sass">
+              <img src="./img/react.png" alt="react">
+              <img src="./img/mysql.png" alt="mysql">
+              <img src="./img/node.png" alt="node">
+              <img src="./img/git.png" alt="git">
+              <img src="./img/mongodb.png" alt="mongodb">
             </div>
           </div>
         </div>
-
-        <div class="project">
-          <div class="screenshot-container">
-            <img src="./img/screenshot_urunomics.jpg" alt="screenshot" class="screenshot">
-          </div>
-          <div class="project-info">
-            <h3>Urunomics</h3>
-            <hr class="separator">
-            <span class="project-description">
-              Plataforma de E-Commerce destinada a la comercialización de productos veganos
-              con diseño propio y base de datos en My SQL<br>
-              Desarrollada en el año 2020 como parte del proceso de aprendizaje y con el objetivo
-              de entender en su totalidad el funcionamiento y la interoperabilidad de una aplicación de
-              mediano porte y como interactúan sus distintos componentes
-            </span>
-            <div class="tags-container">
-              <span>Node JS</span>
-              <span>Chart JS</span>
-              <span>Javascript</span>
-            </div>
-            <div class="links-container">
-              <a href="https://www.urunomics.com/" class="link" target="_blank">ver demo</a>
-              <a href="https://github.com/jpmsoftware/urunomics" class="link" target="_blank">ver código</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="screenshot-container">
-            <img src="./img/screenshot_green_market.jpg" alt="screenshot" class="screenshot">
-          </div>
-          <div class="project-info">
-            <h3>React Project</h3>
-            <hr class="separator">
-            <span class="project-description">
-              Plataforma de E-Commerce destinada a la comercialización de productos veganos
-              con diseño propio y base de datos en My SQL<br>
-              Desarrollada en el año 2020 como parte del proceso de aprendizaje y con el objetivo
-              de entender en su totalidad el funcionamiento y la interoperabilidad de una aplicación de
-              mediano porte y como interactúan sus distintos componentes
-            </span>
-            <div class="tags-container">
-              <span>React</span>
-              <span>Node JS</span>
-            </div>
-            <div class="links-container">
-              <a href="https://www.greenmarket.uy/" class="link" target="_blank">ver demo</a>
-              <a href="https://www.greenmarket.uy/" class="link" target="_blank">ver código</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project">
-          <div class="screenshot-container">
-            <img src="./img/screenshot_green_market.jpg" alt="screenshot" class="screenshot">
-          </div>
-          <div class="project-info">
-            <h3>Web Portfolio</h3>
-            <hr class="separator">
-            <span class="project-description">
-              Plataforma de E-Commerce destinada a la comercialización de productos veganos
-              con diseño propio y base de datos en My SQL<br>
-              Desarrollada en el año 2020 como parte del proceso de aprendizaje y con el objetivo
-              de entender en su totalidad el funcionamiento y la interoperabilidad de una aplicación de
-              mediano porte y como interactúan sus distintos componentes
-            </span>
-            <div class="tags-container">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Javascript</span>
-            </div>
-            <div class="links-container">
-              <a href="https://www.greenmarket.uy/" class="link" target="_blank">ver demo</a>
-              <a href="https://www.greenmarket.uy/" class="link" target="_blank">ver código</a>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2>Contacto</h2>
-
-      <div class="content">
-        <div class="left-side">
-          <span class="contact-text">
-            Envíame tu mensaje a través del siguiente formulario y me contactaré a la brevedad<br><br>
-            También puedes contactarme a través de los siguientes medios:
-          </span>
-          <div class="contact-social-media">
-            <div>
-              <img src="./img/icon-github.svg" alt="github">
-              <a href="https://github.com/jpmsoftware" class="social-media-link" target="_blank">GITHUB</a>
-            </div>
-            <div>
-              <img src="./img/icon-linkedin.svg" alt="github">
-              <a href="https://www.linkedin.com/in/juan-pablo-miranda-604295215/" class="social-media-link" target="_blank">LINKEDIN</a>
+  <section class="section-contact" id="contact">
+    <div class="wrapper">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="content">
+          <div>
+            <span class="contact-text">
+              Feel free to contact me through the next form<br>and I will get to you as soon as possible
+            </span>
+            <div class="contact-social-media">
+              <div>
+                <img src="./img/icon-github.svg" alt="github">
+                <a href="https://github.com/jpmsoftware" class="social-media-link" target="_blank">GITHUB</a>
+              </div>
+              <div>
+                <img src="./img/icon-linkedin.svg" alt="github">
+                <a href="https://www.linkedin.com/in/juan-pablo-miranda-604295215/" class="social-media-link"
+                  target="_blank">LINKEDIN</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="right-side">
-          <form name="contact-form" action="./success.html" method="POST" data-netlify="true">
-            <input type="text" name="name" placeholder="Tu nombre" class="user-name" required>
-            <input type="email" name="email" placeholder="Tu E-Mail" class="user-email" required>
-            <textarea name="message" cols="30" rows="10" placeholder="Tu mensaje" class="user-msg" required></textarea>
-            <input type="submit" class="cta btn-submit" value="Enviar">
+          <form name="contact-form" action="./success.html" method="POST" data-netlify="true" class="contact-form">
+            <input type="text" name="name" placeholder="Your name" class="user-name" required>
+            <input type="email" name="email" placeholder="Your E-Mail" class="user-email" required>
+            <textarea name="message" cols="30" rows="10" placeholder="Your message" class="user-msg"
+              required></textarea>
+            <input type="submit" class="cta btn-submit" value="Send">
           </form>
         </div>
       </div>
     </div>
   </section>
-
-  <script src="./js/index.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
